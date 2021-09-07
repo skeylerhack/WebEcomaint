@@ -1,0 +1,12 @@
+if not exists(select * from sys.columns 
+            where Name = N'BAT_BUOC ' and Object_ID = Object_ID(N'DON_DAT_HANG_DUYET'))
+begin
+    ALTER TABLE DON_DAT_HANG_DUYET ADD BAT_BUOC  BIT
+    
+    ALTER TABLE [dbo].[DON_DAT_HANG_DUYET] ADD  CONSTRAINT [DF_DON_DAT_HANG_DUYET_BAT_BUOC ]  DEFAULT ((0)) FOR [BAT_BUOC ]
+
+END 
+
+GO
+	UPDATE DON_DAT_HANG_DUYET SET BAT_BUOC = 0 WHERE BAT_BUOC IS NULL
+

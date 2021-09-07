@@ -1,0 +1,14 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'spGetNhaCungCap_DiaChi')
+   exec('CREATE PROCEDURE spGetNhaCungCap_DiaChi AS BEGIN SET NOCOUNT ON; END')
+
+GO
+
+
+ALTER procedure spGetNhaCungCap_DiaChi
+	
+AS
+BEGIN
+	SELECT MS_KH AS MS_NCC, TEN_CONG_TY AS TEN_NHA_CUNG_CAP, DIA_CHI FROM KHACH_HANG
+	UNION 
+	SELECT '' MS_NCC, '' TEN_CONG_TY, '' DIA_CHI
+END

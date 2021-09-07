@@ -1,0 +1,51 @@
+
+--IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'VS_GET_DATA_KTTT_MONITORING')
+--   exec('CREATE PROCEDURE VS_GET_DATA_KTTT_MONITORING AS BEGIN SET NOCOUNT ON; END')
+--GO
+--IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'FN' AND name = 'MGetMailYCNSDung')
+--   exec('CREATE FUNCTION  dbo.MGetMailYCNSDung () RETURNS  nvarchar(50) as Begin return null end')
+--GO
+--if not exists(select * from sys.columns 
+--            where Name = N'THOI_GIAN_DU_KIEN' and Object_ID = Object_ID(N'KE_HOACH_TONG_CONG_VIEC'))
+--begin
+--    ALTER TABLE KE_HOACH_TONG_CONG_VIEC ADD THOI_GIAN_DU_KIEN float
+--END    
+--IF  NOT EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[TINH_TRANG_YCSD]') AND type in (N'U'))
+--BEGIN
+--END
+
+
+
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'FN' AND name = 'fnGet_VI_TRI_PT_THEO_KHO')
+   exec('CREATE FUNCTION  dbo.fnGet_VI_TRI_PT_THEO_KHO () RETURNS  int as Begin return null end')
+GO
+alter FUNCTION fnGet_VI_TRI_PT_THEO_KHO
+(
+		@MS_PT NVARCHAR(16) = NULL,
+		@THEO_KHO INT,
+		@MS_KHO INT
+)
+RETURNS INT
+
+AS
+BEGIN
+		DECLARE @MS_VI_TRI INT = NULL
+		IF(@THEO_KHO = 0)
+		BEGIN
+			 SELECT @MS_VI_TRI = MS_VI_TRI FROM IC_PHU_TUNG WHERE MS_PT = @MS_PT
+		END
+		ELSE
+		BEGIN
+			SELECT TOP(1) @MS_VI_TRI = MS_VI_TRI FROM IC_PHU_TUNG_KHO WHERE MS_PT = @MS_PT AND MS_KHO = @MS_KHO AND MS_VI_TRI IS NOT NULL		
+			IF @MS_VI_TRI IS NULL
+			BEGIN
+				SELECT @MS_VI_TRI = MS_VI_TRI FROM IC_PHU_TUNG WHERE MS_PT = @MS_PT
+			END
+					
+		END
+		RETURN @MS_VI_TRI
+END
+GO
+
+--SELECT DBO.fnGet_VI_TRI_PT_THEO_KHO(N'99999', 1, 1)

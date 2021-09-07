@@ -1,0 +1,6 @@
+IF NOT EXISTS (SELECT * FROM   sys.columns WHERE  object_id = OBJECT_ID(N'[dbo].[PHIEU_BAO_TRI_CV_PHU_TRO]') AND name = 'STT_CV')
+begin
+    ALTER TABLE PHIEU_BAO_TRI_CV_PHU_TRO ADD STT_CV INT
+end 
+
+

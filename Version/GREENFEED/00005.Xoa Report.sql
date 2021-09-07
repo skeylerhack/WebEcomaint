@@ -1,0 +1,30 @@
+﻿--TONKHO 8.8. THÔNG TIN TỒN KHO  - Thống kê xuất vật tư - rptThongKeXuatVatTu - Commons.frmrptThongKeXuatVatTu
+--TONKHO 8.8. THÔNG TIN TỒN KHO  - Thẻ kho - rptTheKho - Commons.frmrptTheKho
+--TONKHO 8.8. THÔNG TIN TỒN KHO  - Báo cáo tồn kho không theo vị trí - rptTON_KHO_KHONG_THEO_VI_TRI - Commons.frmrptTON_KHO_KHONG_THEO_VI_TRI
+--TONKHO 8.8. THÔNG TIN TỒN KHO  - Báo cáo tồn kho theo vị trí - rptTON_KHO_THEO_VI_TRI - Commons.frmrptTON_KHO_THEO_VI_TRI
+--TONKHO 8.8. THÔNG TIN TỒN KHO  - Dự toán kinh phí mua vật tư cho nhà máy - ucDuToanTheoDonVi - MReportVB.ucDuToanTheoDonVi
+--TONKHO 8.8. THÔNG TIN TỒN KHO  - Danh sách vật tư không xuất kho - rptucVTKhongXuatKho - ReportHuda.UControl.ucVTChuaXuatKho
+
+DELETE FROM NHOM_REPORT WHERE REPORT_NAME = 'rptThongKeXuatVatTu'
+DELETE FROM NHOM_REPORT WHERE REPORT_NAME = 'rptTheKho'
+DELETE FROM NHOM_REPORT WHERE REPORT_NAME = 'rptTON_KHO_KHONG_THEO_VI_TRI'
+DELETE FROM NHOM_REPORT WHERE REPORT_NAME = 'rptTON_KHO_THEO_VI_TRI'
+DELETE FROM NHOM_REPORT WHERE REPORT_NAME = 'ucDuToanTheoDonVi'
+DELETE FROM NHOM_REPORT WHERE REPORT_NAME = 'rptucVTKhongXuatKho'
+
+
+DELETE FROM DS_REPORT WHERE REPORT_NAME = 'rptThongKeXuatVatTu'
+DELETE FROM DS_REPORT WHERE REPORT_NAME = 'rptTheKho'
+DELETE FROM DS_REPORT WHERE REPORT_NAME = 'rptTON_KHO_KHONG_THEO_VI_TRI'
+DELETE FROM DS_REPORT WHERE REPORT_NAME = 'rptTON_KHO_THEO_VI_TRI'
+DELETE FROM DS_REPORT WHERE REPORT_NAME = 'ucDuToanTheoDonVi'
+DELETE FROM DS_REPORT WHERE REPORT_NAME = 'rptucVTKhongXuatKho'
+
+DELETE FROM LIC_REPORT WHERE REPORT_NAME =  N'ΨΤάͬΔ΢ΠΒ͚ΎʹήΆάͰΆάͬή'
+DELETE FROM LIC_REPORT WHERE REPORT_NAME =  N'ΨΤάͬΔΎ͚Δ΢'
+DELETE FROM LIC_REPORT WHERE REPORT_NAME =  N'ΨΤάͬ͢͠΂͚͔͢΂͚͔͒͢͠΂͔͎ͬ͢΂Ͱ͖΂͖ͬͨ'
+DELETE FROM LIC_REPORT WHERE REPORT_NAME =  N'ΨΤάͬ͢͠΂͚͔͢΂͔͎ͬ͢΂Ͱ͖΂͖ͬͨ'
+DELETE FROM LIC_REPORT WHERE REPORT_NAME =  N'ήΊ͌ήͬ΢ΆΠͬΔΎ΢͌΢ΠͰΖ'
+DELETE FROM LIC_REPORT WHERE REPORT_NAME =  N'ΨΤάήΊͰ͚ͬΔ΢ΠΒʹήΆά͚Δ΢'
+
+

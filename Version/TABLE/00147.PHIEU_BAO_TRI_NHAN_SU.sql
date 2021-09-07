@@ -1,0 +1,17 @@
+--CREATE TABLE PHIEU_BAO_TRI_NHAN_SU
+--(
+--	[STT] [int] identity(1, 1),
+--	[MS_PHIEU_BAO_TRI] [nvarchar](20) NOT NULL,
+--	[MS_CONG_NHAN] [nvarchar](9) NOT NULL,
+--	[NGAY] [datetime] NULL,
+--	[TU_GIO] [datetime] NULL,
+--	[DEN_NGAY] [datetime] NULL,
+--	[DEN_GIO] [datetime] NULL,
+--	[HOAN_THANH] [bit] NOT NULL,
+--	[SO_GIO] [float] NULL,
+--	[NGAY_KH] [datetime] NULL,
+--	[TU_GIO_KH] [datetime] NULL,
+--	[DEN_NGAY_KH] [datetime] NULL,
+--	[DEN_GIO_KH] [datetime] NULL,
+--	[TONG_GIO_KH] [float] NULL
+--)

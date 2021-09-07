@@ -1,0 +1,39 @@
+﻿
+IF NOT EXISTS (SELECT * FROM MENU WHERE [MENU_ID] = N'mnuVTPTExcel') 
+begin
+	INSERT [dbo].[MENU] ([MENU_ID], [MENU_TEXT], [MENU_ENGLISH], [MENU_CHINESE], [MENU_PARENT], [MENU_LINE], [MENU_INDEX], [SHORT_KEY], [DLL_NAME], [CLASS_NAME], [FUNCTION_NAME], [CUSTUMER], [NOTE], [MENU_IMAGE], [PROJECT_NAME], [MENU_NOTE], [MENU_FONT], [MENU_POSITION], [MENU_TYPE], [AN_HIEN])
+	VALUES (N'mnuVTPTExcel', N' 6.18. Tìm vật tư từ file excel', N' 6.18. Item search from excel file', NULL, N'mnuQuanlykho', 0, 25, NULL, NULL, N'frmMain', N'ShowVTPTExcel', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1)
+end
+GO
+IF NOT EXISTS (SELECT * FROM NHOM_MENU WHERE [MENU_ID] = N'mnuVTPTExcel' AND GROUP_ID = 1) 
+BEGIN
+	INSERT INTO NHOM_MENU SELECT 1, N'mnuVTPTExcel'
+END
+
+go
+IF NOT EXISTS (SELECT * FROM LIC_MENU WHERE [TYPE_LIC] = N'̦' AND [MENU_ID] = N'ΞΠήͰ͎ͬͤͬδΊΎΜ') 
+BEGIN
+	INSERT INTO dbo.LIC_MENU([TYPE_LIC],[MENU_ID]) VALUES(N'̦',N'ΞΠήͰ͎ͬͤͬδΊΎΜ')
+END
+GO
+
+-----vi du chi tiet form
+IF NOT EXISTS (SELECT * FROM [CHI_TIET_FORMS] WHERE [FORM_NAME] = N'frmImportPhuTungVC') 
+BEGIN
+	INSERT [dbo].[CHI_TIET_FORMS] ([FORM_NAME], [TEN_FORMS_VIET], [TEN_FORMS_ANH], [TEN_FORMS_HOA], [CUSTUMER], [SHOW_IN], [NOTE])
+	VALUES (N'frmImportPhuTungVC', N' 6.18. Tìm vật tư từ file excel', N' 6.18. Item search from excel file', NULL, NULL, NULL, NULL)
+END
+
+go
+IF NOT EXISTS (SELECT * FROM NHOM_FORM WHERE [FORM_NAME] = N'frmImportPhuTungVC' AND GROUP_ID = 1) 
+BEGIN
+	INSERT INTO NHOM_FORM
+	SELECT 1,N'frmImportPhuTungVC',N'Full access'
+END
+go
+
+IF NOT EXISTS (SELECT * FROM LIC_FORM WHERE [TYPE_LIC] = N'̦' AND [FORM_NAME] = N'ΐΨΞ͖ΞΤ΢ΨάͤΔήͬήΠΒͰ͊' ) 
+BEGIN
+INSERT INTO dbo.LIC_FORM([TYPE_LIC],[FORM_NAME])
+     VALUES (N'̦',N'ΐΨΞ͖ΞΤ΢ΨάͤΔήͬήΠΒͰ͊')
+END

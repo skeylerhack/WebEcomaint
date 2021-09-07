@@ -1,0 +1,45 @@
+﻿IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'spGetPBTGSTT')
+   
+exec('CREATE PROCEDURE spGetPBTGSTT AS BEGIN SET NOCOUNT ON; END')
+
+GO
+
+
+
+ALTER PROCEDURE spGetPBTGSTT
+	@TNgay DATE = '07/01/2019',
+	@DNgay DATE = '07/29/2019',
+	@UserName NVARCHAR(255) = 'Admin',
+	@MsNXuong nvarchar(50) = '-1',
+	@GiaiDoan BIT = 1,
+	@NNgu INT = 0
+AS 
+BEGIN
+
+--@GiaiDoan = 0 Coi đúng ngay luc do set tu ngay = @DNgay
+--@GiaiDoan = 1 Coi trong giai doan
+IF @GiaiDoan = 0 
+BEGIN
+	SET @TNgay = @DNgay
+END
+
+SELECT DISTINCT MS_MAY,TEN_MAY INTO #MAY_USER FROM [dbo].[MGetMayUserNgay](@DNgay,@UserName,@MsNXuong,-1,-1,'-1','-1','-1',@NNgu)
+
+--chi lấy nhung pbt đang thực hiện TINH_TRANG_PBT = 2
+SELECT DISTINCT T1.MS_MAY,T2.TEN_MAY INTO #PBT FROM dbo.PHIEU_BAO_TRI T1 INNER JOIN #MAY_USER T2 ON T1.MS_MAY = T2.MS_MAY WHERE (CONVERT(DATE, NGAY_BD_KH) BETWEEN	@TNgay AND @DNgay) AND (TINH_TRANG_PBT = 2)
+
+SELECT DISTINCT T1.MS_MAY,T1.TEN_MAY INTO #GSTT FROM [dbo].[MGetHieuChuanKeGSTT](@TNgay,@DNgay,@UserName,@MsNXuong,-1,-1,'-1','-1',-1,0,@NNgu) T1 
+
+
+
+SELECT T1.MS_MAY,T1.TEN_MAY,
+CASE WHEN ISNULL(T2.MS_MAY,'') = '' THEN 0 ELSE 1 END AS PBT,
+CASE WHEN ISNULL(T3.MS_MAY,'') = '' THEN 0 ELSE 1 END AS GSTT
+FROM (
+SELECT MS_MAY,TEN_MAY FROM #GSTT
+UNION SELECT MS_MAY,TEN_MAY FROM #PBT
+) T1 LEFT JOIN 
+#PBT T2 ON T1.MS_MAY = T2.MS_MAY LEFT JOIN 
+#GSTT T3 ON T1.MS_MAY = T3.MS_MAY 
+ORDER BY T1.MS_MAY
+END

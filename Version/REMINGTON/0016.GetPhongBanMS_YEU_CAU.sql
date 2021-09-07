@@ -1,0 +1,24 @@
+
+--SELECT  dbo.[GetPhongBanMS_YEU_CAU]('WO-202009000011')
+
+ALTER function [dbo].[GetPhongBanMS_YEU_CAU]
+(
+	@MS_PBT NVARCHAR(20) = 'WO-202009000011'
+)
+returns nvarchar(MAX)
+as 
+begin
+
+
+declare @MS_YEU_CAU nvarchar(MAX)
+SELECT @MS_YEU_CAU =COALESCE(@MS_YEU_CAU + ', ', '') +
+	CAST(T.TEN_TO AS Nvarchar(MAX))
+	FROM 
+		(SELECT DISTINCT T4.TEN_TO
+FROM        YEU_CAU_NSD AS T1 inner JOIN
+                      YEU_CAU_NSD_CHI_TIET AS T2 ON T1.STT = T2.STT INNER JOIN dbo.USERS T3 ON T3.USERNAME = T1.USER_LAP INNER JOIN dbo.TO_PHONG_BAN T4 ON T3.MS_TO = T4.MS_TO
+WHERE     (T2.MS_PBT = @MS_PBT )
+) T  
+
+return @MS_YEU_CAU
+end

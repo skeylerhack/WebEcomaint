@@ -1,0 +1,12 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'spGetComponentByDevice')
+   exec('CREATE PROCEDURE spGetComponentByDevice AS BEGIN SET NOCOUNT ON; END')
+GO
+
+ALTER PROC spGetComponentByDevice
+	@deviceID NVARCHAR(50),
+	@lang BIT
+AS
+BEGIN
+	SELECT MS_MAY DeviceID, MS_BO_PHAN ID,  MS_BO_PHAN + ' - ' + CASE @lang WHEN 0 THEN TEN_BO_PHAN WHEN 1 THEN TEN_BO_PHAN_ANH ELSE TEN_BO_PHAN_HOA END AS [Name], MS_PT SparePartID, SO_LUONG Amount, MS_BO_PHAN_CHA RootID, GHI_CHU Note, RUN_TIME Runtime, MS_DVT_RT UnitOfRuntimeID, HINH Image, CLASS_ID ClassID, STT [Index], TEN_BO_PHAN_ANH NameOfEng, TEN_BO_PHAN_HOA NameOfChina FROM CAU_TRUC_THIET_BI WHERE MS_MAY = @deviceID
+END
+

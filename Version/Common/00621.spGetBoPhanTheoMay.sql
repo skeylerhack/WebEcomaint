@@ -1,0 +1,21 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'spGetBoPhanTheoMay')
+   exec('CREATE PROCEDURE spGetBoPhanTheoMay AS BEGIN SET NOCOUNT ON; END')
+GO
+-----------------EXEC spGetBoPhanTheoMay 'BAF-2502', 'ChonBoPhanChoMayAdmin'
+ALTER PROCEDURE [dbo].[spGetBoPhanTheoMay]
+	@MS_MAY Nvarchar(30),
+	@BTAM nvarchar(50)
+
+AS
+		DECLARE @sSql NVARCHAR (4000)
+		SET @sSql = 'SELECT DISTINCT MS_BO_PHAN INTO BoPhanTheoMayTMP FROM ' + @BTAM
+		EXEC (@sSQL)
+
+
+
+		SELECT   CONVERT(BIT, 0) AS CHON, MS_BO_PHAN , TEN_BO_PHAN 
+		FROM         dbo.CAU_TRUC_THIET_BI
+		WHERE dbo.CAU_TRUC_THIET_BI.MS_MAY = @MS_MAY AND 
+		NOT EXISTS (SELECT * FROM BoPhanTheoMayTMP AS T3 WHERE T3.MS_BO_PHAN = dbo.CAU_TRUC_THIET_BI.MS_BO_PHAN AND CAU_TRUC_THIET_BI.MS_MAY = @MS_MAY ) 
+		ORDER BY ISNULL(CAU_TRUC_THIET_BI.STT, 999)
+		drop table BoPhanTheoMayTMP

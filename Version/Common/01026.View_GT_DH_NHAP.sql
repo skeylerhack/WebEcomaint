@@ -1,0 +1,14 @@
+
+ALTER view [dbo].[View_GT_DH_NHAP] 
+
+as
+SELECT     dbo.IC_DON_HANG_NHAP.MS_DH_NHAP_PT, 
+                      SUM(dbo.IC_DON_HANG_NHAP_VAT_TU.SL_THUC_NHAP * dbo.IC_DON_HANG_NHAP_VAT_TU.DON_GIA) 
+                      AS GIA_TRI
+FROM         dbo.IC_DON_HANG_NHAP_VAT_TU INNER JOIN
+                      dbo.IC_DON_HANG_NHAP ON dbo.IC_DON_HANG_NHAP_VAT_TU.MS_DH_NHAP_PT = dbo.IC_DON_HANG_NHAP.MS_DH_NHAP_PT
+GROUP BY dbo.IC_DON_HANG_NHAP.MS_DH_NHAP_PT
+
+
+
+

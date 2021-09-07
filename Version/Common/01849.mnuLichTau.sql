@@ -1,0 +1,6 @@
+﻿
+DELETE FROM dbo.NHOM_MENU WHERE MENU_ID = 'mnuLichTau'
+go
+DELETE FROM dbo.MENU WHERE MENU_ID = 'mnuLichTau'
+go
+DELETE FROM dbo.LIC_MENU WHERE MENU_ID =  N'ΞΠή͜ΖΊΔͬΆή'

@@ -1,0 +1,26 @@
+
+
+--SELECT dbo.Get_NoiDungYeuCau(MS_PHIEU_BAO_TRI ) as aaa, * FROM PHIEU_BAO_TRI WHERE MS_PHIEU_BAO_TRI = 'WO-201511000043'
+
+	
+ALTER function [dbo].[Get_NoiDungYeuCau]
+(
+	@MsPBT nvarchar(100)
+)
+returns nvarchar(1000)
+as 
+begin
+
+
+	
+	
+DECLARE @NDUNGYC Nvarchar(1000)
+
+SELECT @NDUNGYC =COALESCE(@NDUNGYC + ', ' + CHAR(13) , '') +
+CAST(YEU_CAU AS Nvarchar(1000))
+FROM 
+	(SELECT CASE  ISNULL(YEU_CAU,'') WHEN '' THEN MO_TA_TINH_TRANG ELSE MO_TA_TINH_TRANG +' - '+ YEU_CAU END AS YEU_CAU 
+	FROM YEU_CAU_NSD_CHI_TIET WHERE MS_PBT=@MsPBT) T1 
+RETURN @NDUNGYC
+
+end

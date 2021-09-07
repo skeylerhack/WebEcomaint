@@ -1,0 +1,5 @@
+﻿GO
+UPDATE DS_REPORT SET TEN_REPORT_VIET = N'Biểu mẫu ghi nhận kết quả thực hiện bảo trì theo tuần' WHERE REPORT_NAME = 'ucKeHoachTuan'
+
+GO
+IF EXISTS (SELECT * FROM LANGUAGES WHERE FORM=N'ucKeHoachKiemDinhThang' AND KEYWORD =N'lblNam') UPDATE LANGUAGES SET VIETNAM=N'Tháng', ENGLISH=N'Month', VIETNAM_OR=N'Tháng', ENGLISH_OR=N'Month' WHERE FORM=N'ucKeHoachKiemDinhThang' AND KEYWORD=N'lblNam' ELSE INSERT INTO LANGUAGES(FORM,KEYWORD,VIETNAM,ENGLISH,VIETNAM_OR,ENGLISH_OR) VALUES(N'ucKeHoachKiemDinhThang',N'lblNam',N'Tháng',N'Month',N'Tháng',N'Month')

@@ -1,0 +1,30 @@
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'CA_DEM') and Object_ID = Object_ID(N'CA'))
+BEGIN
+ALTER TABLE CA ADD CA_DEM BIT DEFAULT 0
+END            
+
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'TU_PHUT') and Object_ID = Object_ID(N'CA'))
+BEGIN
+ALTER TABLE CA ADD TU_PHUT INT
+END   
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DEN_PHUT') and Object_ID = Object_ID(N'CA'))
+BEGIN
+ALTER TABLE CA ADD DEN_PHUT INT
+END   
+
+GO
+UPDATE CA
+SET
+TU_PHUT = T1.TU_PHUT,
+DEN_PHUT =  T1.DEN_PHUT
+FROM CA T
+INNER JOIN 
+(SELECT STT, DATEDIFF(MINUTE, DATEADD(DAY, DATEDIFF(DAY, 0, TU_GIO), 0), TU_GIO) AS TU_PHUT,
+DATEDIFF(MINUTE, DATEADD(DAY, DATEDIFF(DAY, CASE WHEN TU_GIO < DEN_GIO THEN 0 ELSE DATEPART(HOUR, DEN_GIO) END ,DEN_GIO), 0),  DEN_GIO)  AS DEN_PHUT  FROM CA ) T1 ON T1.STT = T.STT
+

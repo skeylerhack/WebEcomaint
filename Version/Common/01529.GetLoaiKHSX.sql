@@ -1,0 +1,17 @@
+﻿IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'GetLoaiKHSX')
+exec('CREATE PROCEDURE GetLoaiKHSX AS BEGIN SET NOCOUNT ON; END')
+GO
+ALTER PROCEDURE GetLoaiKHSX
+@NNgu INT =1
+AS 
+BEGIN
+SELECT DISTINCT ISNULL(LOAI,0) AS ID_LOAI,
+CASE	WHEN ISNULL(LOAI,0) = 0 THEN CASE WHEN @NNgu = 0 THEN	 N'Giờ kế hoạch' ELSE 'planning hours' END	
+WHEN ISNULL(LOAI,0) = 1 THEN N'Target' 
+--WHEN ISNULL(LOAI,0) = 2 THEN N'Sản lượng theo nhóm line' 
+ELSE CASE WHEN @NNgu = 0 THEN	N'Sản lượng cuối tháng'  ELSE 'Output of month' END	
+END AS TEN_LOAI 
+FROM dbo.KHSX_NGAY
+ORDER BY ID_LOAI
+END	
+

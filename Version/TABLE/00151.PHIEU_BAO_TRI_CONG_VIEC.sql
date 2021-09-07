@@ -1,0 +1,173 @@
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'NGAY_KH') and Object_ID = Object_ID(N'PHIEU_BAO_TRI_CONG_VIEC_NHAN_SU_PHU_TRO'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI_CONG_VIEC_NHAN_SU_PHU_TRO ADD NGAY_KH DATETIME
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'TU_GIO_KH') and Object_ID = Object_ID(N'PHIEU_BAO_TRI_CONG_VIEC_NHAN_SU_PHU_TRO'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI_CONG_VIEC_NHAN_SU_PHU_TRO ADD TU_GIO_KH DATETIME
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DEN_NGAY_KH') and Object_ID = Object_ID(N'PHIEU_BAO_TRI_CONG_VIEC_NHAN_SU_PHU_TRO'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI_CONG_VIEC_NHAN_SU_PHU_TRO ADD DEN_NGAY_KH DATETIME
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DEN_GIO_KH') and Object_ID = Object_ID(N'PHIEU_BAO_TRI_CONG_VIEC_NHAN_SU_PHU_TRO'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI_CONG_VIEC_NHAN_SU_PHU_TRO ADD DEN_GIO_KH DATETIME
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'TONG_GIO_KH') and Object_ID = Object_ID(N'PHIEU_BAO_TRI_CONG_VIEC_NHAN_SU_PHU_TRO'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI_CONG_VIEC_NHAN_SU_PHU_TRO ADD TONG_GIO_KH FLOAT
+END
+GO
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'MS_NCC') and Object_ID = Object_ID(N'DE_XUAT_MUA_HANG'))
+BEGIN
+		ALTER TABLE DE_XUAT_MUA_HANG ADD MS_NCC NVARCHAR(250)
+END
+GO
+--PHIEU BAO TRI
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'NGAY_BD_KH_GOC') and Object_ID = Object_ID(N'PHIEU_BAO_TRI'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI ADD NGAY_BD_KH_GOC DATETIME
+END
+GO
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'NGAY_KT_KH_GOC') and Object_ID = Object_ID(N'PHIEU_BAO_TRI'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI ADD NGAY_KT_KH_GOC DATETIME
+END
+GO
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'ID_DD') and Object_ID = Object_ID(N'PHIEU_BAO_TRI_CONG_VIEC'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI_CONG_VIEC ADD ID_DD BIGINT
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DD_SN') and Object_ID = Object_ID(N'PHIEU_BAO_TRI_CONG_VIEC'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI_CONG_VIEC ADD DD_SN FLOAT
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DD_NGAY') and Object_ID = Object_ID(N'PHIEU_BAO_TRI_CONG_VIEC'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI_CONG_VIEC ADD DD_NGAY DATE
+END
+GO
+UPDATE PHIEU_BAO_TRI SET NGAY_BD_KH_GOC = NGAY_BD_KH, NGAY_KT_KH_GOC = NGAY_KT_KH WHERE NGAY_BD_KH_GOC IS NULL
+GO
+-- KE HOACH TONG TH
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'NGAY_GOC') and Object_ID = Object_ID(N'KE_HOACH_TONG_THE'))
+BEGIN
+		ALTER TABLE KE_HOACH_TONG_THE ADD NGAY_GOC DATETIME
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'NGAY_DK_HT_GOC') and Object_ID = Object_ID(N'KE_HOACH_TONG_THE'))
+BEGIN
+		ALTER TABLE KE_HOACH_TONG_THE ADD NGAY_DK_HT_GOC DATETIME
+END
+GO
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'ID_DD') and Object_ID = Object_ID(N'KE_HOACH_TONG_CONG_VIEC'))
+BEGIN
+		ALTER TABLE KE_HOACH_TONG_CONG_VIEC ADD ID_DD BIGINT
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DD_SN') and Object_ID = Object_ID(N'KE_HOACH_TONG_CONG_VIEC'))
+BEGIN
+		ALTER TABLE KE_HOACH_TONG_CONG_VIEC ADD DD_SN FLOAT
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DD_NGAY') and Object_ID = Object_ID(N'KE_HOACH_TONG_CONG_VIEC'))
+BEGIN
+		ALTER TABLE KE_HOACH_TONG_CONG_VIEC ADD DD_NGAY DATE
+END
+GO
+UPDATE KE_HOACH_TONG_THE SET NGAY_GOC = NGAY, NGAY_DK_HT_GOC = NGAY_DK_HT WHERE NGAY_GOC IS NULL
+GO
+
+-- GIAM_SAT_TINH_TRANG
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'NGAY_KT_GOC') and Object_ID = Object_ID(N'GIAM_SAT_TINH_TRANG'))
+BEGIN
+		ALTER TABLE GIAM_SAT_TINH_TRANG ADD NGAY_KT_GOC DATETIME
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'ID_DD') and Object_ID = Object_ID(N'GIAM_SAT_TINH_TRANG_TS'))
+BEGIN
+		ALTER TABLE GIAM_SAT_TINH_TRANG_TS ADD ID_DD BIGINT
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DD_SN') and Object_ID = Object_ID(N'GIAM_SAT_TINH_TRANG_TS'))
+BEGIN
+		ALTER TABLE GIAM_SAT_TINH_TRANG_TS ADD DD_SN FLOAT
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DD_NGAY') and Object_ID = Object_ID(N'GIAM_SAT_TINH_TRANG_TS'))
+BEGIN
+		ALTER TABLE GIAM_SAT_TINH_TRANG_TS ADD DD_NGAY DATE
+END
+GO
+UPDATE GIAM_SAT_TINH_TRANG SET NGAY_KT_GOC = NGAY_KT WHERE NGAY_KT_GOC IS NULL
+GO
+
+
+
+--KE_HOACH_THUC_HIEN
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'NGAY_GOC') and Object_ID = Object_ID(N'KE_HOACH_THUC_HIEN'))
+BEGIN
+		ALTER TABLE KE_HOACH_THUC_HIEN ADD NGAY_GOC DATEtime
+END
+GO
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'THOI_HAN_GOC') and Object_ID = Object_ID(N'KE_HOACH_THUC_HIEN'))
+BEGIN
+		ALTER TABLE KE_HOACH_THUC_HIEN ADD THOI_HAN_GOC DATEtime
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'ID_DD') and Object_ID = Object_ID(N'KE_HOACH_THUC_HIEN'))
+BEGIN
+		ALTER TABLE KE_HOACH_THUC_HIEN ADD ID_DD BIGINT
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DD_SN') and Object_ID = Object_ID(N'KE_HOACH_THUC_HIEN'))
+BEGIN
+		ALTER TABLE KE_HOACH_THUC_HIEN ADD DD_SN FLOAT
+END
+GO
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'DD_NGAY') and Object_ID = Object_ID(N'KE_HOACH_THUC_HIEN'))
+BEGIN
+		ALTER TABLE KE_HOACH_THUC_HIEN ADD DD_NGAY DATE
+END
+GO
+UPDATE KE_HOACH_THUC_HIEN SET NGAY_GOC = NGAY, THOI_HAN_GOC = THOI_HAN WHERE NGAY_GOC IS NULL
+

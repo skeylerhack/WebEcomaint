@@ -1,0 +1,14 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'GetWorkByComponent')
+   exec('CREATE PROCEDURE GetWorkByComponent AS BEGIN SET NOCOUNT ON; END')
+GO	   
+ALTER PROC GetWorkByComponent
+	@deviceID NVARCHAR(30),
+	@componentID NVARCHAR(20),
+	@lang int
+AS
+
+SELECT  T1.MS_MAY DeviceID, T1.MS_BO_PHAN ComponentID, T1.MS_CV WorkID,CASE @lang WHEN 0 THEN  T3.MO_TA_CV WHEN 1 THEN  T3.MO_TA_CV_ANH ELSE  T3.MO_TA_CV_HOA END AS [Description], T1.TG_KH TimePlan
+FROM dbo.CAU_TRUC_THIET_BI_CONG_VIEC AS T1 
+INNER JOIN dbo.CONG_VIEC AS T3 ON T1.MS_CV = T3.MS_CV
+WHERE (T1.MS_MAY = @deviceID) AND (T1.MS_BO_PHAN = @componentID)
+

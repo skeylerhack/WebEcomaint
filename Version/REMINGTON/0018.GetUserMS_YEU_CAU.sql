@@ -1,0 +1,29 @@
+--SELECT * FROM dbo.YEU_CAU_NSD_CHI_TIET WHERE MS_PBT IS NOT NULL
+--SELECT  dbo.[GetUserMS_YEU_CAU]('WO-202009000011')
+alter function [dbo].[GetUserMS_YEU_CAU]
+(
+	@MS_PBT NVARCHAR(20) = 'WO-202009000011'
+)
+returns nvarchar(MAX)
+as 
+begin
+
+
+
+declare @MS_YEU_CAU nvarchar(MAX)
+SELECT @MS_YEU_CAU =COALESCE(@MS_YEU_CAU + ', ', '') +
+	CAST(T.USER_LAP AS Nvarchar(MAX))
+	FROM 
+		(SELECT DISTINCT USER_LAP
+FROM        YEU_CAU_NSD AS T1 inner JOIN
+                      YEU_CAU_NSD_CHI_TIET AS T2 ON T1.STT = T2.STT
+WHERE     (T2.MS_PBT = @MS_PBT )) T
+
+return @MS_YEU_CAU
+
+
+end
+
+GO
+
+--SELECT USER_LAP FROM dbo.YEU_CAU_NSD

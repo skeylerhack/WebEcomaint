@@ -1,0 +1,1 @@
+alter table KE_HOACH_TONG_THE alter column TEN_HANG_MUC NVARCHAR(250)

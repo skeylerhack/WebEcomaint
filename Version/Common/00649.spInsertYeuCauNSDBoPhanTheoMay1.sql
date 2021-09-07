@@ -1,0 +1,35 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'spInsertYeuCauNSDBoPhanTheoMay')
+   exec('CREATE PROCEDURE spInsertYeuCauNSDBoPhanTheoMay AS BEGIN SET NOCOUNT ON; END')
+GO
+-----------------
+ALTER PROCEDURE [dbo].[spInsertYeuCauNSDBoPhanTheoMay]
+	@STT int,
+	@STT_VAN_DE int,
+	@MS_MAY Nvarchar(30),
+	@MS_BO_PHAN nvarchar(50),
+	@STT_BO_PHAN int,
+	@MS_PT nvarchar(50),
+	@DEL int
+
+
+AS
+	IF(@STT_BO_PHAN = -1)
+	BEGIN
+
+			INSERT INTO YEU_CAU_NSD_CHI_TIET_BO_PHAN (STT, MS_MAY, STT_VAN_DE, MS_BO_PHAN, MS_PT) VALUES
+			(@STT, @MS_MAY, @STT_VAN_DE, @MS_BO_PHAN, @MS_PT)
+		
+	END
+	ELSE
+	BEGIN		
+			IF(@DEL = 1)
+			BEGIN
+				DELETE YEU_CAU_NSD_CHI_TIET_BO_PHAN WHERE STT_BO_PHAN = @STT_BO_PHAN
+			END
+			ELSE
+			BEGIN
+				UPDATE YEU_CAU_NSD_CHI_TIET_BO_PHAN SET MS_PT = @MS_PT WHERE STT_BO_PHAN = @STT_BO_PHAN 		
+			END
+
+				
+	END

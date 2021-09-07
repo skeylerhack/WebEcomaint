@@ -1,0 +1,117 @@
+﻿
+DECLARE @menu nvarchar(500)
+DECLARE @menu1 nvarchar(500)
+
+SET @menu1 = 'mnuDieuDo'
+set @menu =  N'ΞΠή͌ΖΎή͌΢'
+
+
+IF NOT EXISTS (SELECT * FROM dbo.LIC_MENU WHERE MENU_ID = @menu)
+	INSERT INTO LIC_MENU (MENU_ID,TYPE_LIC) VALUES ( @menu,N'̦')
+
+IF NOT EXISTS (SELECT * FROM dbo.MENU WHERE MENU_ID = @menu1)
+	INSERT	dbo.MENU(MENU_ID,MENU_TEXT,MENU_ENGLISH,MENU_PARENT,MENU_LINE,MENU_INDEX,CLASS_NAME,AN_HIEN)
+		VALUES(@menu1, N'5.7. Điều độ công việc bảo trì',  N'5.7. Maintenance task schedulling', 'mnuBaotri',1,9,'frmMain',1	 )
+	
+IF NOT EXISTS (SELECT * FROM NHOM_MENU WHERE MENU_ID = @menu1)
+	INSERT INTO NHOM_MENU(MENU_ID,GROUP_ID)
+	VALUES(@menu1, 1)
+
+GO
+
+
+DECLARE @menu nvarchar(500)
+DECLARE @menu1 nvarchar(500)
+
+SET @menu1 = 'mnuDDo'
+set @menu =  N'ΞΠή͌͌͠Δ΢Ξ͞Άζ'
+
+
+IF NOT EXISTS (SELECT * FROM dbo.LIC_MENU WHERE MENU_ID = @menu)
+	INSERT INTO LIC_MENU (MENU_ID,TYPE_LIC) VALUES ( @menu,N'̦')
+
+IF NOT EXISTS (SELECT * FROM dbo.MENU WHERE MENU_ID = @menu1)
+	INSERT	dbo.MENU(MENU_ID,MENU_TEXT,MENU_ENGLISH,MENU_PARENT,MENU_LINE,MENU_INDEX,CLASS_NAME,FUNCTION_NAME,AN_HIEN)
+		VALUES(@menu1, N'5.7.1. Điều độ',  N'5.7.1. Điều độ', 'mnuDieuDo',0,1,'frmMain','ShowDDo',1 )
+	
+IF NOT EXISTS (SELECT * FROM NHOM_MENU WHERE MENU_ID = @menu1)
+	INSERT INTO NHOM_MENU(MENU_ID,GROUP_ID)
+	VALUES(@menu1, 1)
+
+
+GO
+
+
+DECLARE @menu nvarchar(500)
+DECLARE @menu1 nvarchar(500)
+
+SET @menu1 = 'mnuDDNhomMay'
+set @menu =  N'ΞΠή͌͌͠Δ΢Ξ͞Άζ'
+
+
+IF NOT EXISTS (SELECT * FROM dbo.LIC_MENU WHERE MENU_ID = @menu)
+	INSERT INTO LIC_MENU (MENU_ID,TYPE_LIC) VALUES ( @menu,N'̦')
+
+IF NOT EXISTS (SELECT * FROM dbo.MENU WHERE MENU_ID = @menu1)
+	INSERT	dbo.MENU(MENU_ID,MENU_TEXT,MENU_ENGLISH,MENU_PARENT,MENU_LINE,MENU_INDEX,CLASS_NAME,FUNCTION_NAME,AN_HIEN)
+		VALUES(@menu1, N'5.7.2. Nhóm điều độ máy',  N'5.7.2. Nhóm điều độ máy', 'mnuDieuDo',1,2,'frmMain','ShowDDNhomMay',1 )
+	
+IF NOT EXISTS (SELECT * FROM NHOM_MENU WHERE MENU_ID = @menu1)
+	INSERT INTO NHOM_MENU(MENU_ID,GROUP_ID)
+	VALUES(@menu1, 1)
+
+GO
+
+
+DECLARE @menu nvarchar(500)
+DECLARE @menu1 nvarchar(500)
+
+SET @menu1 = 'mnuDDNhomCNhan'
+set @menu =  N'ΞΠή͌͌͠Δ΢Ξ͞Άζ'
+
+
+IF NOT EXISTS (SELECT * FROM dbo.LIC_MENU WHERE MENU_ID = @menu)
+	INSERT INTO LIC_MENU (MENU_ID,TYPE_LIC) VALUES ( @menu,N'̦')
+
+IF NOT EXISTS (SELECT * FROM dbo.MENU WHERE MENU_ID = @menu1)
+	INSERT	dbo.MENU(MENU_ID,MENU_TEXT,MENU_ENGLISH,MENU_PARENT,MENU_LINE,MENU_INDEX,CLASS_NAME,FUNCTION_NAME,AN_HIEN)
+		VALUES(@menu1, N'5.7.3. Nhóm điều độ công nhân',  N'5.7.3. Nhóm điều độ công nhân', 'mnuDieuDo',0,3,'frmMain','ShowDDNhomCNhan',1 )
+	
+IF NOT EXISTS (SELECT * FROM NHOM_MENU WHERE MENU_ID = @menu1)
+	INSERT INTO NHOM_MENU(MENU_ID,GROUP_ID)
+	VALUES(@menu1, 1)
+
+
+
+GO
+
+
+
+
+DECLARE @menu nvarchar(500)
+DECLARE @menu1 nvarchar(500)
+
+SET @menu1 = 'mnuDDNhom'
+set @menu =  N'ΞΠή͌͌͠Δ΢Ξ'
+
+
+IF NOT EXISTS (SELECT * FROM dbo.LIC_MENU WHERE MENU_ID = @menu)
+	INSERT INTO LIC_MENU (MENU_ID,TYPE_LIC) VALUES ( @menu,N'̦')
+
+IF NOT EXISTS (SELECT * FROM dbo.MENU WHERE MENU_ID = @menu1)
+	INSERT	dbo.MENU(MENU_ID,MENU_TEXT,MENU_ENGLISH,MENU_PARENT,MENU_LINE,MENU_INDEX,CLASS_NAME,FUNCTION_NAME,AN_HIEN)
+		VALUES(@menu1, N'5.7.4. Nhóm điều độ',  N'5.7.4. Nhóm điều độ', 'mnuDieuDo',1,4,'frmMain','ShowDDNhom',1 )
+	
+IF NOT EXISTS (SELECT * FROM NHOM_MENU WHERE MENU_ID = @menu1)
+	INSERT INTO NHOM_MENU(MENU_ID,GROUP_ID)
+	VALUES(@menu1, 1)
+
+
+
+
+	--DELETE FROM dbo.NHOM_MENU WHERE MENU_ID IN(
+	--SELECT MENU_ID FROM dbo.MENU WHERE MENU_PARENT = 'mnuDieuDo')
+
+	--go
+	--DELETE FROM dbo.MENU WHERE MENU_PARENT = 'mnuDieuDo'
+

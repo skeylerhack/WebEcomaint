@@ -1,0 +1,3 @@
+
+ALTER TABLE UOMConversionGroupDetails ALTER COLUMN UOMQuantity NUMERIC(18,3)
+ALTER TABLE UOMConversionGroupDetails ALTER COLUMN BasedUOMQuantity NUMERIC(18,3)

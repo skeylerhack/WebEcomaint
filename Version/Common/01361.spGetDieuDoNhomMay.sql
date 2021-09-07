@@ -1,0 +1,27 @@
+
+
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'spGetDieuDoNhomMay')
+   exec('CREATE PROCEDURE spGetDieuDoNhomMay AS BEGIN SET NOCOUNT ON; END')
+GO
+
+
+
+ALTER PROC [dbo].[spGetDieuDoNhomMay]
+	@ID_NHOM_DD BIGINT = -1,
+	@UserName NVARCHAR(255) = 'Admin',
+	@NNGU INT = 0
+AS
+
+
+BEGIN
+
+
+
+SELECT * INTO #MAY FROM dbo.MGetMayUserNgay(GETDATE(),@UserName,'-1',-1,-1,'-1','-1', '-1',@NNGU)
+
+SELECT        T1.MS_MAY,TEN_MAY,Ten_N_XUONG,TEN_HE_THONG,TEN_LOAI_MAY,TEN_NHOM_MAY,MS_LOAI_MAY,MS_NHOM_MAY,MS_N_XUONG,MS_HE_THONG
+FROM            dbo.DIEU_DO_NHOM_MAY T1 INNER JOIN
+                         #MAY T2 ON T1.MS_MAY = T2.MS_MAY
+WHERE (T1.ID_NHOM_DD = @ID_NHOM_DD)
+
+END

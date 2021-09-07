@@ -1,0 +1,28 @@
+IF OBJECT_ID (N'MGetNXCha', N'IF') IS NOT NULL  
+    DROP FUNCTION MGetNXCha;  
+GO  
+
+--	SELECT * FROM [dbo].MGetNXCha(0) order by MS_N_XUONG
+
+CREATE FUNCTION MGetNXCha
+    (@NNgu int)
+RETURNS TABLE 
+AS RETURN
+with cte(MS_N_XUONG, MS_CHA,[ALL_CHA],Ten_N_XUONG)
+AS 
+(
+select MS_N_XUONG,MS_CHA , CAST('' AS VARCHAR(8000))  AS ALL_CHA,
+CASE @NNgu WHEN 0 THEN Ten_N_XUONG WHEN 1 THEN TEN_N_XUONG_A ELSE TEN_N_XUONG_H END AS Ten_N_XUONG
+from 
+dbo.NHA_XUONG
+where MS_CHA is null 
+UNION ALL
+select A.MS_N_XUONG, A.MS_CHA,cast ((B.ALL_CHA + cast(A.MS_CHA as varchar(10)) +'; ') as varchar(8000)),
+CASE @NNgu WHEN 0 THEN A.Ten_N_XUONG WHEN 1 THEN A.TEN_N_XUONG_A ELSE A.TEN_N_XUONG_H END AS Ten_N_XUONG
+from 
+dbo.NHA_XUONG A 
+inner join cte B
+ON A.MS_CHA=B.MS_N_XUONG
+) 
+select MS_N_XUONG, CASE substring(ALL_CHA,0,LEN(ALL_CHA)) WHEN '' THEN MS_N_XUONG ELSE substring(ALL_CHA,0,LEN(ALL_CHA)) END  AS NX_CHA,Ten_N_XUONG from cte 
+

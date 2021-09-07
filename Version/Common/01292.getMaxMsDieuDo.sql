@@ -1,0 +1,14 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'getMaxMsDieuDo')
+   exec('CREATE PROCEDURE getMaxMsDieuDo AS BEGIN SET NOCOUNT ON; END')
+GO
+
+
+-- exec getMaxMsDieuDo '201406', 'DD'
+
+ALTER proc [dbo].[getMaxMsDieuDo]
+	@MONTH NVARCHAR(6), 
+	@Ms NVARCHAR(5)
+AS
+SELECT MAX(CONVERT(FLOAT, SUBSTRING( MS_DIEU_DO, LEN(@Ms) + 2 ,LEN(MS_DIEU_DO)))) AS 'MS_DIEU_DO' 
+FROM DIEU_DO
+WHERE MS_DIEU_DO LIKE @Ms + '-'+@MONTH+'%'

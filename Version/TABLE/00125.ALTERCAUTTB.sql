@@ -1,0 +1,29 @@
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'THAO_TAC') and Object_ID = Object_ID(N'CAU_TRUC_THIET_BI_CONG_VIEC'))
+BEGIN
+		ALTER TABLE CAU_TRUC_THIET_BI_CONG_VIEC ADD  THAO_TAC NVARCHAR(2000)
+END
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'TIEU_CHUAN_KT') and Object_ID = Object_ID(N'CAU_TRUC_THIET_BI_CONG_VIEC'))
+BEGIN
+		ALTER TABLE CAU_TRUC_THIET_BI_CONG_VIEC ADD  TIEU_CHUAN_KT NVARCHAR(2000)
+END
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'YEU_CAU_NS') and Object_ID = Object_ID(N'CAU_TRUC_THIET_BI_CONG_VIEC'))
+BEGIN
+		ALTER TABLE CAU_TRUC_THIET_BI_CONG_VIEC ADD  YEU_CAU_NS NVARCHAR(1000)
+END
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'YEU_CAU_DUNG_CU') and Object_ID = Object_ID(N'CAU_TRUC_THIET_BI_CONG_VIEC'))
+BEGIN
+		ALTER TABLE CAU_TRUC_THIET_BI_CONG_VIEC ADD  YEU_CAU_DUNG_CU NVARCHAR(1000)
+END
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'PATH_HD') and Object_ID = Object_ID(N'CAU_TRUC_THIET_BI_CONG_VIEC'))
+BEGIN
+		ALTER TABLE CAU_TRUC_THIET_BI_CONG_VIEC ADD  PATH_HD NVARCHAR(500)
+END

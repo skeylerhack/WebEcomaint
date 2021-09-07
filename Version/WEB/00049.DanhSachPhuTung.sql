@@ -1,0 +1,9 @@
+--CREATE TYPE [dbo].[DanhSachPhuTung] AS TABLE(
+--	[STT] [INT] NULL,
+--	[MS_MAY] [NVARCHAR](30) NULL,
+--	[STT_VAN_DE] [INT] NULL,
+--	[MS_BO_PHAN] [NVARCHAR](30) NULL,
+--	[MS_PT] [NVARCHAR](30) NULL,
+--	[MS_VI_TRI_PT] [NVARCHAR](30) NULL
+--)
+--GO

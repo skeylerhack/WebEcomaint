@@ -1,0 +1,14 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'spGetPhieuTheoDiaDiem')
+exec('CREATE PROCEDURE spGetPhieuTheoDiaDiem AS BEGIN SET NOCOUNT ON; END')
+GO
+ALTER PROCEDURE dbo.spGetPhieuTheoDiaDiem
+	@UName NVARCHAR(100) ='admin',
+	@MS_N_XUONG NVARCHAR(50) ='-1'
+AS
+DECLARE @DNgay DATETIME
+SET @DNgay = GETDATE()
+SELECT * INTO #MAY_USER FROM [dbo].[MGetMayUserNgay](@DNgay,@UName,@MS_N_XUONG,-1,-1,'-1','-1','-1',0)
+SELECT     T1.MS_PHIEU_BAO_TRI
+FROM         dbo.PHIEU_BAO_TRI AS T1 INNER JOIN
+                      #MAY_USER AS T2 ON T1.MS_MAY = T2.MS_MAY AND MONTH(T1.NGAY_LAP) =  MONTH(GETDATE()) AND YEAR(T1.NGAY_LAP) = YEAR(GETDATE())
+GO

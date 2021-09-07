@@ -1,0 +1,9 @@
+﻿
+
+IF NOT EXISTS (SELECT * FROM VAI_TRO WHERE rtrim(lower(TEN_VAI_TRO_V)) = N'trưởng ca')
+BEGIN
+	INSERT INTO VAI_TRO (MS_VAI_TRO, TEN_VAI_TRO_V) VALUES (20, N'Trưởng Ca')
+END
+select * from VAI_TRO
+
+

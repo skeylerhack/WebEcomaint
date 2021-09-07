@@ -1,0 +1,18 @@
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'TT_SAU_BT_ANH') and Object_ID = Object_ID(N'PHIEU_BAO_TRI'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI ADD TT_SAU_BT_ANH NVARCHAR(250)		
+END	
+GO
+update  PHIEU_BAO_TRI set TT_SAU_BT_ANH = ISNULL(TT_SAU_BT_ANH,TT_SAU_BT) where TT_SAU_BT_ANH = '' or ISNULL(TT_SAU_BT_ANH,TT_SAU_BT) = TT_SAU_BT
+GO
+
+
+IF NOT EXISTS(select * from sys.columns 
+            where Name IN (N'TT_SAU_BT_HOA') and Object_ID = Object_ID(N'PHIEU_BAO_TRI'))
+BEGIN
+		ALTER TABLE PHIEU_BAO_TRI ADD TT_SAU_BT_HOA NVARCHAR(250)		
+END	
+GO
+update  PHIEU_BAO_TRI set TT_SAU_BT_HOA = ISNULL(TT_SAU_BT_HOA,TT_SAU_BT) where TT_SAU_BT_HOA = '' or ISNULL(TT_SAU_BT_HOA,TT_SAU_BT) = TT_SAU_BT
+GO

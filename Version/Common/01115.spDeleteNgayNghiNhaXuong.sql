@@ -1,0 +1,13 @@
+IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'spDeleteNgayNghiNhaXuong')
+   exec('CREATE PROCEDURE spDeleteNgayNghiNhaXuong AS BEGIN SET NOCOUNT ON; END')
+GO
+
+
+
+
+ALTER proc spDeleteNgayNghiNhaXuong
+	@MS_N_XUONG NVARCHAR(50),
+	@NGAY_NGHI DATETIME
+AS
+
+DELETE FROM NGAY_NGHI_NX WHERE MS_N_XUONG = @MS_N_XUONG AND NGAY_NGHI = @NGAY_NGHI

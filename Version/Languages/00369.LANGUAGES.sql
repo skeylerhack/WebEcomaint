@@ -1,0 +1,5 @@
+﻿
+
+IF EXISTS (SELECT * FROM LANGUAGES WHERE FORM=N'frmMucUT' AND KEYWORD =N'TEN_TA') UPDATE LANGUAGES SET VIETNAM=N'Tên tiếng Anh ', ENGLISH=N'English name',CHINESE=N'English name', VIETNAM_OR=N'Tên tiếng Anh ', ENGLISH_OR=N'English name' , CHINESE_OR=N'English name' WHERE FORM=N'frmMucUT' AND KEYWORD=N'TEN_TA' ELSE INSERT INTO LANGUAGES(FORM,KEYWORD,VIETNAM,ENGLISH,CHINESE,VIETNAM_OR,ENGLISH_OR,CHINESE_OR,MS_MODULE)  VALUES(N'frmMucUT',N'TEN_TA',N'Tên tiếng Anh ',N'English name',N'English name',N'Tên tiếng Anh ',N'English name',N'English name','ECOMAIN')
+
+IF EXISTS (SELECT * FROM LANGUAGES WHERE FORM=N'frmMucUT' AND KEYWORD =N'lblfrmMucUuTienAnh') UPDATE LANGUAGES SET VIETNAM=N'Tên tiếng Anh ', ENGLISH=N'English name',CHINESE=N'English name', VIETNAM_OR=N'Tên tiếng Anh ', ENGLISH_OR=N'English name' , CHINESE_OR=N'English name' WHERE FORM=N'frmMucUT' AND KEYWORD=N'lblfrmMucUuTienAnh' ELSE INSERT INTO LANGUAGES(FORM,KEYWORD,VIETNAM,ENGLISH,CHINESE,VIETNAM_OR,ENGLISH_OR,CHINESE_OR,MS_MODULE)  VALUES(N'frmMucUT',N'lblfrmMucUuTienAnh',N'Tên tiếng Anh ',N'English name',N'English name',N'Tên tiếng Anh ',N'English name',N'English name','ECOMAIN')

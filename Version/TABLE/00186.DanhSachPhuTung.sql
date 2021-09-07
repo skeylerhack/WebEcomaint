@@ -1,0 +1,9 @@
+IF NOT EXISTS (SELECT 1 FROM sys.types WHERE is_table_type = 1 AND name ='DanhSachPhuTung') 
+CREATE TYPE [dbo].[DanhSachPhuTung] AS TABLE(
+	[STT] [INT] NULL,
+	[MS_MAY] [NVARCHAR](30) NULL,
+	[STT_VAN_DE] [INT] NULL,
+	[MS_BO_PHAN] [NVARCHAR](30) NULL,
+	[MS_PT] [NVARCHAR](30) NULL,
+	[MS_VI_TRI_PT] [NVARCHAR](30) NULL
+)
