@@ -776,7 +776,7 @@ namespace EcomaintSite.Controllers
                         string nth = Safety().fnGetApproval(ID, UserName, ReportParent);
                         body = "Dear <b>" + dearto + "</b> <br>" + "+ Báo cáo: <b>Kết quả thực hiện hành động khắc phục, phòng ngừa từ Ecomaint/Safety</b><br>" + "+ Người báo cáo: <b>" + CreatedBy + "</b><br>" + "+ Ngày báo cáo: <b>" + DateTime.Now.Date.ToString("dd/MM/yyyy") + "</b><br>" + "+ Người duyệt: <b>" + (nduyet == "" ? Approval : nduyet) + "</b><br>" + "+ Người thực hiện: <b>" + (nth == "" ? UserName : nth) + "</b><br>" + "+ Số chứng từ: <b>" + txtDocNum + "</b><br>" + "+ Nội dung/nguyên nhân: <b>" + Description + "</b><br>" + "+ Hành động đã hoàn tất:  <br>";
                         bodyEng = "Dear <b>" + dearto + "</b> <br>" + "+ Report: <b>Result of preventive and corrective actions</b><br>" + "+ Reporter: <b>" + Safety().fnGetReporter(ID, CreatedBy, ReportParent) + "</b><br>" + "+ Report Date: <b>" + DateTime.Now.Date.ToString("dd/MM/yyyy") + "</b><br>" + "+ Reviewed by: <b>" + (nduyet == "" ? Approval : nduyet) + "</b><br>" + "+ Person in charge: <b>" + (nth == "" ? UserName : nth) + "</b><br>" + "+ Doc. No.: <b>" + txtDocNum + "</b><br>" + "+ Description/ Cause: <b>" + Description + "</b><br>" + "+ Action done:  <br>";
-                        DataTable dt = Safety().fnGetListActionDoneST(ID, "","");
+                        DataTable dt = Safety().fnGetListActionDoneST(ID, "", "");
                         if (dt.Rows.Count > 0)
                         {
                             for (int i = 0; i <= dt.Rows.Count - 1; i++)
@@ -799,6 +799,36 @@ namespace EcomaintSite.Controllers
                 Combobox().SendEmailCC("bamboo2711@gmail.com", CC, subjectEng, bodyEng);
             }
             return Json("success", JsonRequestBehavior.AllowGet);
+        }
+
+        #endregion
+
+        #region Leader Ship
+        [Authorize]
+        public ActionResult ShowLeaderShip()
+        {
+            List<LeaderShipViewModel> model = new List<LeaderShipViewModel>();
+            string UserName = User.Identity.GetUserName();
+            ViewBag.UserName = UserName;
+            ViewBag.ListReportParent = Combobox().GetListReportParent(UserName);
+            ViewBag.IDStafety = Safety().GetIDSafery(User.Identity.GetUserName());
+            model = Safety().GetListLeaderShipDetails(UserName, DateTime.Now);
+            return View("~/Views/Safety/ShowLeaderShip.cshtml", model);
+        }
+
+        [HttpPost]
+        public JsonResult SaveLeaderShip(string TuNgay,string User, string DataDetails)
+        {
+            try
+            {
+                //Convert.ToDateTime(tngay, new CultureInfo("vi-vn")).ToString("dd/MM/yyyy");
+                List<LeaderShipViewModel> model = JsonConvert.DeserializeObject<List<LeaderShipViewModel>>(DataDetails);
+                return Json(new { Message = "success" }, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception ex)
+            {
+                return Json(new { Message = "error" + ex.InnerException.Message }, JsonRequestBehavior.AllowGet);
+            }
         }
 
         #endregion

@@ -4,6 +4,7 @@ using Model.Interface.IRepository;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Globalization;
 using System.Linq;
@@ -1662,6 +1663,52 @@ namespace Model.Repository.Repository
 
         public ST_StopCard StopCard(int ID) => db.ST_StopCard.Where(x => x.ID == ID).FirstOrDefault();
 
+
+        #endregion
+
+        #region Leader Ship
+        public List<LeaderShipViewModel>  GetListLeaderShipDetails(string User,DateTime DateCreate)
+        {
+            List<LeaderShipViewModel> list = null;
+            try
+            {
+                List<SqlParameter> listParameter = new List<SqlParameter>();
+                listParameter.Add(new SqlParameter("USER_NAME", User));
+                listParameter.Add(new SqlParameter("DateCreate", DateCreate));
+                list = DBUtils.ExecuteSPList<LeaderShipViewModel>("VS_LEADERSHIPDETAILS1", listParameter, AppName.Model1);
+                return list;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        public bool SaveLeaderShipDetails(List<LeaderShipViewModel> model,string User, DateTime NgayTao)
+        {
+            try
+            {
+                List<LeadershipDetail> listDetails = new List<LeadershipDetail>();
+                model.ForEach(x=>{
+                    listDetails.Add(new LeadershipDetail { 
+                    IDLeadership = x.IDLeadership,
+                    DateCreate = NgayTao,
+                    UserName = User,
+                    Yes =x.Yes,
+                    No =x.No,
+                    NA =x.NA
+                    });
+                });
+                db.LeadershipDetails.RemoveRange(db.LeadershipDetails.Where(x=>x.UserName == User && DbFunctions.TruncateTime(x.DateCreate) == DbFunctions.TruncateTime(NgayTao)));
+                db.LeadershipDetails.AddRange(listDetails);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+
+        }
 
         #endregion
 

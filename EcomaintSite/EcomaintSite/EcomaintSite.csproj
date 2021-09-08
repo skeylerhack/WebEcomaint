@@ -284,6 +284,7 @@
     <Content Include="js\browser\respond.min.js" />
     <Content Include="js\browser\select2.min.js" />
     <Content Include="Content\browser\highcharts.css" />
+    <Content Include="js\controller\LeaderShipController.js" />
     <Content Include="js\controller\HazardReportDetailsController.js" />
     <Content Include="js\controller\StopCardController.js" />
     <Content Include="js\controller\InitMonitoringController.js" />
@@ -448,7 +449,7 @@
     <Content Include="Views\Monitoring\_GiamSatTinhTrangMay.cshtml" />
     <Content Include="Views\Safety\ShowStopCard.cshtml" />
     <Content Include="Views\Safety\ShowHazardReport.cshtml" />
-    <Content Include="Views\Safety\_ThemHazardDetails.cshtml" />
+    <Content Include="Views\Safety\ShowLeaderShip.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

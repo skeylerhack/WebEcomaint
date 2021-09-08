@@ -56,5 +56,9 @@ namespace Model.Interface.IRepository
         ST_StopCard StopCard(int ID);
         #endregion
 
+        #region Leader Ship
+        List<LeaderShipViewModel> GetListLeaderShipDetails(string User, DateTime DateCreate);
+        #endregion
+
     }
 }

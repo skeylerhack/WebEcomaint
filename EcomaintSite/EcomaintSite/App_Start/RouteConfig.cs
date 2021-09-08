@@ -82,6 +82,11 @@ namespace EcomaintSite
             url: "stopcard",
             defaults: new { controller = "Safety", action = "ShowStopCard", id = UrlParameter.Optional });
 
+            /*-- HazardReport --*/
+            routes.MapRoute(
+            name: "leadership",
+            url: "leadership",
+            defaults: new { controller = "Safety", action = "ShowLeaderShip", id = UrlParameter.Optional });
 
             /*-- DANH MỤC ĐƠN VỊ --*/
             routes.MapRoute(

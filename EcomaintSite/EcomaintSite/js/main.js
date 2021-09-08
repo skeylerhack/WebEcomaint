@@ -78,6 +78,7 @@
         'MornitoringDeviceController': baseUrl + 'controller/MornitoringDeviceController',
         'StopCardController': baseUrl + 'controller/StopCardController',
         'HazardReportController': baseUrl + 'controller/HazardReportController',
+        'LeaderShipController': baseUrl + 'controller/LeaderShipController',
         
     },
     shim: {
@@ -171,6 +172,10 @@
             deps: ['angular', 'select2']
         },
         'HazardReportController': {
+            exports: 'angular',
+            deps: ['angular', 'select2']
+        },
+        'LeaderShipController': {
             exports: 'angular',
             deps: ['angular', 'select2']
         },

@@ -162,6 +162,7 @@
     <Compile Include="Models\Formation.cs" />
     <Compile Include="ViewModel\ChiTietBoPhanViewModel.cs" />
     <Compile Include="ViewModel\GiamSatTinhTrangViewModel.cs" />
+    <Compile Include="ViewModel\LeaderShipViewModel.cs" />
     <Compile Include="ViewModel\MoningtoringViewModel.cs" />
     <Compile Include="ViewModel\PhieuBaoTriViewModel.cs" />
     <Compile Include="ViewModel\MyEcomainViewModel.cs" />
