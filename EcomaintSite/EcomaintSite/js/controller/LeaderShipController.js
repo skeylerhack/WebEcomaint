@@ -20,6 +20,13 @@
                     "icon": "<i class='fa fa-angle-double-up'></i>"
                 },
                 {
+                    "id": "btnXoa",
+                    "url": "#",
+                    "icon": "<i class='fa fa-minus-square'></i>",
+                    "lang": "btndelete",
+                    "func": "fn.Remove"
+                },
+                {
                     "id": "btnSave",
                     "url": "#",
                     "icon": "<i class='fa fa-floppy-o'></i>",
@@ -44,6 +51,28 @@
             }
             var fnPrivate = {
 
+                LoadLeaderShipDetails: function () {
+                    Loading.fn.Show();
+                    $.post(urlGetLeaderShip, { TuNgay: $("#fromDate").val(), User: $("#cbReport").val() }, function (data) {
+                        if ($.fn.DataTable.isDataTable('#tbShowListDeails')) {
+                            $('#tbShowListDeails').dataTable().fnDestroy();
+                        }
+                        $('#tbShowListDeails tbody').empty();
+                        if (data.length > 0) {
+                            var i = 0;
+                            for (i = 0; i < data.length; i++) {
+                                $('#tbShowListDeails tbody').append('<tr data-id="' + data[i].IDLeadership + '"><td style="width:15px; text-align:center">'
+                                    + data[i].STT + '</td><td class="hidden">'
+                                    + data[i].IDLeadership + '</td ><td>'
+                                    + data[i].Content + '</td><td style="width:15px; text-align:center"><input type="checkbox" class="custom-control-input" '
+                                    + (data[i].Yes == true ? "checked" : "") + ' data-chon="yes"></td><td style="width:15px; text-align:center"><input type="checkbox" class="custom-control-input"'
+                                    + (data[i].No == true ? "checked" : "") + ' data-chon="no"></td><td style="width:15px; text-align:center"><input type="checkbox" class="custom-control-input "'
+                                    + (data[i].NA == true ? "checked" : "") + ' data-chon="na"></td></tr>');
+                            }
+                        }
+                        Loading.fn.Hide();
+                    });
+                }
             }
 
             var method
@@ -55,32 +84,44 @@
                     Main.fn.InitButtonFloat(buttonFloat)
                     vars = bindVariables();
                     method = fnPrivate;
-                    $(".select2").select2(
+                    Main.fn.InitDateTimePickerChanged([$('#fromDate')], method.LoadLeaderShipDetails);
+                    $('#cbReport').val($('#txtCreatedBy').val()).change();
+                    $('#cbReport').change(function () {
+                        method.LoadLeaderShipDetails();
+                    })
+                    method.LoadLeaderShipDetails();
+                    $("#cbReport").select2(
                         {
                             theme: "classic"
                         });
-                    $('#tbShowListDeails tbody tr td input').on('click', '', function () {
+                    $('#tbShowListDeails tbody').on('click', 'tr td input', function () {
                         var rowchon = $(this).parent().parent().attr("data-id");
                         if ($(this).is(":checked")) {
                             if ($(this).attr("data-chon") == 'yes') {
-                                $('#tbShowListDeails tbody tr[data-id="'+rowchon+'"] td input[type=checkbox][data-chon="no"]').prop('checked', false);
-                                $('#tbShowListDeails tbody tr[data-id="' + rowchon +'"] td input[type=checkbox][data-chon="na"]').prop('checked', false);
+                                $('#tbShowListDeails tbody tr[data-id="' + rowchon + '"] td input[type=checkbox][data-chon="no"]').prop('checked', false);
+                                $('#tbShowListDeails tbody tr[data-id="' + rowchon + '"] td input[type=checkbox][data-chon="na"]').prop('checked', false);
                             }
 
                             if ($(this).attr("data-chon") == 'no') {
-                                $('#tbShowListDeails tbody tr[data-id="' + rowchon +'"] td input[type=checkbox][data-chon="yes"]').prop('checked', false);
-                                $('#tbShowListDeails tbody tr[data-id="' + rowchon +'"] td input[type=checkbox][data-chon="na"]').prop('checked', false);
+                                $('#tbShowListDeails tbody tr[data-id="' + rowchon + '"] td input[type=checkbox][data-chon="yes"]').prop('checked', false);
+                                $('#tbShowListDeails tbody tr[data-id="' + rowchon + '"] td input[type=checkbox][data-chon="na"]').prop('checked', false);
                             }
 
                             if ($(this).attr("data-chon") == 'na') {
-                                $('#tbShowListDeails tbody tr[data-id="' + rowchon +'"] td input[type=checkbox][data-chon="no"]').prop('checked', false);
-                                $('#tbShowListDeails tbody tr[data-id="' + rowchon +'"] td input[type=checkbox][data-chon="yes"]').prop('checked', false);
+                                $('#tbShowListDeails tbody tr[data-id="' + rowchon + '"] td input[type=checkbox][data-chon="no"]').prop('checked', false);
+                                $('#tbShowListDeails tbody tr[data-id="' + rowchon + '"] td input[type=checkbox][data-chon="yes"]').prop('checked', false);
                             }
                         }
                     });
                 },
                 CheckValidateControl: function () {
-                    var lstLeadDetails = new  Array();
+
+                    if ($('#cbReport').val() !== $('#txtCreatedBy').val()) {
+                        Alert.fn.Show(global.TypeLanguage == 0 ? "Bạn không được báo cáo cho người khác!" : "You must not report to others!", Alert.Type.warning);
+                        return false;
+                    }
+
+                    var lstLeadDetails = new Array();
                     var i = 0;
                     $('#tbShowListDeails tbody tr').each(function (i, obj) {
                         if (!this.rowIndex) return;
@@ -94,17 +135,36 @@
                         lstLeadDetails[i].NA = $(obj).closest('tr').find('input[type=checkbox][data-chon="na"]').is(":checked");
                         i = i + 1;
                     });
+                    var stringData1 = JSON.stringify(lstLeadDetails).replace(/[\n\t]/g, " ");
                     $.ajax({
                         url: urlSaveLeaderShip,
                         type: "post",
-                        data: { TuNgay: $("#fromDate").val(), User: $("#cbReport").val(), DataDetails: JSON.stringify(lstLeadDetails)},
+                        data: { TuNgay: $("#fromDate").val(), User: $("#cbReport").val(), DataDetails: stringData1 },
                         success: function (data) {
                             if (data.Message === 'success') {
-                                alert("thanh cong");
+                                Alert.fn.Show(global.TypeLanguage == 0 ? "Thêm chứng từ thành công!" : "Add certificate to public!", Alert.Type.success);
                             }
                             else {
-                                Alert.fn.Show(global.TypeLanguage == 0 ? "Cập nhật chứng từ không thành công!" : "Failed to Update voucher!", Alert.Type.warning);
+                                Alert.fn.Show(global.TypeLanguage == 0 ? "Cập nhật chứng từ không thành công!" : "Update voucher failed!", Alert.Type.error);
                             }
+                        }
+                    });
+                },
+                Remove: function () {
+                    if ($('#cbReport').val() !== $('#txtCreatedBy').val()) {
+                        Alert.fn.Show(global.TypeLanguage == 0 ? "Bạn không được xóa!" : "You can't delete!", Alert.Type.warning);
+                        return false;
+                    }
+                    Alert.fn.ShowConfirm(global.TypeLanguage == 0 ? "Bạn có chắc muốn xóa?" : "Are you sure you want to delete?", Alert.Type.question, 'Xóa', function (result) {
+                        if (result === true) {
+                            $.post(urlDeleteLeaderShip, { TuNgay: $("#fromDate").val(), User: $("#cbReport").val()}, function (data) {
+                                if (data === 'success') {
+                                    window.location.href = urlResetLeaderShip;
+                                } 
+                                else {
+                                    Alert.fn.Show(global.TypeLanguage == 0 ? "Xóa chứng từ không thành công!" : "Failed to delete voucher!", Alert.Type.error);
+                                }
+                            });
                         }
                     });
                 }

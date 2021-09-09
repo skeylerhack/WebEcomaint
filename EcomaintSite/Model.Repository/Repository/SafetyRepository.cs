@@ -1187,23 +1187,23 @@ namespace Model.Repository.Repository
                 stop.KHU_VUC_LAM_VIEC = model.KHU_VUC_LAM_VIEC;
                 stop.MOI_TRUONG_LAM_VIEC = model.MOI_TRUONG_LAM_VIEC;
                 stop.SACH_SE_NGAN_NAP = model.SACH_SE_NGAN_NAP;
-                stop.LOAI_CONG_VIEC = model.LOAI_CONG_VIEC;
-                stop.HO_TEN_CA_NHAN_TO_NHOM = model.HO_TEN_CA_NHAN_TO_NHOM;
-                stop.HANH_DONG_HANH_VI_AN_TOAN = model.HANH_DONG_HANH_VI_AN_TOAN;
-                stop.HANH_VI_KHONG_AN_TOAN = model.HANH_VI_KHONG_AN_TOAN;
-                stop.KHAC_PHUC_TUC_THI = model.KHAC_PHUC_TUC_THI;
-                stop.APPROVAL_USER = model.APPROVAL_USER;
+                stop.LOAI_CONG_VIEC = model.LOAI_CONG_VIEC == null ?"" : model.LOAI_CONG_VIEC;
+                stop.HO_TEN_CA_NHAN_TO_NHOM = model.HO_TEN_CA_NHAN_TO_NHOM == null ? "" : model.HO_TEN_CA_NHAN_TO_NHOM;
+                stop.HANH_DONG_HANH_VI_AN_TOAN = model.HANH_DONG_HANH_VI_AN_TOAN == null ? "" : model.HANH_DONG_HANH_VI_AN_TOAN;
+                stop.HANH_VI_KHONG_AN_TOAN = model.HANH_VI_KHONG_AN_TOAN == null ? "" : model.HANH_VI_KHONG_AN_TOAN;
+                stop.KHAC_PHUC_TUC_THI = model.KHAC_PHUC_TUC_THI == null ? "" : model.KHAC_PHUC_TUC_THI;
+                stop.APPROVAL_USER = model.APPROVAL_USER == null ? "" : model.APPROVAL_USER;
                 stop.IS_APPROVED = model.IS_APPROVED;
-                stop.TOtherOrderliness = model.TOtherOrderliness;
-                stop.TOtherPPE = model.TOtherPPE;
-                stop.TOtherProcedure = model.TOtherProcedure;
-                stop.TOtherReactions = model.TOtherReactions;
-                stop.TOtherToolAndEquipment = model.TOtherToolAndEquipment;
-                stop.Description = model.Description;
-                stop.REPORT_PARENT = model.REPORT_PARENT;
+                stop.TOtherOrderliness = model.TOtherOrderliness == null ? "" : model.TOtherOrderliness;
+                stop.TOtherPPE = model.TOtherPPE == null ? "" : model.TOtherPPE;
+                stop.TOtherProcedure = model.TOtherProcedure == null ? "" : model.TOtherProcedure;
+                stop.TOtherReactions = model.TOtherReactions == null ? "" : model.TOtherReactions;
+                stop.TOtherToolAndEquipment = model.TOtherToolAndEquipment == null ? "" : model.TOtherToolAndEquipment;
+                stop.Description = model.Description == null ? "" : model.Description;
+                stop.REPORT_PARENT = model.REPORT_PARENT == null ? "" : model.REPORT_PARENT;
                 stop.IS_DELETE = model.IS_DELETE;
-                stop.NGUOILIENQUAN1 = model.NGUOILIENQUAN1;
-                stop.NGUOILIENQUAN2 = model.NGUOILIENQUAN2;
+                stop.NGUOILIENQUAN1 = model.NGUOILIENQUAN1 == null ? "" : model.NGUOILIENQUAN1;
+                stop.NGUOILIENQUAN2 = model.NGUOILIENQUAN2 == null ? "" : model.NGUOILIENQUAN2;
                 stop.Image_1 = model.Image_1;
 
 
@@ -1701,6 +1701,22 @@ namespace Model.Repository.Repository
                 });
                 db.LeadershipDetails.RemoveRange(db.LeadershipDetails.Where(x=>x.UserName == User && DbFunctions.TruncateTime(x.DateCreate) == DbFunctions.TruncateTime(NgayTao)));
                 db.LeadershipDetails.AddRange(listDetails);
+                db.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+
+        }
+
+        public bool DeleteLeaderShipDetails(string User, DateTime NgayTao)
+        {
+            try
+            {
+                db.LeadershipDetails.RemoveRange(db.LeadershipDetails.Where(x => x.UserName == User && DbFunctions.TruncateTime(x.DateCreate) == DbFunctions.TruncateTime(NgayTao)));
+                db.SaveChanges();
                 return true;
             }
             catch

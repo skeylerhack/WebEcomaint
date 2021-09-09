@@ -810,19 +810,18 @@ namespace EcomaintSite.Controllers
             List<LeaderShipViewModel> model = new List<LeaderShipViewModel>();
             string UserName = User.Identity.GetUserName();
             ViewBag.UserName = UserName;
-            ViewBag.ListReportParent = Combobox().GetListReportParent(UserName);
-            ViewBag.IDStafety = Safety().GetIDSafery(User.Identity.GetUserName());
+            ViewBag.ListReportParent = Combobox().LoadListUserSafety();
             model = Safety().GetListLeaderShipDetails(UserName, DateTime.Now);
             return View("~/Views/Safety/ShowLeaderShip.cshtml", model);
         }
-
         [HttpPost]
-        public JsonResult SaveLeaderShip(string TuNgay,string User, string DataDetails)
+        public JsonResult SaveLeaderShip(string TuNgay, string User, string DataDetails)
         {
             try
             {
                 //Convert.ToDateTime(tngay, new CultureInfo("vi-vn")).ToString("dd/MM/yyyy");
                 List<LeaderShipViewModel> model = JsonConvert.DeserializeObject<List<LeaderShipViewModel>>(DataDetails);
+                Safety().SaveLeaderShipDetails(model, User, Convert.ToDateTime(TuNgay, new CultureInfo("vi-vn")));
                 return Json(new { Message = "success" }, JsonRequestBehavior.AllowGet);
             }
             catch (Exception ex)
@@ -830,6 +829,36 @@ namespace EcomaintSite.Controllers
                 return Json(new { Message = "error" + ex.InnerException.Message }, JsonRequestBehavior.AllowGet);
             }
         }
+        [HttpPost]
+        public JsonResult GetLeaderShip(string TuNgay, string User)
+        {
+            try
+            {
+                List<LeaderShipViewModel> model = new List<LeaderShipViewModel>();
+                model = Safety().GetListLeaderShipDetails(User, Convert.ToDateTime(TuNgay, new CultureInfo("vi-vn")));
+                return Json(model, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception)
+            {
+                return Json("error", JsonRequestBehavior.AllowGet);
+            }
+        }
+
+        [HttpPost]
+        public JsonResult DeleteLeaderShip(string TuNgay, string User)
+        {
+            try
+            {
+              Safety().DeleteLeaderShipDetails(User, Convert.ToDateTime(TuNgay, new CultureInfo("vi-vn")));
+                return Json("success", JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception)
+            {
+                return Json("error", JsonRequestBehavior.AllowGet);
+            }
+        }
+
+
 
         #endregion
 

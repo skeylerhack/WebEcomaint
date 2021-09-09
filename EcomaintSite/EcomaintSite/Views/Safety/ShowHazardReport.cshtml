@@ -23,8 +23,6 @@
     <input type="hidden" id="hfTTPhieu" value="@ViewBag.TTPhieu" />
     <input type="hidden" id="hfUserDuyet" value="@ViewBag.UserDuyet" />
     <input type="hidden" id="hfIDStafety" value="@ViewBag.IDStafety" />
-
-
     @Html.HiddenFor(model => model.ID)
     <div class="row" id="frmMain">
         <div class="col-lg-12">
@@ -397,26 +395,22 @@
                                                 <td class="hidden">@item.MUCUUTIEN</td>
                                                 <td style="white-space: normal">@item.TENMUCUUTIEN</td>
 
-                                                <td>
-                                                    @if (@item.Deadline != null)
+                                                <td>@if (@item.Deadline != null)
                                                     {
                                                         @item.Deadline.Value.ToString("dd/MM/yyyy");
                                                     }
                                                     else
                                                     {
                                                         "null".ToString();
-                                                    }
-                                            </td>
-                                            <td>
-                                                @if (@item.CompletedDate != null)
+                                                    }</td>
+                                            <td>@if (@item.CompletedDate != null)
                                                 {
                                                     @item.CompletedDate.Value.ToString("dd/MM/yyyy");
                                                 }
                                                 else
                                                 {
                                                     "null".ToString();
-                                                }
-                                        </td>
+                                                }</td>
                                         <td>@item.Status</td>
                                         <td class="hidden">@item.PersonReport</td>
                                         <td>@item.Description</td>
@@ -839,6 +833,4 @@
         var fileURL = window.URL.createObjectURL(curFile);
         $('#img01').attr('src', fileURL);
     }
-
-
 </script>

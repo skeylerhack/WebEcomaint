@@ -30,5 +30,7 @@ namespace Model.Interface
         List<EmailViewModel> AutoCompleteMail();
         void SendEmail(string address, string subject, string message,string link);
         void SendEmailCC(string address, string CC, string subject, string message);
+
+        SelectList LoadListUserSafety();
     }
 }

@@ -58,6 +58,9 @@ namespace Model.Interface.IRepository
 
         #region Leader Ship
         List<LeaderShipViewModel> GetListLeaderShipDetails(string User, DateTime DateCreate);
+        bool SaveLeaderShipDetails(List<LeaderShipViewModel> model, string User, DateTime NgayTao);
+        bool DeleteLeaderShipDetails(string User, DateTime NgayTao);
+
         #endregion
 
     }

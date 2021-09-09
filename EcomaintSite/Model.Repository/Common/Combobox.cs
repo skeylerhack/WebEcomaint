@@ -303,7 +303,16 @@ namespace Model.Combobox
             return new SelectList(listItem, "Value", "Text", null);
         }
 
-
+        public SelectList LoadListUserSafety()
+        {
+            var listItem = db.ST_Safety.Select(
+             x => new SelectListItem
+             {
+                 Text = x.Staffname,
+                 Value = x.Userlogin
+             });
+            return new SelectList(listItem, "Value", "Text", null);
+        }
 
         public string GetEmailByNhaXuong(int stt, string msnx, string loaiyc, string username, string mailthem)
         {

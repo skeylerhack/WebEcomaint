@@ -288,12 +288,11 @@
             var sessLastActivity;
             //How frequently to check for session expiration in milliseconds
             var sessPollInterval = 1000;
-
             var request = 1000;
             //How many minutes the session is valid for
-            var sessExpirationMinutes = 5;
+            var sessExpirationMinutes = 6;
             //How many minutes before the warning prompt
-            var sessWarningMinutes = 4;
+            var sessWarningMinutes = 5;
             var sessIntervalID;
             var idleButtonIntervalID;
             var SessSetInterval = function () {

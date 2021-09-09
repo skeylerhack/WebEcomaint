@@ -24,11 +24,7 @@ namespace EcomaintSite.Controllers
             {
                 if(!webUserLoginRepository.CheckExists(User.Identity.Name))
                 {
-                    //var authenticationManager = System.Web.HttpContext.Current.GetOwinContext().Authentication;
-                    //authenticationManager.SignOut();
-                    //webRepository.Delete(User.Identity.Name);
-                    //Session.Abandon();
-                    //return Json("out: ", JsonRequestBehavior.AllowGet);
+                    return Json("out: ", JsonRequestBehavior.AllowGet);
                 }
                 return Json(webUserLoginRepository.Count(), JsonRequestBehavior.AllowGet);
             }
