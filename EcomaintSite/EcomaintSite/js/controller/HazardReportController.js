@@ -147,6 +147,7 @@
                                 "emptyTable": "<span data-lang='lblEmpty'></span>",
                             },
                             "processing": true,
+                            "order": [[0, 'desc']],
                             "lengthChange": false,
                             "lengthMenu": [5],
                             createdRow: function (row, data, dataIndex) {

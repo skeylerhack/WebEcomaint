@@ -242,11 +242,13 @@ namespace EcomaintSite.Controllers
                 byte[] bytes = webImage.GetBytes();
                 var a = listthongso.Where(x => x.ComponentID == com && x.MonitoringParamsID == mor).FirstOrDefault();
                 a.ImageGS = imgToByteConverter(bytes);
-                return Json(JsonRequestBehavior.AllowGet);
+                return Json("success", JsonRequestBehavior.AllowGet);
             }
             catch (Exception ex)
             {
-                return Json(ex.Message.ToString(), JsonRequestBehavior.AllowGet);
+                var a = listthongso.Where(x => x.ComponentID == com && x.MonitoringParamsID == mor).FirstOrDefault();
+                a.ImageGS = null;
+                return Json("error", JsonRequestBehavior.AllowGet);
             }
         }
 

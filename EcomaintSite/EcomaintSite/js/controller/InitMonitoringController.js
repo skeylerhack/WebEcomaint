@@ -763,9 +763,12 @@
                                 columnDefs: [
                                     {
                                         'targets': 0,
-                                        'max-width': '150px',
+                                        'max-width': '150px'
                                     }
                                 ],
+                                "targets": 'no-sort',
+                                "bSort": false,
+                                "order": [],
                                 "language":
                                 {
                                     "processing": "<div class='overlay custom-loader-background'><i class='fa fa-cog fa-spin custom-loader-color'></i></div>",
@@ -783,6 +786,7 @@
                                     },
                                     "emptyTable": "<span data-lang='lblEmpty'></span>",
                                 },
+                                
                                 "processing": true,
                                 "lengthChange": false,
                                 "lengthMenu": [5],

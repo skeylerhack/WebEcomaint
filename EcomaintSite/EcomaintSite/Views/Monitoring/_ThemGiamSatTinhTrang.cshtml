@@ -627,7 +627,12 @@
             contentType: false,
             url: urlSacveImage,
             success: function (resulst) {
-                $('#tbQualityParameter tr[class$="selected"] img').attr('src', $('#img01').attr('src'));
+                if (resulst == 'success') {
+                    $('#tbQualityParameter tr[class$="selected"] img').attr('src', $('#img01').attr('src'));
+                }
+                else {
+                    $('#tbQualityParameter tr[class$="selected"] img').attr('src',null);
+                }
             },
             error: function (response) {
             }
@@ -635,6 +640,7 @@
     });
 
     $('#btnXoaHinh').click(function () {
+        file = null;
         $('#img01').attr('src', null);
     });
     $('#btnChonHinh').click(function () {

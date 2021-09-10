@@ -1,4 +1,6 @@
-﻿
+﻿IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'VS_ST_StopCard')
+   exec('CREATE PROCEDURE VS_ST_StopCard AS BEGIN SET NOCOUNT ON; END')
+GO
 ALTER PROC  [dbo].[VS_ST_StopCard]
 (
 	@ACTION nvarchar(250) =NULL,
