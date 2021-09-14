@@ -29,6 +29,7 @@
                 <h6 style="margin: 20px 0 0 0;"></h6>
                 <!-- Tab panes -->
                 <div class="tab-content">
+
                     @*tab yeeu cau*@
                     <div role="tabpanel" class="tab-pane active" id="tabRequest">
                         <div class="row">
@@ -38,7 +39,7 @@
                                     <input class="form-control" type="text" id="fromDate" data-loading="true" data-type="datepicker" value="@DateTime.Now.AddMonths(-1).ToString("dd/MM/yyyy")" />
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">   
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                                 <div class="form-group">
                                     <label data-lang="lblDenngay">Đến ngày</label>
                                     <input class="form-control" type="text" id="toDate" data-loading="true" data-type="datepicker" value="@DateTime.Now.ToString("dd/MM/yyyy")" />
@@ -73,9 +74,15 @@
 
                                 </div>
                                 <h5 class="card-title" data-lang="lblDSYeuCau">Danh sách yêu cầu</h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-12">
                                 <div class="form-group">
                                     <div class="table-responsive" style="overflow: auto">
-                                        <table id="tbRequest" class="table table-bordered table-condensed">
+                                        <table id="tbRequest" class="table table-bordered table-condensed display" style="width:100%">
+
                                             <thead>
                                                 <tr>
                                                     <th data-lang="UserRequestID">UserRequestID</th>
@@ -88,18 +95,18 @@
                                                     <th data-lang="WorkSiteID">WorkSiteID</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                @*<tr>
-                                                        <td colspan="7" data-lang="KhongCoDuLieu">Không có dữ liệu</td>
-                                                    </tr>*@
-                                            </tbody>
+                                            <tbody></tbody>
                                         </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
+                    
                     @*tab yeu cau chi tiet*@
+
+
                     <div role="tabpanel" class="tab-pane" id="tabRequestDetail">
                         <div class="row">
                             <div class="col-lg-12">
@@ -146,6 +153,7 @@
                                 <h5 class="card-title" data-lang="grpDanhsachBP">
                                     Danh sách phụ tùng, bộ phận có vấn đề
                                 </h5>
+
                                 <div class="form-group">
                                     <div class="table-responsive" style="overflow: auto;">
                                         <table id="tbComponent" class="table table-bordered table-condensed ">
@@ -167,6 +175,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-lg-4">
                                 <div class="col-lg-12">
                                     <div id="divButtonDefault" class="toolbar-action">
@@ -199,6 +208,10 @@
                             </div>
                         </div>
                     </div>
+
+
+
+
                 </div>
             </div>
             @*popup them bo phan*@

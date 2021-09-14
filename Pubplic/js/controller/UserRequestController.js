@@ -1,7 +1,7 @@
 ﻿define(['_MasterPageController', '_MenuPageController', '_DetailsModalController', 'datatables-bootstrap', 'bootstrap-select'], function (module, menu, modal) {
     var UserRequest = (function () {
         var app = angular.module("UserRequestPage", [])
-        app.controller('UserRequestController', function ($scope) {
+        app.controller('UserRequestController', function ($scope, $compile) {
             var Main = module.Main
             var Languages = module.Languages
             var InfoDetails = modal
@@ -60,6 +60,8 @@
                     $tbRequestBody: $('#tbRequest tbody'),
                     $tabRequestDetail: $('a[href="#tabRequestDetail"]'),
                     $tbRequestDetailBody: $("#tbRequestInfo tbody"),
+                    $tableRequest: 'undefined'
+
                 };
             }
 
@@ -78,10 +80,13 @@
 
             var fnPrivate = {
                 FilterData: function () {
-                    $.post(urlFilter, { fromDate: $('#fromDate').val(), toDate: $('#toDate').val(), createdBy: $('#cboCreatedBy').val(), MS_N_XUONG: $('#cboDiaDiem').val() }, function (data) {
-                        $('#tbRequest').dataTable().fnClearTable();
-                        $('#tbRequest').dataTable().fnDestroy();
-                        $('#tbRequest').DataTable({
+                    $.post(urlFilter, { fromDate: $('#fromDate').val(), toDate: $('#toDate').val(), createdBy: $('#cboCreatedBy').val(), MS_N_XUONG: $('#cboDiaDiem').val() },
+                        function (data) {
+                            if ($.fn.DataTable.isDataTable('#tbRequest')) {
+                                $('#tbRequest').dataTable().fnDestroy();
+                            }
+                        
+                            vars.$tableRequest = vars.$tbRequest.DataTable({
                             data: data,
                             columns: [
                                 { data: 'UserRequestID' },
@@ -95,13 +100,13 @@
                             ]
                             , "columnDefs": [
                                 { "width": "180px", "targets": [0] },
-                                { "width": "80px", "text-align": "right", "targets": [1] },
-                                { "width": "80px", "text-align": "right", "targets": [2] },
-                                { "width": "80px", "text-align": "right", "targets": [3] },
-                                { "width": "170px", "text-align": "right", "targets": [4] },
-                                { "width": "100px", "text-align": "right", "targets": [5] },
-                                { "width": "125px", "text-align": "right", "targets": [6] },
-                                { "width": "130px", "text-align": "right", "targets": [7] }
+                                { "width": "80px", "targets": [1] },
+                                { "width": "80px", "targets": [2] },
+                                { "width": "80px",  "targets": [3] },
+                                { "width": "170px", "targets": [4] },
+                                { "width": "100px", "targets": [5] },
+                                { "width": "125px", "targets": [6] },
+                                { "width": "130px", "targets": [7] }
                             ],
                             "language": {
                                 "processing": "<div class='overlay custom-loader-background'><i class='fa fa-cog fa-spin custom-loader-color'></i></div>",
@@ -117,24 +122,24 @@
                                     "next": ">",
                                     "previous": "<"
                                 },
-                                "emptyTable": "<span data-lang='lblEmpty'></span>",
+                                "emptyTable": "<span data-lang='lblEmpty'>" + (global.TypeLanguage == 0 ? "Không có dữ liệu" : "No data available in table") + "</span>",
                             },
-                            "scrollY": 350,
-                            "scrollX": true,
-                            "processing": true,
+                            bLengthChange: false,
+                            scrollY: 350,
+                            scrollX: true,
+                            //"processing": true,
                             'createdRow': function (row, data, dataIndex) {
                                 if (data.hasOwnProperty("ID")) {
                                     $(row).attr('data-id', data.ID);
+                                    $('td', row).eq(0).addClass('details');
+                                    $compile($('td', row))($scope);
                                 }
                             },
                             "order": [[0, 'desc']]
                         });
-                        //$('#tbRequest').dataTable().row(':eq(0)', { page: 'current' }).select();
-                        //$('#tbRequest').dataTable({
-                        //    "order": [[0, 'asc'], [1, 'asc']]
-                        //});
                         $($.fn.dataTable.tables(true)).DataTable().columns.adjust().draw(false);
-                        Loading.fn.Hide();
+                            vars.$tbRequestBody.find('tr:first-child').addClass('selected');
+                            Loading.fn.Hide();
                     });
 
                 },

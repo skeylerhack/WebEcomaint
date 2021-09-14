@@ -67,10 +67,19 @@
         'MasterPlansController': baseUrl + 'controller/MasterPlansController',
         'WorkOrderController': baseUrl + 'controller/WorkOrderController',
         'AddRequestController': baseUrl + 'controller/AddRequestController',
+
+        'HazardReportDetailsController': baseUrl + 'controller/HazardReportDetailsController',
+
         'UserRequestController': baseUrl + 'controller/UserRequestController',
         'CalendarController': baseUrl + 'controller/CalendarController',
         'ReceiptRequestController': baseUrl + 'controller/ReceiptRequestController',
         'MyEcomainController': baseUrl + 'controller/MyEcomainController',
+        'WorkWorkerController': baseUrl + 'controller/WorkWorkerController',
+        'MornitoringDeviceController': baseUrl + 'controller/MornitoringDeviceController',
+        'StopCardController': baseUrl + 'controller/StopCardController',
+        'HazardReportController': baseUrl + 'controller/HazardReportController',
+        'LeaderShipController': baseUrl + 'controller/LeaderShipController',
+        
     },
     shim: {
         'bootstrap': {
@@ -128,9 +137,18 @@
             exports: 'angular',
             deps: ['angular','select2']
         },
+        'WorkWorkerController': {
+            exports: 'angular',
+            deps: ['angular', 'select2']
+        },
         'AddRequestController': {
             exports: 'angular',
             deps: ['angular', 'select2','jquery','jquery-ui']
+        },
+
+        'HazardReportDetailsController': {
+            exports: 'angular',
+            deps: ['angular', 'select2', 'jquery', 'jquery-ui']
         },
 
         'ApproveRequestsController': {
@@ -142,6 +160,22 @@
             deps: ['angular', 'select2']
         },
         'InitMonitoringController': {
+            exports: 'angular',
+            deps: ['angular', 'select2']
+        },
+        'MornitoringDeviceController': {
+            exports: 'angular',
+            deps: ['angular', 'select2']
+        },
+        'StopCardController': {
+            exports: 'angular',
+            deps: ['angular', 'select2']
+        },
+        'HazardReportController': {
+            exports: 'angular',
+            deps: ['angular', 'select2']
+        },
+        'LeaderShipController': {
             exports: 'angular',
             deps: ['angular', 'select2']
         },

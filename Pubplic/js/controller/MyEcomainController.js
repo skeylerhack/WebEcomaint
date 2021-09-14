@@ -20,11 +20,15 @@
             var vars = {};
             var bindVariables = function () {
                 return {
-                    //$tbPhieuBaoTri: $('#tbphieubaotri'),
+                    $btnChooseEquip: $('#btnChooseEquip'),
+                    $tbEquip: $('#tbEquip'),
+                    $tbEquipBody: $('#tbEquip tbody'),
+                    $txtDevice: $('#cbbThietBi'),
                 };
             }
             var fnPrivate = {
                 FilterData: function () {
+                    Loading.fn.Show();
                     $.post(urlMyecomain, {
                         fromDate: $('#fromDate').val(), toDate: $('#toDate').val(), ms_nx: $("#cbbDiaDiem").val(), may: $("#cbbThietBi").val(), giadoan: $('input[name = "optradio"]:checked').val()
                     }, function (data) {
@@ -129,6 +133,22 @@
                         method.FilterData();
                     });
                 },
+                GetConditionMonitoringByDevice: function () {
+                    var keys = vars.$equipDatatables.data().count();
+                    if (keys == 0) {
+                        Alert.fn.Show(Messenger.msgDuLieuRong, Alert.Type.warning);
+                        return;
+                    }
+                    keys = vars.$equipDatatables.$('tr[class$=selected]')
+                    if (keys.length == 0) {
+                        Alert.fn.Show(Messenger.msgChonDevice, Alert.Type.warning)
+                        return;
+                    }
+                    //Loading.fn.Show();
+                    vars.$txtDevice.val(vars.$tbEquip.find('tr[class$=selected]').attr('data-id'));
+                    $('#myModal').appendTo("body").modal('hide');
+                    window.setTimeout(function () { method.FilterData(); }, 500);
+                },
                 LoadMay: function () {
                     $('#cbbThietBi option').remove();
                     $.ajax({
@@ -155,17 +175,71 @@
                     vars = bindVariables();
                     method = fnPrivate;
                     method.EvenRadio();
-                    method.LoadMay();
+                    vars.$btnChooseEquip.click(method.GetConditionMonitoringByDevice);
                     method.FilterData();
                     $("#cbbDiaDiem").change(function () {
                         method.FilterData();
-                        method.LoadMay();
+                    });
+                    $("#cbbThietBi").change(function () {
+                        method.FilterData();
                     });
                     Main.fn.InitDateTimePickerChanged([$('#fromDate'), $('#toDate')], method.FilterData);
-                    Main.fn.ScanBarCode($('#ReadBtn'), $('#fileToUpload'), $('#cbbThietBi'), '#cbbThietBi option');
+                    //Main.fn.ScanBarCode($('#ReadBtn'), $('#fileToUpload'), $('#cbbThietBi'), '#cbbThietBi option');
                     Main.fn.InitButtonFloat(buttonFloat);
                     $('.select2-container--classic').select2({ theme: "classic" });
-                }
+                },
+                ShowEquipForm: function () {
+                    $.post(urlCheckTheParametersDue, { msnx: $("#cbbDiaDiem").val() }, function (data) {
+                        if (data.length > 0) {
+                            if ($.fn.DataTable.isDataTable('#tbEquip')) {
+                                $('#tbEquip').dataTable().fnDestroy();
+                            }
+                            vars.$equipDatatables = $("#tbEquip").DataTable({
+                                data: data,
+                                columns: [
+                                    { data: 'ID' },
+                                    { data: 'Name' }
+                                ],
+                                columnDefs: [
+                                    {
+                                        'targets': 0,
+                                        'max-width': '150px',
+                                    }
+                                ],
+                                "language":
+                                {
+                                    "processing": "<div class='overlay custom-loader-background'><i class='fa fa-cog fa-spin custom-loader-color'></i></div>",
+                                    "sSearch": "<span data-lang='lblSearch'></span> ",
+                                    "info": "",
+                                    "zeroRecords": "<span data-lang='lblFilterInfo'>" + (global.TypeLanguage == 0 ? "Không tìm thấy" : "No matching records found") + "</span>",
+                                    "lengthMenu": "<span data-lang='lblShow'></span> _MENU_ <span data-lang='lblEntries'></span>",
+                                    "infoEmpty": "",
+                                    "infoFiltered": "",
+                                    "paginate": {
+                                        "first": "<<",
+                                        "last": ">>",
+                                        "next": ">",
+                                        "previous": "<"
+                                    },
+                                    "emptyTable": "<span data-lang='lblEmpty'></span>",
+                                },
+                                "processing": true,
+                                "lengthChange": false,
+                                "lengthMenu": [5],
+                                createdRow: function (row, data, dataIndex) {
+                                    if (data.hasOwnProperty("ID")) {
+                                        $(row).attr('data-id', data.ID);
+                                    }
+                                },
+                            });
+                            $('#myModal').appendTo("body").modal('show')
+                        }
+                        else {
+                            Alert.fn.Show(Messenger.msgKhongCoThietBi, Alert.Type.warning);
+                            return false;
+                        }
+                    });
+                },
             }
         })
         app.init = function () {

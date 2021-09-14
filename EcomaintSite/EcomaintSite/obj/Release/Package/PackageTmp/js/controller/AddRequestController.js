@@ -349,7 +349,7 @@
                 Edit: function () {
                     $('#tbRequestInfo tr[class$=selected]').each(function () {
                         if (!this.rowIndex) return;
-                        $('#cboDevice').val(this.cells[0].innerHTML.trim());
+                        $('#cboDevice').val(this.cells[0].innerHTML.trim()); 
                         $("#txtDescription").val(this.cells[1].innerHTML)
                         $("#txtRequest").val(this.cells[2].innerHTML)
                         $('#myModal').appendTo("body").modal('show')

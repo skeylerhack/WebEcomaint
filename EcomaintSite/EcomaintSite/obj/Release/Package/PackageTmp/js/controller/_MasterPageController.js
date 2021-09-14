@@ -288,12 +288,11 @@
             var sessLastActivity;
             //How frequently to check for session expiration in milliseconds
             var sessPollInterval = 1000;
-
             var request = 1000;
             //How many minutes the session is valid for
-            var sessExpirationMinutes = 5;
+            var sessExpirationMinutes = 6;
             //How many minutes before the warning prompt
-            var sessWarningMinutes = 4;
+            var sessWarningMinutes = 5;
             var sessIntervalID;
             var idleButtonIntervalID;
             var SessSetInterval = function () {
@@ -322,7 +321,7 @@
                 idleButtonIntervalID = setInterval(timer, request);
             }
             var SessInterval = function () {
-                var now = new Date();
+                    var now = new Date();
                 var diff = now - sessLastActivity;
                 var diffMins = (diff / request / 60);
                 TrackingUserOnline();
@@ -517,10 +516,10 @@
                         return mm + '/' + dd + '/' + yyyy;
                     }
                     else {
-                         hours = today.getHours();
-                         minutes = today.getMinutes();
-                         minutes = minutes < 10 ? '0' + minutes : minutes;
-                         strTime = hours + ':' + minutes;
+                        hours = today.getHours();
+                        minutes = today.getMinutes();
+                        minutes = minutes < 10 ? '0' + minutes : minutes;
+                        strTime = hours + ':' + minutes;
                         return dd + '/' + mm + '/' + yyyy + ' ' + strTime;
                     }
                 },
