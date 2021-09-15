@@ -117,10 +117,6 @@ namespace Model.Combobox
              });
             return new SelectList(listItem, "Value", "Text", null);
         }
-
-
-        
-
         public SelectList GetListReportParent(string Username)
         {
             DataTable dtTmp = new DataTable();

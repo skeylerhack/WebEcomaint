@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>D:\01.WebEcomaint\Pubplic</_PublishTargetUrl>
-    <History>True|2021-09-14T02:02:01.7831331Z;False|2021-09-13T10:25:39.3462293+07:00;False|2021-09-13T09:56:31.7695989+07:00;</History>
+    <History>True|2021-09-15T07:13:23.4649091Z;True|2021-09-15T14:12:47.2094205+07:00;True|2021-09-15T13:59:04.0567156+07:00;True|2021-09-14T09:02:01.7831331+07:00;False|2021-09-13T10:25:39.3462293+07:00;False|2021-09-13T09:56:31.7695989+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -20,10 +20,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/EcomaintSite.dll">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/15/2021 14:12:45</publishTime>
     </File>
     <File Include="bin/EcomaintSite.pdb">
-      <publishTime>01/01/0001 00:00:00</publishTime>
+      <publishTime>09/15/2021 14:12:45</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/12/2019 09:06:44</publishTime>
@@ -125,10 +125,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/02/2018 15:49:40</publishTime>
     </File>
     <File Include="bin/Model.Repository.dll">
-      <publishTime>09/13/2021 09:56:17</publishTime>
+      <publishTime>09/15/2021 13:58:52</publishTime>
     </File>
     <File Include="bin/Model.Repository.pdb">
-      <publishTime>09/13/2021 09:56:17</publishTime>
+      <publishTime>09/15/2021 13:58:52</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>06/27/2020 11:18:35</publishTime>
@@ -923,7 +923,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/10/2021 09:45:05</publishTime>
     </File>
     <File Include="Views/Monitoring/Index.cshtml">
-      <publishTime>08/27/2021 09:18:32</publishTime>
+      <publishTime>09/15/2021 07:45:21</publishTime>
     </File>
     <File Include="Views/Monitoring/List.cshtml">
       <publishTime>01/02/2018 14:37:31</publishTime>
@@ -932,7 +932,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/28/2021 13:20:59</publishTime>
     </File>
     <File Include="Views/Monitoring/_ThemGiamSatTinhTrang.cshtml">
-      <publishTime>09/10/2021 20:46:33</publishTime>
+      <publishTime>09/14/2021 20:54:22</publishTime>
     </File>
     <File Include="Views/MyEcomain/Index - Copy.cshtml">
       <publishTime>06/27/2020 11:18:35</publishTime>
@@ -1010,7 +1010,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:35</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/10/2021 19:45:07</publishTime>
+      <publishTime>09/15/2021 07:31:08</publishTime>
     </File>
   </ItemGroup>
 </Project>

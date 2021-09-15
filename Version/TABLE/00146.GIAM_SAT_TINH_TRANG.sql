@@ -1,4 +1,5 @@
-
+--commons 1870
+--talbe 467
 IF NOT EXISTS(select * from sys.columns 
             where Name IN (N'SO_PHIEU') and Object_ID = Object_ID(N'GIAM_SAT_TINH_TRANG'))
 BEGIN

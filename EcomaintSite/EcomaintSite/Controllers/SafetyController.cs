@@ -456,11 +456,11 @@ namespace EcomaintSite.Controllers
             }
             if (SessionVariable.TypeLanguage == 0)
             {
-                Combobox().SendEmailCC(/*Mailto*/"bamboo2711@gmail.com", CC, subject, body);
+                Combobox().SendEmailCC(Mailto, CC, subject, body);
             }
             else
             {
-                Combobox().SendEmailCC("bamboo2711@gmail.com", CC, subjectEng, bodyEng);
+                Combobox().SendEmailCC(Mailto, CC, subjectEng, bodyEng);
             }
             return Json("success", JsonRequestBehavior.AllowGet);
         }

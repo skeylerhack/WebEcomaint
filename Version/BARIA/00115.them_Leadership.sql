@@ -24,7 +24,7 @@ IF NOT EXISTS (SELECT * FROM NHOM_MENU WHERE MENU_ID = @menu1)
 DECLARE @form nvarchar(500)
 DECLARE @form1 nvarchar(500)
 set @form = N'FrmLeadership'
-set @form1 = N'͐͐ΨΞ͜ΎΆΌΎΨΪΔΖΤ'
+set @form1 = N'͐ΨΞ͜ΎΆΌΎΨΪΔΖΤ'
 --DELETE FROM CHI_TIET_FORMS WHERE FORM_NAME = @form
 IF NOT EXISTS (SELECT * FROM CHI_TIET_FORMS WHERE FORM_NAME = @form)
 	INSERT INTO CHI_TIET_FORMS(FORM_NAME , TEN_FORMS_VIET , TEN_FORMS_ANH)

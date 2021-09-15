@@ -1,4 +1,6 @@
-﻿
+﻿IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND name = 'spGetPBTGSTT')
+   exec('CREATE PROCEDURE spGetPBTGSTT AS BEGIN SET NOCOUNT ON; END')
+GO
 ALTER PROCEDURE [dbo].[spGetPBTGSTT]
 	@TNgay DATE = '2019/07/11',
 	@DNgay DATE = '2019/07/30',
