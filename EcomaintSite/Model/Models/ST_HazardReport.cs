@@ -68,6 +68,8 @@ namespace  Model.Data
         [StringLength(250)]
         public string Location { get; set; }
 
+        public int ID_HAZARD { get; set; }
+
         public string Description { get; set; }
 
         public bool? External { get; set; }

@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>D:\01.WebEcomaint\Pubplic</_PublishTargetUrl>
-    <History>True|2021-09-15T07:13:23.4649091Z;True|2021-09-15T14:12:47.2094205+07:00;True|2021-09-15T13:59:04.0567156+07:00;True|2021-09-14T09:02:01.7831331+07:00;False|2021-09-13T10:25:39.3462293+07:00;False|2021-09-13T09:56:31.7695989+07:00;</History>
+    <History>True|2021-09-20T08:12:47.5928992Z;True|2021-09-15T14:13:23.4649091+07:00;True|2021-09-15T14:12:47.2094205+07:00;True|2021-09-15T13:59:04.0567156+07:00;True|2021-09-14T09:02:01.7831331+07:00;False|2021-09-13T10:25:39.3462293+07:00;False|2021-09-13T09:56:31.7695989+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -20,10 +20,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/EcomaintSite.dll">
-      <publishTime>09/15/2021 14:12:45</publishTime>
+      <publishTime>09/20/2021 15:12:38</publishTime>
     </File>
     <File Include="bin/EcomaintSite.pdb">
-      <publishTime>09/15/2021 14:12:45</publishTime>
+      <publishTime>09/20/2021 15:12:38</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/12/2019 09:06:44</publishTime>
@@ -101,13 +101,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/28/2021 13:10:09</publishTime>
     </File>
     <File Include="bin/Model.Data.dll">
-      <publishTime>09/13/2021 09:56:16</publishTime>
+      <publishTime>09/20/2021 15:12:26</publishTime>
     </File>
     <File Include="bin/Model.Data.dll.config">
-      <publishTime>06/12/2019 09:06:42</publishTime>
+      <publishTime>09/16/2021 17:01:43</publishTime>
     </File>
     <File Include="bin/Model.Data.pdb">
-      <publishTime>09/13/2021 09:56:16</publishTime>
+      <publishTime>09/20/2021 15:12:26</publishTime>
     </File>
     <File Include="bin/Model.dll">
       <publishTime>01/02/2018 15:49:40</publishTime>
@@ -116,19 +116,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Model.Interface.dll">
-      <publishTime>09/13/2021 09:56:16</publishTime>
+      <publishTime>09/20/2021 15:12:27</publishTime>
     </File>
     <File Include="bin/Model.Interface.pdb">
-      <publishTime>09/13/2021 09:56:16</publishTime>
+      <publishTime>09/20/2021 15:12:27</publishTime>
     </File>
     <File Include="bin/Model.pdb">
       <publishTime>01/02/2018 15:49:40</publishTime>
     </File>
     <File Include="bin/Model.Repository.dll">
-      <publishTime>09/15/2021 13:58:52</publishTime>
+      <publishTime>09/20/2021 15:12:28</publishTime>
     </File>
     <File Include="bin/Model.Repository.pdb">
-      <publishTime>09/15/2021 13:58:52</publishTime>
+      <publishTime>09/20/2021 15:12:28</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>06/27/2020 11:18:35</publishTime>
@@ -434,7 +434,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/07/2020 11:54:36</publishTime>
     </File>
     <File Include="Content/plugins/select2/select2-bootstrap.min.css">
-      <publishTime>01/08/2019 16:37:04</publishTime>
+      <publishTime>08/01/2019 16:37:04</publishTime>
     </File>
     <File Include="Content/plugins/sweetalert2.min.css">
       <publishTime>06/27/2020 11:18:35</publishTime>
@@ -443,7 +443,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="Content/sb-admin.css">
-      <publishTime>07/10/2020 08:32:38</publishTime>
+      <publishTime>10/07/2020 08:32:38</publishTime>
     </File>
     <File Include="Content/scrollbar.css">
       <publishTime>06/27/2020 11:18:35</publishTime>
@@ -650,7 +650,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:36</publishTime>
     </File>
     <File Include="js/controller/AddRequestController.js">
-      <publishTime>08/09/2021 19:34:41</publishTime>
+      <publishTime>09/08/2021 19:34:41</publishTime>
     </File>
     <File Include="js/controller/ApproveRequestsController.js">
       <publishTime>03/10/2021 11:09:53</publishTime>
@@ -662,7 +662,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:36</publishTime>
     </File>
     <File Include="js/controller/HazardReportController.js">
-      <publishTime>09/14/2021 08:58:10</publishTime>
+      <publishTime>09/20/2021 09:54:28</publishTime>
     </File>
     <File Include="js/controller/HazardReportDetailsController.js">
       <publishTime>08/19/2021 13:51:14</publishTime>
@@ -680,7 +680,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:36</publishTime>
     </File>
     <File Include="js/controller/MonitoringController.js">
-      <publishTime>07/09/2021 15:54:37</publishTime>
+      <publishTime>09/07/2021 15:54:37</publishTime>
     </File>
     <File Include="js/controller/MornitoringDeviceController.js">
       <publishTime>07/13/2021 13:55:57</publishTime>
@@ -701,7 +701,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:36</publishTime>
     </File>
     <File Include="js/controller/StopCardController.js">
-      <publishTime>09/10/2021 20:34:59</publishTime>
+      <publishTime>09/17/2021 14:38:43</publishTime>
     </File>
     <File Include="js/controller/UserRequestController.js">
       <publishTime>08/13/2021 11:29:35</publishTime>
@@ -719,13 +719,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/09/2021 21:00:31</publishTime>
     </File>
     <File Include="js/controller/_MenuPageController.js">
-      <publishTime>07/08/2021 10:06:24</publishTime>
+      <publishTime>08/07/2021 10:06:24</publishTime>
     </File>
     <File Include="js/controller/_SettingPageController.js">
       <publishTime>06/27/2020 11:18:36</publishTime>
     </File>
     <File Include="js/main.js">
-      <publishTime>08/09/2021 11:03:38</publishTime>
+      <publishTime>09/08/2021 11:03:38</publishTime>
     </File>
     <File Include="js/plugins/angular/angular-route.js">
       <publishTime>06/27/2020 11:18:36</publishTime>
@@ -875,7 +875,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:36</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>07/28/2021 13:10:08</publishTime>
+      <publishTime>09/16/2021 17:02:01</publishTime>
     </File>
     <File Include="Resource/1.png">
       <publishTime>08/14/2019 14:25:57</publishTime>
@@ -908,7 +908,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:35</publishTime>
     </File>
     <File Include="Views/ApproveRequests/Index.cshtml">
-      <publishTime>05/10/2020 16:17:10</publishTime>
+      <publishTime>10/05/2020 16:17:10</publishTime>
     </File>
     <File Include="Views/Calendar/Index.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -938,7 +938,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:35</publishTime>
     </File>
     <File Include="Views/MyEcomain/Index.cshtml">
-      <publishTime>08/09/2021 13:28:24</publishTime>
+      <publishTime>09/08/2021 13:28:24</publishTime>
     </File>
     <File Include="Views/OrgUnit/Index.cshtml">
       <publishTime>06/27/2020 11:18:35</publishTime>
@@ -950,7 +950,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>03/09/2021 14:53:57</publishTime>
     </File>
     <File Include="Views/ReceiptRequest/Index.cshtml">
-      <publishTime>05/10/2020 16:19:11</publishTime>
+      <publishTime>10/05/2020 16:19:11</publishTime>
     </File>
     <File Include="Views/Report/NhanVien/Index.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -962,13 +962,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/12/2017 15:26:45</publishTime>
     </File>
     <File Include="Views/Safety/ShowHazardReport.cshtml">
-      <publishTime>09/09/2021 19:38:50</publishTime>
+      <publishTime>09/20/2021 08:47:11</publishTime>
     </File>
     <File Include="Views/Safety/ShowLeaderShip.cshtml">
       <publishTime>09/09/2021 15:31:07</publishTime>
     </File>
     <File Include="Views/Safety/ShowStopCard.cshtml">
-      <publishTime>09/09/2021 19:39:07</publishTime>
+      <publishTime>09/20/2021 10:04:12</publishTime>
     </File>
     <File Include="Views/SearchAll/Index.cshtml">
       <publishTime>01/01/0001 00:00:00</publishTime>
@@ -1001,7 +1001,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>08/25/2021 10:52:17</publishTime>
     </File>
     <File Include="Views/_PartialMenu.cshtml">
-      <publishTime>05/10/2020 16:41:35</publishTime>
+      <publishTime>10/05/2020 16:41:35</publishTime>
     </File>
     <File Include="Views/_PartialModalDetails.cshtml">
       <publishTime>06/27/2020 11:18:35</publishTime>
@@ -1010,7 +1010,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:35</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/15/2021 07:31:08</publishTime>
+      <publishTime>09/17/2021 14:21:24</publishTime>
     </File>
   </ItemGroup>
 </Project>

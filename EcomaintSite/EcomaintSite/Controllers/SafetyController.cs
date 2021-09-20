@@ -37,13 +37,16 @@ namespace EcomaintSite.Controllers
         [Authorize]
         public ActionResult ShowHazardReport()
         {
-            ViewBag.STT = "-1";
-            ViewBag.UserName = User.Identity.GetUserName();
+            string UserName = User.Identity.GetUserName();
 
-            ViewBag.ListReportParent = Combobox().GetListReportParent(User.Identity.GetUserName());
+            ViewBag.STT = "-1";
+            ViewBag.UserName = UserName;
+
+            ViewBag.ListReportParent = Combobox().GetListReportParent(UserName);
             ViewBag.ListLocation = Combobox().GetListLocation();
+            ViewBag.ListLoaiMoiNguy = Combobox().GetListLoaiMoiNguy();
             ViewBag.ListDepartment = Combobox().GetListDepartment();
-            ViewBag.ListPersonRef = Combobox().GetListPersonRef(User.Identity.GetUserName());
+            //ViewBag.ListPersonRef = Combobox().GetListPersonRef(User.Identity.GetUserName());
 
             ViewBag.LoadListInCharge = Combobox().LoadListInCharge();
             ViewBag.LoadListThietBi = Combobox().LoadListThietBi();
@@ -51,7 +54,8 @@ namespace EcomaintSite.Controllers
             ViewBag.LoadListLoaiYC = Combobox().LoadListLoaiYC();
             ViewBag.LoadListUuTien = Combobox().LoadListUuTien(SessionVariable.TypeLanguage);
 
-            ViewBag.IDStafety = Safety().GetIDSafery(User.Identity.GetUserName());
+            ViewBag.IDStafety = Safety().GetIDSafery(UserName);
+            ViewBag.IDDepartment = Safety().GetIDDepartment(UserName);
 
             ViewBag.TTPhieu = 0;
             ViewBag.UserDuyet = CheckApprovalUser("FrmHazardReport");
@@ -104,8 +108,9 @@ namespace EcomaintSite.Controllers
             ViewBag.UserName = User.Identity.GetUserName();
             ViewBag.ListReportParent = Combobox().GetListReportParent(User.Identity.GetUserName());
             ViewBag.ListLocation = Combobox().GetListLocation();
+            ViewBag.ListLoaiMoiNguy = Combobox().GetListLoaiMoiNguy();
             ViewBag.ListDepartment = Combobox().GetListDepartment();
-            ViewBag.ListPersonRef = Combobox().GetListPersonRef(User.Identity.GetUserName());
+            //ViewBag.ListPersonRef = Combobox().GetListPersonRef(User.Identity.GetUserName());
 
 
             ViewBag.LoadListInCharge = Combobox().LoadListInCharge();
@@ -146,11 +151,13 @@ namespace EcomaintSite.Controllers
             if (model.TechHSE == true) model.Relateddepartments = 3;
             if (model.HR == true) model.Relateddepartments = 5;
             if (model.Acount == true) model.Relateddepartments = 6;
+            if (model.Commercial == true) model.Relateddepartments = 7;
             //Relateddepartments
             //2  Operation
             //3 TechHSE
             //5  HR
             //6 Account
+            //7 Commercial
 
             if (model.BelongContractor == true) model.Belongto = 1;
             if (model.BelongToBSPort == true) model.Belongto = 2;
@@ -242,12 +249,13 @@ namespace EcomaintSite.Controllers
                 if (model.Relateddepartments == 3) model.TechHSE = true;
                 if (model.Relateddepartments == 5) model.HR = true;
                 if (model.Relateddepartments == 6) model.Acount = true;
-
+                if (model.Relateddepartments == 7) model.Commercial = true;
                 //Relateddepartments
                 //2  Operation
                 //3 TechHSE
                 //5  HR
                 //6 Account
+                //7 Commercial
                 if (model.Belongto == 1) model.BelongContractor = true;
                 if (model.Belongto == 2) model.BelongToBSPort = true;
 
@@ -477,7 +485,7 @@ namespace EcomaintSite.Controllers
             ViewBag.ListReportParent = Combobox().GetListReportParent(UserName);
             ViewBag.ListLocation = Combobox().GetListLocation();
             ViewBag.ListDepartment = Combobox().GetListDepartment();
-            ViewBag.ListPersonRef = Combobox().GetListPersonRef(UserName);
+            //ViewBag.ListPersonRef = Combobox().GetListPersonRef(UserName);
 
             ViewBag.LoadListInCharge = Combobox().LoadListInCharge();
             ViewBag.LoadListThietBi = Combobox().LoadListThietBi();
@@ -517,7 +525,7 @@ namespace EcomaintSite.Controllers
         {
             ViewBag.UserName = User.Identity.GetUserName();
             ViewBag.ListReportParent = Combobox().GetListReportParent(User.Identity.GetUserName());
-            ViewBag.ListPersonRef = Combobox().GetListPersonRef(User.Identity.GetUserName());
+            //ViewBag.ListPersonRef = Combobox().GetListPersonRef(User.Identity.GetUserName());
 
 
             ViewBag.LoadListInCharge = Combobox().LoadListInCharge();

@@ -200,12 +200,6 @@
                         Alert.fn.Show(global.TypeLanguage == 0 ? "chứng từ này đã hoàn thành không thể sửa!" : "This form is Done and cannot be edited!", Alert.Type.warning);
                         return false;
                     }
-
-                    if ($('#REPORT_PARENT').val() == null || $('#REPORT_PARENT').val().trim() == "" || $('#REPORT_PARENT').val().length == 0) {
-                        Alert.fn.Show(global.TypeLanguage == 0 ? "User báo cáo được để trống!" : "Report parent not blank!", Alert.Type.warning);
-                        return false;
-                    }
-
                     if ($('#Description').val() == null || $('#Description').val().trim() == "" || $('#Description').val().length == 0) {
                         Alert.fn.Show(global.TypeLanguage == 0 ? "Mô tả được để trống!" : "Description not blank!", Alert.Type.warning);
                         return false;

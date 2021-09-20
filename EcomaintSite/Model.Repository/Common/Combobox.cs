@@ -160,6 +160,29 @@ namespace Model.Combobox
              });
             return new SelectList(listItem, "Value", "Text", null);
         }
+
+        public SelectList GetListLoaiMoiNguy()
+        {
+            DataTable dtTmp = new DataTable();
+            SqlCommand sqlcom = new SqlCommand();
+            SqlConnection con = new SqlConnection(db.Database.Connection.ConnectionString);
+            if (con.State == ConnectionState.Closed)
+                con.Open();
+            sqlcom.Connection = con;
+            sqlcom.Parameters.AddWithValue("ACTION", "LIST_LOAIMOINGUY");
+            sqlcom.CommandType = CommandType.StoredProcedure;
+            sqlcom.CommandText = "VS_ST_HazardReport";
+            SqlDataAdapter da = new SqlDataAdapter(sqlcom);
+            da.Fill(dtTmp);
+            var listItem = dtTmp.AsEnumerable().Select(
+             x => new SelectListItem
+             {
+                 Text = x.Field<string>("Hazard"),
+                 Value = x.Field<int>("ID").ToString()
+             });
+            return new SelectList(listItem, "Value", "Text", null);
+        }
+
         public SelectList GetListDepartment()
         {
             DataTable dtTmp = new DataTable();

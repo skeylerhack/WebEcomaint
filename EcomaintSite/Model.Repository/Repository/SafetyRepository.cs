@@ -121,7 +121,7 @@ namespace Model.Repository.Repository
                 hazard.Department = model.Department;
                 hazard.Description = model.Description;
                 hazard.DocDate = Convert.ToDateTime(model.sDocDate, new CultureInfo("vi-vn"));
-                hazard.DocNum = model.DocNum;
+                hazard.DocNum = GetSoPhieuHazard();
                 hazard.DocTime = Convert.ToDateTime(model.DocTime, new CultureInfo("vi-vn"));
                 hazard.Environment = model.Environment;
 
@@ -137,6 +137,7 @@ namespace Model.Repository.Repository
                 hazard.Image_1 = model.Image_1;
                 hazard.IS_DELETE = model.IS_DELETE;
                 hazard.Location = model.Location;
+                hazard.ID_HAZARD = model.ID_HAZARD;
                 hazard.NearMiss = model.NearMiss;
                 hazard.NGUOILIENQUAN1 = model.NGUOILIENQUAN1;
                 hazard.NGUOILIENQUAN2 = model.NGUOILIENQUAN2;
@@ -223,6 +224,7 @@ namespace Model.Repository.Repository
                 hazard.IS_APPROVED = model.IS_APPROVED;
                 hazard.IS_DELETE = model.IS_DELETE;
                 hazard.Location = model.Location;
+                hazard.ID_HAZARD = model.ID_HAZARD;
                 hazard.NearMiss = model.NearMiss;
                 hazard.NGUOILIENQUAN1 = model.NGUOILIENQUAN1;
                 hazard.NGUOILIENQUAN2 = model.NGUOILIENQUAN2;
@@ -262,6 +264,7 @@ namespace Model.Repository.Repository
                 db.Entry(hazard).Property(x => x.ID).IsModified = true;
                 db.Entry(hazard).Property(x => x.Image_1).IsModified = true;
                 db.Entry(hazard).Property(x => x.Location).IsModified = true;
+                db.Entry(hazard).Property(x => x.ID_HAZARD).IsModified = true;
                 db.Entry(hazard).Property(x => x.NearMiss).IsModified = true;
                 db.Entry(hazard).Property(x => x.NGUOILIENQUAN1).IsModified = true;
                 db.Entry(hazard).Property(x => x.NGUOILIENQUAN2).IsModified = true;
@@ -552,6 +555,20 @@ namespace Model.Repository.Repository
                 return "";
             }
         }
+
+        public string GetIDDepartment(string Username)
+        {
+            try
+            {
+                string ID = db.ST_Safety.Where(x => x.Userlogin.Equals(Username)).Select(x => x.Department).FirstOrDefault().ToString();
+                return ID;
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+        }
+
         public string GetDepartmentbyReportParent(string User)
         {
             try
@@ -912,15 +929,13 @@ namespace Model.Repository.Repository
             }
             return list;
         }
-
-
         public int AddStopCard(StopCardViewModel model)
         {
             try
             {
                 ST_StopCard stop = new ST_StopCard();
                 stop.ID = model.ID;
-                stop.DocNum = model.DocNum;
+                stop.DocNum = GetSoPhieuStopCart();
                 stop.DocDate = Convert.ToDateTime(model.sDocDate, new CultureInfo("vi-vn"));
                 stop.DocTime = Convert.ToDateTime(model.DocTime, new CultureInfo("vi-vn"));
                 stop.AdjPerPPE = model.AdjPerPPE;
@@ -1031,38 +1046,38 @@ namespace Model.Repository.Repository
 
                 stop.SACH_SE_NGAN_NAP = model.SACH_SE_NGAN_NAP;
 
-                stop.LOAI_CONG_VIEC = model.LOAI_CONG_VIEC;
+                stop.LOAI_CONG_VIEC = model.LOAI_CONG_VIEC == null ? "" : model.LOAI_CONG_VIEC;
 
-                stop.HO_TEN_CA_NHAN_TO_NHOM = model.HO_TEN_CA_NHAN_TO_NHOM;
+                stop.HO_TEN_CA_NHAN_TO_NHOM = model.HO_TEN_CA_NHAN_TO_NHOM == null ? "" : model.HO_TEN_CA_NHAN_TO_NHOM;
 
-                stop.HANH_DONG_HANH_VI_AN_TOAN = model.HANH_DONG_HANH_VI_AN_TOAN;
+                stop.HANH_DONG_HANH_VI_AN_TOAN = model.HANH_DONG_HANH_VI_AN_TOAN == null ? "" : model.HANH_DONG_HANH_VI_AN_TOAN;
 
-                stop.HANH_VI_KHONG_AN_TOAN = model.HANH_VI_KHONG_AN_TOAN;
+                stop.HANH_VI_KHONG_AN_TOAN = model.HANH_VI_KHONG_AN_TOAN == null ? "" : model.HANH_VI_KHONG_AN_TOAN;
 
                 stop.KHAC_PHUC_TUC_THI = "";
 
-                stop.APPROVAL_USER = model.APPROVAL_USER;
+                stop.APPROVAL_USER = model.APPROVAL_USER == null ? "" : model.APPROVAL_USER;
 
                 stop.IS_APPROVED = model.IS_APPROVED;
 
-                stop.TOtherOrderliness = model.TOtherOrderliness;
+                stop.TOtherOrderliness = model.TOtherOrderliness == null ? "" : model.TOtherOrderliness;
 
-                stop.TOtherPPE = model.TOtherPPE;
+                stop.TOtherPPE = model.TOtherPPE == null ? "" : model.TOtherPPE;
 
-                stop.TOtherProcedure = model.TOtherProcedure;
+                stop.TOtherProcedure = model.TOtherProcedure == null ? "" : model.TOtherProcedure;
 
-                stop.TOtherReactions = model.TOtherReactions;
+                stop.TOtherReactions = model.TOtherReactions == null ? "" : model.TOtherReactions;
 
-                stop.TOtherToolAndEquipment = model.TOtherToolAndEquipment;
+                stop.TOtherToolAndEquipment = model.TOtherToolAndEquipment == null ? "" : model.TOtherToolAndEquipment;
 
-                stop.Description = model.Description;
+                stop.Description = model.Description == null ? "" : model.Description;
 
-                stop.REPORT_PARENT = model.REPORT_PARENT;
+                stop.REPORT_PARENT = model.REPORT_PARENT == null ? "" : model.REPORT_PARENT;
                 stop.IS_DELETE = model.IS_DELETE;
 
-                stop.NGUOILIENQUAN1 = model.NGUOILIENQUAN1;
+                stop.NGUOILIENQUAN1 = model.NGUOILIENQUAN1 == null ? "" : model.NGUOILIENQUAN1;
 
-                stop.NGUOILIENQUAN2 = model.NGUOILIENQUAN2;
+                stop.NGUOILIENQUAN2 = model.NGUOILIENQUAN2 == null ? "" : model.NGUOILIENQUAN2;
                 stop.Image_1 = model.Image_1;
 
                 db.ST_StopCard.Add(stop);

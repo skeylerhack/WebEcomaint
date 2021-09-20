@@ -23,6 +23,7 @@
     <input type="hidden" id="hfTTPhieu" value="@ViewBag.TTPhieu" />
     <input type="hidden" id="hfUserDuyet" value="@ViewBag.UserDuyet" />
     <input type="hidden" id="hfIDStafety" value="@ViewBag.IDStafety" />
+    <input type="hidden" id="hfIDDepartment" value="@ViewBag.IDDepartment" />
     @Html.HiddenFor(model => model.ID)
     <div class="row" id="frmMain">
         <div class="col-lg-12">
@@ -81,7 +82,8 @@
                         <div class="form-group responsive">
                             <label data-lang="lblNGUOILIENQUAN1">NGUOILIENQUAN1</label>
                             @*@Html.EditorFor(model => model.NGUOILIENQUAN1, new { htmlAttributes = new { @class = "form-control" } })*@
-                            @Html.DropDownListFor(model => model.NGUOILIENQUAN1, (SelectList)ViewBag.ListPersonRef, new { data_live_search = "true", data_slide = "left", @class = "form-control select-one select2", @style = "width:100%" })
+                            @*@Html.DropDownListFor(model => model.NGUOILIENQUAN1, (SelectList)ViewBag.ListPersonRef, new { data_live_search = "true", data_slide = "left", @class = "form-control select-one select2", @style = "width:100%" })*@
+                            @Html.EditorFor(model => model.NGUOILIENQUAN2, new { htmlAttributes = new { @class = "form-control" } })
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center">
@@ -99,21 +101,21 @@
                 </div>
 
                 <div class="row ">
+                    @*doi thanh danh sach moi nguy*@
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group responsive">
-                            <label data-lang="lblDescription">Description</label>
-                            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                            <label data-lang="cbLoaiMoiNguy">Loại mối nguy</label>
+                            @Html.DropDownListFor(model => model.ID_HAZARD, (SelectList)ViewBag.ListLoaiMoiNguy, new { data_live_search = "true", data_slide = "left", @class = "form-control select-one select2", @style = "width:100%" })
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <div class="form-group responsive">
-                            <label data-lang="lblCOMMENT">COMMENT</label>
-                            @Html.EditorFor(model => model.COMMENT, new { htmlAttributes = new { @class = "form-control" } })
-                            @Html.ValidationMessageFor(model => model.COMMENT, "", new { @class = "text-danger" })
+                            <label data-lang="lblDescription">Description</label>
+                            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
                         </div>
                     </div>
+
                 </div>
 
                 <div class="row ">
@@ -213,6 +215,16 @@
                     <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                         @Html.RadioButtonFor(model => model.Relateddepartments, "6", new { @id = "Acount", @class = "align-middle" })
                     </div>
+
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
+                        <div class="form-group responsive">
+                            <label data-lang="lblCommercial">Commercial</label>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        @Html.RadioButtonFor(model => model.Relateddepartments, "7", new { @id = "Commercial", @class = "align-middle" })
+                    </div>
+
                 </div>
 
                 <div class="row">
@@ -233,17 +245,20 @@
                     <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
                         @Html.RadioButtonFor(model => model.Belongto, "2", new { @id = "BelongtoBSPort", @class = "align-middle" })
                     </div>
+                </div>
 
+                <div class="row">
                     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-5">
                         <div class="form-group responsive">
                             <label data-lang="lblStopwork">Stopwork</label>
                         </div>
                     </div>
-                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-7">
                         @Html.CheckBoxFor(model => model.Stopwork, new { @id = "Stopwork", @class = "align-middle" })
+                        <small class="text-danger">*(Nếu có dừng thì check vào)</small>
                     </div>
-
                 </div>
+
 
                 <div class="row">
                     <div class="form-group responsive">
@@ -303,7 +318,6 @@
                         <div class="form-group responsive">
                             <label data-lang="lblDepartment">Department</label>
                             @Html.DropDownListFor(model => model.Department, (SelectList)ViewBag.ListDepartment, new { data_live_search = "true", data_slide = "left", @class = "form-control select-one select2", @style = "width:100%" })
-                            @Html.ValidationMessageFor(model => model.Department, "", new { @class = "text-danger", @readonly = "readonly" })
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
@@ -311,7 +325,6 @@
                             <label data-lang="lblLocation">Location</label>
                             @*@Html.EditorFor(model => model.Location, new { htmlAttributes = new { @class = "form-control" } })*@
                             @Html.DropDownListFor(model => model.Location, (SelectList)ViewBag.ListLocation, new { data_live_search = "true", data_slide = "left", @class = "form-control select-one select2", @style = "width:100%" })
-                            @Html.ValidationMessageFor(model => model.Location, "", new { @class = "text-danger" })
                         </div>
                     </div>
 
@@ -403,28 +416,28 @@
                                                     {
                                                         "null".ToString();
                                                     }</td>
-                                            <td>@if (@item.CompletedDate != null)
-                                                {
-                                                    @item.CompletedDate.Value.ToString("dd/MM/yyyy");
-                                                }
-                                                else
-                                                {
-                                                    "null".ToString();
-                                                }</td>
-                                        <td>@item.Status</td>
-                                        <td class="hidden">@item.PersonReport</td>
-                                        <td>@item.Description</td>
+                                                <td>@if (@item.CompletedDate != null)
+                                                    {
+                                                        @item.CompletedDate.Value.ToString("dd/MM/yyyy");
+                                                    }
+                                                    else
+                                                    {
+                                                        "null".ToString();
+                                                    }</td>
+                                                <td>@item.Status</td>
+                                                <td class="hidden">@item.PersonReport</td>
+                                                <td>@item.Description</td>
 
-                                        <td class="hidden">@item.THIETBI</td>
-                                        <td>@item.TENTHIETBI</td>
-                                        <td class="hidden">@item.LOAIYEUCAU</td>
-                                        <td>@item.TENLOAIYEUCAU</td>
-                                        <td class="hidden">@item.NGUYENNHAN</td>
+                                                <td class="hidden">@item.THIETBI</td>
+                                                <td>@item.TENTHIETBI</td>
+                                                <td class="hidden">@item.LOAIYEUCAU</td>
+                                                <td>@item.TENLOAIYEUCAU</td>
+                                                <td class="hidden">@item.NGUYENNHAN</td>
 
-                                        <td>@item.TENNGUYENNHAN</td>
-                                    </tr>
-                                }
-                            }
+                                                <td>@item.TENNGUYENNHAN</td>
+                                            </tr>
+                                        }
+                                    }
                                 </tbody>
                             </table>
 
@@ -652,7 +665,7 @@
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group responsive">
                                 <label data-lang="lnlGuiToi">Gửi tới</label>
-                                <textarea data-loaimail=""  class="form-control" id="txtGuiToi" style="width:100%"></textarea>
+                                <textarea data-loaimail="" class="form-control" id="txtGuiToi" style="width:100%"></textarea>
                             </div>
                         </div>
 

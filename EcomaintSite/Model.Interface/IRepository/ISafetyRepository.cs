@@ -35,6 +35,8 @@ namespace Model.Interface.IRepository
         ST_HazardReport HazardReport(int ID);
         string GetDepartmentbyReportParent(string User);
         string GetIDSafery(string Username);
+        string GetIDDepartment(string Username);
+        
 
         #region stopcard
         string GetSoPhieuStopCart();

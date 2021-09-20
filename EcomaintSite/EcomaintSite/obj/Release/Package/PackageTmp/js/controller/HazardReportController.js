@@ -196,8 +196,8 @@
                         return false;
                     }
 
-                    if ($('#REPORT_PARENT').val() == null || $('#REPORT_PARENT').val().trim() == "" || $('#REPORT_PARENT').val().length == 0) {
-                        Alert.fn.Show(global.TypeLanguage == 0 ? "User báo cáo được để trống!" : "Report parent not blank!", Alert.Type.warning);
+                    if ($('#Department').val() == null || $('#Department').val().trim() == "" || $('#Department').val().length == 0) {
+                        Alert.fn.Show(global.TypeLanguage == 0 ? "Phòng ban báo cáo được để trống!" : "Department not blank!", Alert.Type.warning);
                         return false;
                     }
 
@@ -276,7 +276,6 @@
                                 break;
                             default:
                         }
-
                     });
                     $("#REPORT_PARENT").change(function () {
                         $.post(urlGetDepartmentbyReportParent, { UserName: $(this).val() }, function (data) {
@@ -295,6 +294,7 @@
                         useCurrent: false
                     });
                     if ($('#stt').val() === "-1") {
+                        $("#Department").val(parseInt($('#hfIDDepartment').val())).change();
                         $("#DocDate").val(new Date().toLocaleString('en-GB').substr(0, 10));
                         $("#Createdtime").val(new Date().toLocaleString('en-GB').substr(0, 10));
                         $("#CreatedBy").val($("#hfUsername").val());

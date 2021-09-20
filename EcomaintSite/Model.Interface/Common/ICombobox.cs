@@ -17,6 +17,7 @@ namespace Model.Interface
 
         SelectList GetListReportParent(string UserName);
         SelectList GetListLocation();
+        SelectList GetListLoaiMoiNguy();
         SelectList GetListDepartment();
         SelectList GetListPersonRef(string UserName);
 
