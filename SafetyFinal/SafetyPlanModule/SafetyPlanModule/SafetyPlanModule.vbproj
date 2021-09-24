@@ -1,0 +1,555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3EDCF52-D2F6-4C7B-AA01-44343B927978}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>SafetyPlanModule</RootNamespace>
+    <AssemblyName>SafetyPlanModule</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SafetyPlanModule.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>..\CMMS\CMMS_BARIA\00 CMMS Kho Moi NN\00 Safety\Safety\bin\Debug\</OutputPath>
+    <DocumentationFile>SafetyPlanModule.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Commons, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Safety\bin\Debug\Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="DevExpress.Data.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v9.2, Version=9.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Interop.Excel, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Safety\bin\Debug\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChooseHazardReport.Designer.vb">
+      <DependentUpon>ChooseHazardReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseHazardReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreateRequest.Designer.vb">
+      <DependentUpon>FrmCreateRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreateRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseStopCard.Designer.vb">
+      <DependentUpon>ChooseStopCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseStopCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChooseIncidentAndAccident.Designer.vb">
+      <DependentUpon>ChooseIncidentAndAccident.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChooseIncidentAndAccident.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLeadership.Designer.vb">
+      <DependentUpon>FrmLeadership.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLeadership.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLeadershipDetails.Designer.vb">
+      <DependentUpon>FrmLeadershipDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLeadershipDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQFind.Designer.vb">
+      <DependentUpon>FrmQFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMail.vb" />
+    <Compile Include="VirtualMouse.vb" />
+    <Compile Include="FrmListAlertMail.Designer.vb">
+      <DependentUpon>FrmListAlertMail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListAlertMail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPhanQuyenDuyet.Designer.vb">
+      <DependentUpon>FrmPhanQuyenDuyet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPhanQuyenDuyet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListDepartment.Designer.vb">
+      <DependentUpon>FrmListDepartment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListDepartment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListNhanVienSafety.Designer.vb">
+      <DependentUpon>FrmListNhanVienSafety.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListNhanVienSafety.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListImg.Designer.vb">
+      <DependentUpon>FrmListImg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListImg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrint.Designer.vb">
+      <DependentUpon>FrmPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetworkShare.vb" />
+    <Compile Include="FrmAUDIT.Designer.vb">
+      <DependentUpon>FrmAUDIT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAUDIT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKhuVuc.Designer.vb">
+      <DependentUpon>FrmKhuVuc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKhuVuc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListDTTiepXuc.Designer.vb">
+      <DependentUpon>FrmListDTTiepXuc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListDTTiepXuc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListCongViec.Designer.vb">
+      <DependentUpon>FrmListCongViec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListCongViec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DungChung.vb" />
+    <Compile Include="FrmDKKN.Designer.vb">
+      <DependentUpon>FrmDKKN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDKKN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHazardReport.Designer.vb">
+      <DependentUpon>FrmHazardReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHazardReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIncidentAndAccident.Designer.vb">
+      <DependentUpon>FrmIncidentAndAccident.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIncidentAndAccident.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDanhMucQuanLyRuiRo.Designer.vb">
+      <DependentUpon>FrmDanhMucQuanLyRuiRo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDanhMucQuanLyRuiRo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListMoiNguy.Designer.vb">
+      <DependentUpon>FrmListMoiNguy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListMoiNguy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStopCard.Designer.vb">
+      <DependentUpon>FrmStopCard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStopCard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GlobalVariables.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Protect.vb" />
+    <Compile Include="SQLConnectEntity.vb" />
+    <Compile Include="SQLFunction.vb" />
+    <Compile Include="FrmInspection.Designer.vb">
+      <DependentUpon>FrmInspection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInspection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfirm.Designer.vb">
+      <DependentUpon>FrmConfirm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfirm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.vb">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExportExcel.Designer.vb">
+      <DependentUpon>FrmExportExcel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExportExcel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShowImg.Designer.vb">
+      <DependentUpon>FrmShowImg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShowImg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmXNGuiMail.Designer.vb">
+      <DependentUpon>FrmXNGuiMail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmXNGuiMail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFind.Designer.vb">
+      <DependentUpon>FrmFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ChooseHazardReport.resx">
+      <DependentUpon>ChooseHazardReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreateRequest.resx">
+      <DependentUpon>FrmCreateRequest.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseStopCard.resx">
+      <DependentUpon>ChooseStopCard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChooseIncidentAndAccident.resx">
+      <DependentUpon>ChooseIncidentAndAccident.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLeadership.resx">
+      <DependentUpon>FrmLeadership.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLeadershipDetails.resx">
+      <DependentUpon>FrmLeadershipDetails.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQFind.resx">
+      <DependentUpon>FrmQFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListAlertMail.resx">
+      <DependentUpon>FrmListAlertMail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPhanQuyenDuyet.resx">
+      <DependentUpon>FrmPhanQuyenDuyet.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListDepartment.resx">
+      <DependentUpon>FrmListDepartment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListNhanVienSafety.resx">
+      <DependentUpon>FrmListNhanVienSafety.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAUDIT.resx">
+      <DependentUpon>FrmAUDIT.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKhuVuc.resx">
+      <DependentUpon>FrmKhuVuc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListDTTiepXuc.resx">
+      <DependentUpon>FrmListDTTiepXuc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListCongViec.resx">
+      <DependentUpon>FrmListCongViec.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDKKN.resx">
+      <DependentUpon>FrmDKKN.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHazardReport.resx">
+      <DependentUpon>FrmHazardReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIncidentAndAccident.resx">
+      <DependentUpon>FrmIncidentAndAccident.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDanhMucQuanLyRuiRo.resx">
+      <DependentUpon>FrmDanhMucQuanLyRuiRo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListImg.resx">
+      <DependentUpon>FrmListImg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListMoiNguy.resx">
+      <DependentUpon>FrmListMoiNguy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrint.resx">
+      <DependentUpon>FrmPrint.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStopCard.resx">
+      <DependentUpon>FrmStopCard.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInspection.resx">
+      <DependentUpon>FrmInspection.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfirm.resx">
+      <DependentUpon>FrmConfirm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExportExcel.resx">
+      <DependentUpon>FrmExportExcel.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShowImg.resx">
+      <DependentUpon>FrmShowImg.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmXNGuiMail.resx">
+      <DependentUpon>FrmXNGuiMail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFind.resx">
+      <DependentUpon>FrmFind.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\I5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4CBD-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1462793327_fullscreen_alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ampeross-Qetto-2-Search.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apps-colors-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17-Paste-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-format-text-bold-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal-Text-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font-delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

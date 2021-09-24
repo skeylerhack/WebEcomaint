@@ -1,0 +1,52 @@
+23/03/2017:2:13 PM ucMailPhanTichTGNMay-1.xls: suscess sent to nhattc@vietsoft.com.vn. 
+22/03/2016:8:00 AM PRO_DT_REPORT_20170324.xls: suscess sent to nhattc@vietsoft.com.vn. 
+22/03/2016:8:00 AM PRO_DT_REPORT_20170324.xls: suscess sent to nhattc@vietsoft.com.vn. 
+22/03/2016:8:00 AM PRO_DT_REPORT_20170324.xls: suscess sent to canh.huynhhao@veco.vn;tan.tranphu@veco.vn;tam.luuminh@veco.vn. CC nhattc@vietsoft.com.vn. 
+22/03/2016:8:00 AM PRO_DT_REPORT_20170324.xls: suscess sent to canh.huynhhao@veco.vn;tan.tranphu@veco.vn;tam.luuminh@veco.vn. CC nhattc@vietsoft.com.vn. 
+22/03/2016:8:00 AM PRO_DT_REPORT_20170324.xls: suscess sent to canh.huynhhao@veco.vn;tan.tranphu@veco.vn;tam.luuminh@veco.vn. CC nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170330.xls: suscess sent to canh.huynhhao@veco.vn. CC nhattc@vietsoft.com.vn. 
+03/04/2017:11:34 AM : PTTGNM2. 
+03/04/2017:11:34 AM ucMailPhanTichTGNMay-32 : no data print.2: . 
+03/04/2017:11:35 AM PRO_DT_REPORT_20170402.xls: suscess sent to canh.huynhhao@veco.vn. CC nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to vs@lists.vietsoft.com.vn. CC nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to veco_maintenance@veco.vn. CC nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to veco_maintenance@veco.vn. CC nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to veco_maintenance@veco.vn. CC nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to nhattc@vietsoft.com.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: Invalid e-mail. - Dear All,<br>
+
+I would like to send the DT report of production team. Pls see attached file.<br>
+
+Thanks and Best regards,<br>
+From CMMS. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: Invalid e-mail. - Dear All,<br>
+
+I would like to send the DT report of production team. Pls see attached file.<br>
+
+Thanks and Best regards,<br>
+From CMMS. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to nhattc@vietsoft.com.vn;canh.huynhhao@veco.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to nhattc@vietsoft.com.vn;canh.huynhhao@veco.vn. 
+01/01/0001:12:00 AM PRO_DT_REPORT_20170403.xls: suscess sent to satoveco@irs.star-net.or.jp;kitaveco@irs.star-net.or.jp;s_abe@veco.vn;YASUI_etsuya@star.sfc.co.jp;ueno@mokkai.com;satoken@irs.star-net.or.jp;KONDO_yusuke@star.sfc.co.jp;KANAYA.shingo@veco.vn;shimakawa.takatoshi@veco.vn;takano_tomofumi@star.sfc.co.jp;todd.ellis@veco.vn;duong.tranthe@veco.vn;veco_production@veco.vn;veco_maintenance@veco.vn;veco_qc@veco.vn;veco_pc@veco.vn;veco_finishing@veco.vn;duong.tranthithuy@veco.vn. 
+10/04/2017:3:30 PM Safety_NhacDuyetBaoCao: MailTo is empty!. 
+10/04/2017:3:35 PM Safety_NhacDuyetBaoCao: MailTo is empty!. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: MailTo is empty!. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to dung.le@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to duong.doan@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to ha.le@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to Hai.Huynh@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to hang.vu@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to hoang.diep@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to ngan.to@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to phuong.le@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to Quang.le@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to son.vo@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to tam.pham@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to thang.que@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to Thanh.phung@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to thinh.trinh@bariaserece.com. 
+11/04/2017:2:27 PM Safety_NhacDuyetBaoCao: Suscess sent to thuong.huynh@bariaserece.com. 

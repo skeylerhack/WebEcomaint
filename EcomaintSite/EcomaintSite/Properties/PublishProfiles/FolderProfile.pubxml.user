@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>D:\01.WebEcomaint\Pubplic</_PublishTargetUrl>
-    <History>True|2021-09-20T08:12:47.5928992Z;True|2021-09-15T14:13:23.4649091+07:00;True|2021-09-15T14:12:47.2094205+07:00;True|2021-09-15T13:59:04.0567156+07:00;True|2021-09-14T09:02:01.7831331+07:00;False|2021-09-13T10:25:39.3462293+07:00;False|2021-09-13T09:56:31.7695989+07:00;</History>
+    <History>True|2021-09-23T13:19:09.6970611Z;True|2021-09-23T20:18:41.5026900+07:00;True|2021-09-20T15:12:47.5928992+07:00;True|2021-09-15T14:13:23.4649091+07:00;True|2021-09-15T14:12:47.2094205+07:00;True|2021-09-15T13:59:04.0567156+07:00;True|2021-09-14T09:02:01.7831331+07:00;False|2021-09-13T10:25:39.3462293+07:00;False|2021-09-13T09:56:31.7695989+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -20,10 +20,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/EcomaintSite.dll">
-      <publishTime>09/20/2021 15:12:38</publishTime>
+      <publishTime>09/23/2021 20:18:39</publishTime>
     </File>
     <File Include="bin/EcomaintSite.pdb">
-      <publishTime>09/20/2021 15:12:38</publishTime>
+      <publishTime>09/23/2021 20:18:39</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/12/2019 09:06:44</publishTime>
@@ -116,19 +116,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Model.Interface.dll">
-      <publishTime>09/20/2021 15:12:27</publishTime>
+      <publishTime>09/23/2021 20:18:26</publishTime>
     </File>
     <File Include="bin/Model.Interface.pdb">
-      <publishTime>09/20/2021 15:12:27</publishTime>
+      <publishTime>09/23/2021 20:18:26</publishTime>
     </File>
     <File Include="bin/Model.pdb">
       <publishTime>01/02/2018 15:49:40</publishTime>
     </File>
     <File Include="bin/Model.Repository.dll">
-      <publishTime>09/20/2021 15:12:28</publishTime>
+      <publishTime>09/23/2021 20:18:28</publishTime>
     </File>
     <File Include="bin/Model.Repository.pdb">
-      <publishTime>09/20/2021 15:12:28</publishTime>
+      <publishTime>09/23/2021 20:18:28</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>06/27/2020 11:18:35</publishTime>
@@ -1010,7 +1010,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:35</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/17/2021 14:21:24</publishTime>
+      <publishTime>09/23/2021 15:32:18</publishTime>
     </File>
   </ItemGroup>
 </Project>

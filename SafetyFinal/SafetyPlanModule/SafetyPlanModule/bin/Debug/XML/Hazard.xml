@@ -1,0 +1,113 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="DocNum" type="xs:string" minOccurs="0" />
+                <xs:element name="DocDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DocTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="Createdtime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="Department" type="xs:string" minOccurs="0" />
+                <xs:element name="UnsafeCondition" type="xs:boolean" minOccurs="0" />
+                <xs:element name="BelongContractor" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Operation" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HR" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UnsafeBehevior" type="xs:boolean" minOccurs="0" />
+                <xs:element name="BelongToBSPort" type="xs:boolean" minOccurs="0" />
+                <xs:element name="TechHSE" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Acount" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SatetySuggestion" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Tally" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Procu" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Other" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Stopwork" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Commercial" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES1" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES2" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES3" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES4" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES5" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES6" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Location" type="xs:string" minOccurs="0" />
+                <xs:element name="Description" type="xs:string" minOccurs="0" />
+                <xs:element name="External" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NearMiss" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Table1">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="HazardReportID" type="xs:int" minOccurs="0" />
+                <xs:element name="PreventiveAction" type="xs:string" minOccurs="0" />
+                <xs:element name="Staffname" type="xs:string" minOccurs="0" />
+                <xs:element name="Deadline" type="xs:dateTime" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ID>11</ID>
+    <DocNum>HZ190420160006</DocNum>
+    <DocDate>2016-04-19T00:00:00+07:00</DocDate>
+    <DocTime>2016-04-19T10:04:50.28+07:00</DocTime>
+    <Createdtime>2016-04-19T10:04:50.28+07:00</Createdtime>
+    <CreatedBy>Administrator</CreatedBy>
+    <Department>Phòng dự án</Department>
+    <UnsafeCondition>false</UnsafeCondition>
+    <BelongContractor>true</BelongContractor>
+    <Operation>false</Operation>
+    <HR>true</HR>
+    <UnsafeBehevior>true</UnsafeBehevior>
+    <BelongToBSPort>true</BelongToBSPort>
+    <TechHSE>false</TechHSE>
+    <Acount>true</Acount>
+    <SatetySuggestion>false</SatetySuggestion>
+    <Tally>false</Tally>
+    <Procu>false</Procu>
+    <Other>false</Other>
+    <Stopwork>true</Stopwork>
+    <Commercial>true</Commercial>
+    <HPES1>true</HPES1>
+    <HPES2>false</HPES2>
+    <HPES3>true</HPES3>
+    <HPES4>false</HPES4>
+    <HPES5>true</HPES5>
+    <HPES6>false</HPES6>
+    <Location>Hồ Chí Minh</Location>
+    <Description>fghjgfhj</Description>
+    <External>false</External>
+    <NearMiss>true</NearMiss>
+  </Table>
+  <Table1>
+    <ID>173</ID>
+    <HazardReportID>11</HazardReportID>
+    <PreventiveAction>45sgfsdg</PreventiveAction>
+    <Staffname>Nguyễn Văn A</Staffname>
+    <Deadline>2016-04-19T00:00:00+07:00</Deadline>
+  </Table1>
+  <Table1>
+    <ID>174</ID>
+    <HazardReportID>11</HazardReportID>
+    <PreventiveAction>678sdgdg f fgdfg</PreventiveAction>
+    <Staffname>Bùi Thị C</Staffname>
+    <Deadline>2016-04-23T00:00:00+07:00</Deadline>
+  </Table1>
+  <Table1>
+    <ID>175</ID>
+    <HazardReportID>11</HazardReportID>
+    <PreventiveAction>uykthf</PreventiveAction>
+    <Staffname>Nguyễn Văn A</Staffname>
+    <Deadline>2016-05-11T00:00:00+07:00</Deadline>
+  </Table1>
+</NewDataSet>

@@ -1,0 +1,52 @@
+D:\Mashj\ServerH2\ServerH2\obj\Debug\ResolveAssemblyReference.cache
+D:\Mashj\ServerH2\ServerH2\obj\Debug\ServerH2.Form1.resources
+D:\Mashj\ServerH2\ServerH2\obj\Debug\ServerH2.Properties.Resources.resources
+D:\Mashj\ServerH2\ServerH2\obj\Debug\Cmms Server.csproj.GenerateResource.Cache
+D:\Mashj\ServerH2\ServerH2\bin\Debug\Cmms Server.exe
+D:\Mashj\ServerH2\ServerH2\bin\Debug\Cmms Server.pdb
+D:\Mashj\ServerH2\ServerH2\obj\Debug\Cmms Server.exe
+D:\Mashj\ServerH2\ServerH2\obj\Debug\Cmms Server.pdb
+D:\Mashj\ServerH2\ServerH2\bin\Debug\CmmsServerLib.pdb
+D:\Mashj\New folder (6)\CMMS Server\CMMSServer\obj\Debug\Cmms Server.exe
+D:\Mashj\New folder (6)\CMMS Server\CMMSServer\obj\Debug\Cmms Server.pdb
+D:\Mashj\New folder (6)\CMMS Server\CMMSServer\bin\Debug\Cmms Server.exe
+D:\Mashj\New folder (6)\CMMS Server\CMMSServer\bin\Debug\Cmms Server.pdb
+D:\Mashj\New folder (6)\CMMS Server\CMMSServer\bin\Debug\CmmsServerLib.pdb
+D:\Mashj\New folder (6)\CMMS Server\CMMSServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Mashj\New folder (6)\CMMS Server\CMMSServer\obj\Debug\ServerH2.Form1.resources
+D:\Mashj\New folder (6)\CMMS Server\CMMSServer\obj\Debug\ServerH2.Properties.Resources.resources
+D:\Mashj\New folder (6)\CMMS Server\CMMSServer\obj\Debug\Cmms Server.csproj.GenerateResource.Cache
+D:\01 KH New\CMMS Server\CMMSServer\obj\Debug\Cmms Server.exe
+D:\01 KH New\CMMS Server\CMMSServer\obj\Debug\Cmms Server.pdb
+D:\01 KH New\CMMS Server\CMMSServer\bin\Debug\Cmms Server.exe
+D:\01 KH New\CMMS Server\CMMSServer\bin\Debug\Cmms Server.pdb
+D:\01 KH New\CMMS Server\CMMSServer\bin\Debug\CmmsServerLib.pdb
+D:\01 KH New\CMMS Server\CMMSServer\obj\Debug\ResolveAssemblyReference.cache
+D:\01 KH New\CMMS Server\CMMSServer\obj\Debug\ServerH2.Form1.resources
+D:\01 KH New\CMMS Server\CMMSServer\obj\Debug\ServerH2.Properties.Resources.resources
+D:\01 KH New\CMMS Server\CMMSServer\obj\Debug\Cmms Server.csproj.GenerateResource.Cache
+D:\01 KH New\CMMS\CMMS Server\CMMSServer\obj\Debug\Cmms Server.exe
+D:\01 KH New\CMMS\CMMS Server\CMMSServer\obj\Debug\Cmms Server.pdb
+D:\01 KH New\CMMS\CMMS Server\CMMSServer\bin\Debug\Cmms Server.exe
+D:\01 KH New\CMMS\CMMS Server\CMMSServer\bin\Debug\Cmms Server.pdb
+D:\01 KH New\CMMS\CMMS Server\CMMSServer\bin\Debug\CmmsServerLib.pdb
+D:\01 KH New\CMMS\CMMS Server\CMMSServer\obj\Debug\ResolveAssemblyReference.cache
+D:\01 KH New\CMMS\CMMS Server\CMMSServer\obj\Debug\ServerH2.Form1.resources
+D:\01 KH New\CMMS\CMMS Server\CMMSServer\obj\Debug\ServerH2.Properties.Resources.resources
+D:\01 KH New\CMMS\CMMS Server\CMMSServer\obj\Debug\Cmms Server.csproj.GenerateResource.Cache
+D:\01 KH New\CMMS\CMMS Server\CMMSServer\bin\Debug\DriveInfoEx.dll
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\bin\Debug\Cmms Server.exe
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\bin\Debug\Cmms Server.pdb
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\bin\Debug\office.dll
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\bin\Debug\office.xml
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\obj\Debug\ResolveAssemblyReference.cache
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\obj\Debug\ServerH2.Form1.resources
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\obj\Debug\CmmsServer.Properties.Resources.resources
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\obj\Debug\Cmms Server.csproj.GenerateResource.Cache
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\obj\Debug\Cmms Server.exe
+D:\01 KH New\CMMS\CMMS Server\CMMS Server\CMMSServer\obj\Debug\Cmms Server.pdb
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\obj\Debug\Cmms Server.exe
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\obj\Debug\Cmms Server.pdb

@@ -1,0 +1,127 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="DocNum" type="xs:string" minOccurs="0" />
+                <xs:element name="DocDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DocTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="AdjPerPPE" type="xs:boolean" minOccurs="0" />
+                <xs:element name="StopJob" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ChangingPosition" type="xs:boolean" minOccurs="0" />
+                <xs:element name="RearrangingJob" type="xs:boolean" minOccurs="0" />
+                <xs:element name="AttachingGrouds" type="xs:boolean" minOccurs="0" />
+                <xs:element name="PerformingLocks" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OtherReaction" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Head" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ArmsAndHands" type="xs:boolean" minOccurs="0" />
+                <xs:element name="EyesAndFace" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Trunk" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Ears" type="xs:boolean" minOccurs="0" />
+                <xs:element name="LegsAndFeet" type="xs:boolean" minOccurs="0" />
+                <xs:element name="RespiratorySystem" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OtherPPE" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES1" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES2" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES3" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES4" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES5" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES6" type="xs:boolean" minOccurs="0" />
+                <xs:element name="StrikingAgaintObjects" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ChokingHazardousAir" type="xs:boolean" minOccurs="0" />
+                <xs:element name="CaughtInOn" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Inhaling" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Falling" type="xs:boolean" minOccurs="0" />
+                <xs:element name="RepettiveMotions" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Contacting" type="xs:boolean" minOccurs="0" />
+                <xs:element name="PositionsToWork" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ContactSharpObject" type="xs:boolean" minOccurs="0" />
+                <xs:element name="FlyingObjects" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ContactingElectric" type="xs:boolean" minOccurs="0" />
+                <xs:element name="EmployeeWork" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NotRight" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Unknow" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UsedIncorrectly" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NotUnderstood" type="xs:boolean" minOccurs="0" />
+                <xs:element name="InUnsafeCondition" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NotFlowed" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NotAequate" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OtherProcedure" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OtherTools" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NotIsolate" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ToolAndEquipment" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NoCollectGarbage" type="xs:boolean" minOccurs="0" />
+                <xs:element name="EmergencyExit" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Slip" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OtherOderLine" type="xs:boolean" minOccurs="0" />
+                <xs:element name="External" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ID>2</ID>
+    <CreatedBy>administrator</CreatedBy>
+    <DocNum>34523466</DocNum>
+    <DocDate>2016-03-29T00:00:00+07:00</DocDate>
+    <DocTime>2016-03-29T16:21:31.017+07:00</DocTime>
+    <AdjPerPPE>true</AdjPerPPE>
+    <StopJob>true</StopJob>
+    <ChangingPosition>true</ChangingPosition>
+    <RearrangingJob>true</RearrangingJob>
+    <AttachingGrouds>true</AttachingGrouds>
+    <PerformingLocks>true</PerformingLocks>
+    <OtherReaction>true</OtherReaction>
+    <Head>true</Head>
+    <ArmsAndHands>true</ArmsAndHands>
+    <EyesAndFace>true</EyesAndFace>
+    <Trunk>true</Trunk>
+    <Ears>true</Ears>
+    <LegsAndFeet>true</LegsAndFeet>
+    <RespiratorySystem>true</RespiratorySystem>
+    <OtherPPE>true</OtherPPE>
+    <HPES1>false</HPES1>
+    <HPES2>true</HPES2>
+    <HPES3>false</HPES3>
+    <HPES4>false</HPES4>
+    <HPES5>false</HPES5>
+    <HPES6>false</HPES6>
+    <StrikingAgaintObjects>true</StrikingAgaintObjects>
+    <ChokingHazardousAir>false</ChokingHazardousAir>
+    <CaughtInOn>true</CaughtInOn>
+    <Inhaling>false</Inhaling>
+    <Falling>true</Falling>
+    <RepettiveMotions>false</RepettiveMotions>
+    <Contacting>true</Contacting>
+    <PositionsToWork>false</PositionsToWork>
+    <ContactSharpObject>true</ContactSharpObject>
+    <FlyingObjects>false</FlyingObjects>
+    <ContactingElectric>true</ContactingElectric>
+    <EmployeeWork>false</EmployeeWork>
+    <NotRight>true</NotRight>
+    <Unknow>true</Unknow>
+    <UsedIncorrectly>false</UsedIncorrectly>
+    <NotUnderstood>false</NotUnderstood>
+    <InUnsafeCondition>true</InUnsafeCondition>
+    <NotFlowed>true</NotFlowed>
+    <NotAequate>false</NotAequate>
+    <OtherProcedure>false</OtherProcedure>
+    <OtherTools>true</OtherTools>
+    <NotIsolate>false</NotIsolate>
+    <ToolAndEquipment>false</ToolAndEquipment>
+    <NoCollectGarbage>false</NoCollectGarbage>
+    <EmergencyExit>true</EmergencyExit>
+    <Slip>true</Slip>
+    <OtherOderLine>true</OtherOderLine>
+    <External>true</External>
+  </Table>
+</NewDataSet>

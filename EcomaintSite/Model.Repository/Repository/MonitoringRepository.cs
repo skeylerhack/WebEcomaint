@@ -60,17 +60,19 @@ namespace Model.Repository
 
         public void Delete(int ID) => db.Monitoring.Remove(db.Monitoring.SingleOrDefault(x => x.ID == ID));
 
-        public IEnumerable<MonitoringParametersByDevice> GetMonitoringParametersByDevice(string deviceID, int isDue, string dngay, int msloaicv,int stt)
+        public IEnumerable<MonitoringParametersByDevice> GetMonitoringParametersByDevice(string deviceID, int isDue, string dngay, int msloaicv,int stt,string UserName)
         {
             List<MonitoringParametersByDevice> list = null;
             try
             {
                 List<SqlParameter> listParameter = new List<SqlParameter>();
+                listParameter.Add(new SqlParameter("@UserName", UserName));
                 listParameter.Add(new SqlParameter("@deviceID", deviceID));
                 listParameter.Add(new SqlParameter("@tungay", dngay));
                 listParameter.Add(new SqlParameter("@ms_loaicv", msloaicv));
                 listParameter.Add(new SqlParameter("@isDue", isDue));
                 listParameter.Add(new SqlParameter("@stt",stt));
+                
                 list = DBUtils.ExecuteSPList<MonitoringParametersByDevice>("GetMonitoringParametersByDevice", listParameter, AppName.Model1);
                 //DataTable dt = new DataTable();
                 //dt.Load(SqlHelper.ExecuteReader(db.Database.Connection.ConnectionString, "GetMonitoringParametersByDevice", deviceID, "10/10/2020", msloaicv, isDue, stt));

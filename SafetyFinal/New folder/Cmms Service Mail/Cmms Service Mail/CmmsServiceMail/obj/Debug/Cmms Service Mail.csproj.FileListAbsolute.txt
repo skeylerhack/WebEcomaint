@@ -1,0 +1,66 @@
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\obj\Debug\ResolveAssemblyReference.cache
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\obj\Debug\CmmsServiceMail.Properties.Resources.resources
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\obj\Debug\Cmms Service Mail.csproj.GenerateResource.Cache
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\bin\Debug\Cmms Service Mail.exe
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\bin\Debug\Cmms Service Mail.pdb
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\bin\Debug\office.dll
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\bin\Debug\office.xml
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\obj\Debug\Cmms Service Mail.exe
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\obj\Debug\Cmms Service Mail.pdb
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\obj\Debug\CmmsServiceMail.frmCMMSMailServer.resources
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\obj\Debug\Cmms Service Mail.exe.licenses
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CMMSServer\bin\Debug\Interop.Office.dll
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.exe
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.pdb
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\Cmms Service Mail.exe
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\Cmms Service Mail.pdb
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\office.dll
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\office.xml
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\ResolveAssemblyReference.cache
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\CmmsServiceMail.frmCMMSMailServer.resources
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\CmmsServiceMail.Properties.Resources.resources
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.csproj.GenerateResource.Cache
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.exe.licenses
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.dll
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.pdb
+D:\01 KH New\CMMS\CMMS Server Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.xml
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.pdb
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\bin\Debug\Cmms Service Mail.pdb
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.dll
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\bin\Debug\office.dll
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\bin\Debug\office.xml
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.pdb
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.xml
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\obj\Debug\ResolveAssemblyReference.cache
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\obj\Debug\CmmsServiceMail.frmCMMSMailServer.resources
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\obj\Debug\CmmsServiceMail.Properties.Resources.resources
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.csproj.GenerateResource.Cache
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\bin\Debug\Cmms Service Mail.exe
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.exe.licenses
+D:\01 KH New\CMMS\CMMS Server Mail\00 Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.exe
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.exe
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.pdb
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Cmms Service Mail.exe
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Cmms Service Mail.pdb
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.dll
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\office.dll
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\office.xml
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.pdb
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.xml
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\ResolveAssemblyReference.cache
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\CmmsServiceMail.frmCMMSMailServer.resources
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\CmmsServiceMail.Properties.Resources.resources
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.csproj.GenerateResource.Cache
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\Cmms Service Mail.exe.licenses

@@ -1,0 +1,138 @@
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\VSMail.exe
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\VSMail.pdb
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.dll
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\office.dll
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.pdb
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.xml
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\office.xml
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\ResolveAssemblyReference.cache
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.frmCMMSMailServer.resources
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.Properties.Resources.resources
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.csproj.GenerateResource.Cache
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.exe.licenses
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.exe
+D:\01 CMMS SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.pdb
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.exe
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.pdb
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\VSMail.exe
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\VSMail.pdb
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.ReportSource.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.Shared.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Data.v9.2.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Utils.v9.2.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.Windows.Forms.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\stdole.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\office.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Vbe.Interop.dll
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.pdb
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.CrystalReports.Engine.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.ReportSource.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.Shared.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Data.v9.2.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Utils.v9.2.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.Windows.Forms.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\office.xml
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.csprojResolveAssemblyReference.cache
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.frmCMMSMailServer.resources
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.Properties.Resources.resources
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.csproj.GenerateResource.Cache
+E:\Huan\00.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.exe.licenses
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.exe
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.pdb
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\VSMail.exe
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\VSMail.pdb
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.Shared.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Data.v9.2.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Utils.v9.2.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\stdole.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\office.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Vbe.Interop.dll
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.pdb
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.CrystalReports.Engine.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.ReportSource.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.Shared.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Data.v9.2.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Utils.v9.2.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\Microsoft.Office.Interop.Excel.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\CrystalDecisions.Windows.Forms.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\office.xml
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.csprojResolveAssemblyReference.cache
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.frmCMMSMailServer.resources
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.Properties.Resources.resources
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.csproj.GenerateResource.Cache
+D:\01 SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.exe.licenses
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\VSMail.exe
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\VSMail.pdb
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Data.v9.2.dll
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Utils.v9.2.dll
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.dll
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraNavBar.v9.2.dll
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\stdole.dll
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.pdb
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.xml
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Data.v9.2.xml
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Utils.v9.2.xml
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraNavBar.v9.2.xml
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.csprojResolveAssemblyReference.cache
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.frmCMMSMailServer.resources
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.Properties.Resources.resources
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.csproj.GenerateResource.Cache
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.exe.licenses
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.exe
+D:\01.SVN\DLL\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.pdb
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.csprojResolveAssemblyReference.cache
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.frmCMMSMailServer.resources
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.Properties.Resources.resources
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.csproj.GenerateResource.Cache
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.exe
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\obj\Debug\VSMail.pdb
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\VSMail.exe
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\VSMail.pdb
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Data.v9.2.dll
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Utils.v9.2.dll
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.dll
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraNavBar.v9.2.dll
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\stdole.dll
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.pdb
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\MMail.xml
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Data.v9.2.xml
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.Utils.v9.2.xml
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+E:\CMMS\SafetyFinal\Cmms Service Mail\Cmms Service Mail\CmmsServiceMail\bin\Debug\DevExpress.XtraNavBar.v9.2.xml

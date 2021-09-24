@@ -1,0 +1,149 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Table">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="ID" type="xs:int" minOccurs="0" />
+                <xs:element name="CreatedBy" type="xs:string" minOccurs="0" />
+                <xs:element name="DocNum" type="xs:string" minOccurs="0" />
+                <xs:element name="DocDate" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="DocTime" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="AdjPerPPE" type="xs:boolean" minOccurs="0" />
+                <xs:element name="StopJob" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ChangingPosition" type="xs:boolean" minOccurs="0" />
+                <xs:element name="RearrangingJob" type="xs:boolean" minOccurs="0" />
+                <xs:element name="AttachingGrouds" type="xs:boolean" minOccurs="0" />
+                <xs:element name="PerformingLocks" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OtherReaction" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Head" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ArmsAndHands" type="xs:boolean" minOccurs="0" />
+                <xs:element name="EyesAndFace" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Trunk" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Ears" type="xs:boolean" minOccurs="0" />
+                <xs:element name="LegsAndFeet" type="xs:boolean" minOccurs="0" />
+                <xs:element name="RespiratorySystem" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OtherPPE" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES1" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES2" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES3" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES4" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES5" type="xs:boolean" minOccurs="0" />
+                <xs:element name="HPES6" type="xs:boolean" minOccurs="0" />
+                <xs:element name="StrikingAgaintObjects" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ChokingHazardousAir" type="xs:boolean" minOccurs="0" />
+                <xs:element name="CaughtInOn" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Inhaling" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Falling" type="xs:boolean" minOccurs="0" />
+                <xs:element name="RepettiveMotions" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Contacting" type="xs:boolean" minOccurs="0" />
+                <xs:element name="PositionsToWork" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ContactSharpObject" type="xs:boolean" minOccurs="0" />
+                <xs:element name="FlyingObjects" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ContactingElectric" type="xs:boolean" minOccurs="0" />
+                <xs:element name="EmployeeWork" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NotRight" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Unknow" type="xs:boolean" minOccurs="0" />
+                <xs:element name="UsedIncorrectly" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NotUnderstood" type="xs:boolean" minOccurs="0" />
+                <xs:element name="InUnsafeCondition" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NotFlowed" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NotAequate" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OtherProcedure" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OtherTools" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NotIsolate" type="xs:boolean" minOccurs="0" />
+                <xs:element name="ToolAndEquipment" type="xs:boolean" minOccurs="0" />
+                <xs:element name="NoCollectGarbage" type="xs:boolean" minOccurs="0" />
+                <xs:element name="EmergencyExit" type="xs:boolean" minOccurs="0" />
+                <xs:element name="Slip" type="xs:boolean" minOccurs="0" />
+                <xs:element name="OtherOderLine" type="xs:boolean" minOccurs="0" />
+                <xs:element name="External" type="xs:boolean" minOccurs="0" />
+                <xs:element name="DUNG_CU_THIET_BI" type="xs:boolean" minOccurs="0" />
+                <xs:element name="KHU_VUC_LAM_VIEC" type="xs:boolean" minOccurs="0" />
+                <xs:element name="MOI_TRUONG_LAM_VIEC" type="xs:boolean" minOccurs="0" />
+                <xs:element name="SACH_SE_NGAN_NAP" type="xs:boolean" minOccurs="0" />
+                <xs:element name="LOAI_CONG_VIEC" type="xs:string" minOccurs="0" />
+                <xs:element name="HO_TEN_CA_NHAN_TO_NHOM" type="xs:string" minOccurs="0" />
+                <xs:element name="HANH_DONG_HANH_VI_AN_TOAN" type="xs:string" minOccurs="0" />
+                <xs:element name="HANH_VI_KHONG_AN_TOAN" type="xs:string" minOccurs="0" />
+                <xs:element name="KHAC_PHUC_TUC_THI" type="xs:string" minOccurs="0" />
+                <xs:element name="IS_APPROVED" type="xs:boolean" minOccurs="0" />
+                <xs:element name="APPROVAL_USER" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Table>
+    <ID>1005</ID>
+    <CreatedBy>truong_le</CreatedBy>
+    <DocNum>ST190520160002</DocNum>
+    <DocDate>2016-05-19T00:00:00+07:00</DocDate>
+    <DocTime>2016-05-19T13:06:37.653+07:00</DocTime>
+    <AdjPerPPE>true</AdjPerPPE>
+    <StopJob>false</StopJob>
+    <ChangingPosition>false</ChangingPosition>
+    <RearrangingJob>false</RearrangingJob>
+    <AttachingGrouds>false</AttachingGrouds>
+    <PerformingLocks>false</PerformingLocks>
+    <OtherReaction>true</OtherReaction>
+    <Head>false</Head>
+    <ArmsAndHands>false</ArmsAndHands>
+    <EyesAndFace>true</EyesAndFace>
+    <Trunk>false</Trunk>
+    <Ears>true</Ears>
+    <LegsAndFeet>false</LegsAndFeet>
+    <RespiratorySystem>false</RespiratorySystem>
+    <OtherPPE>false</OtherPPE>
+    <HPES1>false</HPES1>
+    <HPES2>false</HPES2>
+    <HPES3>false</HPES3>
+    <HPES4>false</HPES4>
+    <HPES5>false</HPES5>
+    <HPES6>false</HPES6>
+    <StrikingAgaintObjects>false</StrikingAgaintObjects>
+    <ChokingHazardousAir>false</ChokingHazardousAir>
+    <CaughtInOn>true</CaughtInOn>
+    <Inhaling>false</Inhaling>
+    <Falling>false</Falling>
+    <RepettiveMotions>false</RepettiveMotions>
+    <Contacting>true</Contacting>
+    <PositionsToWork>false</PositionsToWork>
+    <ContactSharpObject>false</ContactSharpObject>
+    <FlyingObjects>false</FlyingObjects>
+    <ContactingElectric>false</ContactingElectric>
+    <EmployeeWork>false</EmployeeWork>
+    <NotRight>true</NotRight>
+    <Unknow>false</Unknow>
+    <UsedIncorrectly>false</UsedIncorrectly>
+    <NotUnderstood>false</NotUnderstood>
+    <InUnsafeCondition>true</InUnsafeCondition>
+    <NotFlowed>false</NotFlowed>
+    <NotAequate>true</NotAequate>
+    <OtherProcedure>false</OtherProcedure>
+    <OtherTools>false</OtherTools>
+    <NotIsolate>true</NotIsolate>
+    <ToolAndEquipment>false</ToolAndEquipment>
+    <NoCollectGarbage>true</NoCollectGarbage>
+    <EmergencyExit>false</EmergencyExit>
+    <Slip>false</Slip>
+    <OtherOderLine>false</OtherOderLine>
+    <External>true</External>
+    <DUNG_CU_THIET_BI>true</DUNG_CU_THIET_BI>
+    <KHU_VUC_LAM_VIEC>false</KHU_VUC_LAM_VIEC>
+    <MOI_TRUONG_LAM_VIEC>false</MOI_TRUONG_LAM_VIEC>
+    <SACH_SE_NGAN_NAP>false</SACH_SE_NGAN_NAP>
+    <LOAI_CONG_VIEC />
+    <HO_TEN_CA_NHAN_TO_NHOM />
+    <HANH_DONG_HANH_VI_AN_TOAN>fvsdfsg</HANH_DONG_HANH_VI_AN_TOAN>
+    <HANH_VI_KHONG_AN_TOAN />
+    <KHAC_PHUC_TUC_THI>adfsadg</KHAC_PHUC_TUC_THI>
+    <IS_APPROVED>true</IS_APPROVED>
+    <APPROVAL_USER>truong_le</APPROVAL_USER>
+  </Table>
+</NewDataSet>

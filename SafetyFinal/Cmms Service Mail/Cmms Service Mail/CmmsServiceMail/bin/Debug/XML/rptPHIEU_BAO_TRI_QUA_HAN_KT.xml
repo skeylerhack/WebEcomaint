@@ -1,0 +1,149 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="PHIEU_BAO_TRI_QUA_HAN_KT">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="MS_PHIEU_BAO_TRI">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="MS_MAY" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="TEN_MAY" msdata:ReadOnly="true" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="TEN_LOAI_BT">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="40" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="NGAY_BD_KH" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="NGAY_KT_KH" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="TEN_N_XUONG" msdata:ReadOnly="true">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="TIEU_DE_PHIEU_BAO_TRI_QUA_HAN_KT">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="TIEU_DE" type="xs:string" minOccurs="0" />
+                <xs:element name="DieuKienLoc" type="xs:string" minOccurs="0" />
+                <xs:element name="MSPhieuBaoTri" type="xs:string" minOccurs="0" />
+                <xs:element name="LoaiBT" type="xs:string" minOccurs="0" />
+                <xs:element name="Ten_May" type="xs:string" minOccurs="0" />
+                <xs:element name="NgayChuanCuoi" type="xs:string" minOccurs="0" />
+                <xs:element name="ChuKy" type="xs:string" minOccurs="0" />
+                <xs:element name="NgayBDKeTiep" type="xs:string" minOccurs="0" />
+                <xs:element name="TenNhaXuong" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="rptTitlereport">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="THONG_TIN_CTY" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="LOGO" type="xs:base64Binary" minOccurs="0" />
+                <xs:element name="LE_TRAI_LOGO" type="xs:int" minOccurs="0" />
+                <xs:element name="LE_TREN_LOGO" type="xs:int" minOccurs="0" />
+                <xs:element name="WIDTH" type="xs:int" minOccurs="0" />
+                <xs:element name="HEIGHT" type="xs:int" minOccurs="0" />
+                <xs:element name="NGAY_IN">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="128" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="PAGE" msdata:ReadOnly="true">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="6" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="OFPAGE" msdata:ReadOnly="true">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <PHIEU_BAO_TRI_QUA_HAN_KT>
+    <MS_PHIEU_BAO_TRI>WO-200911001</MS_PHIEU_BAO_TRI>
+    <MS_MAY>AR-CP-168-0001</MS_MAY>
+    <TEN_MAY>Arian sewing-CP-168-0001</TEN_MAY>
+    <TEN_LOAI_BT>Khẩn cấp</TEN_LOAI_BT>
+    <NGAY_BD_KH>2009-11-05T00:00:00+07:00</NGAY_BD_KH>
+    <NGAY_KT_KH>2009-11-05T00:00:00+07:00</NGAY_KT_KH>
+    <TEN_N_XUONG>NOS B</TEN_N_XUONG>
+  </PHIEU_BAO_TRI_QUA_HAN_KT>
+  <PHIEU_BAO_TRI_QUA_HAN_KT>
+    <MS_PHIEU_BAO_TRI>WO-200912004</MS_PHIEU_BAO_TRI>
+    <MS_MAY>AR-CP-168-0002</MS_MAY>
+    <TEN_MAY>Arian sewing-CP-168-0002</TEN_MAY>
+    <TEN_LOAI_BT>Khẩn cấp</TEN_LOAI_BT>
+    <NGAY_BD_KH>2009-12-10T00:00:00+07:00</NGAY_BD_KH>
+    <NGAY_KT_KH>2009-12-10T00:00:00+07:00</NGAY_KT_KH>
+    <TEN_N_XUONG>NOS B</TEN_N_XUONG>
+  </PHIEU_BAO_TRI_QUA_HAN_KT>
+  <TIEU_DE_PHIEU_BAO_TRI_QUA_HAN_KT>
+    <TIEU_DE>PHIẾU BẢO TRÌ QUÁ HẠN KẾT THÚC</TIEU_DE>
+    <DieuKienLoc>Điều kiện lọc:  Địa điểm lắp đặt: NOS B - Loại thiết bị: Arian sewing m/c</DieuKienLoc>
+    <MSPhieuBaoTri>Phiếu bảo trì</MSPhieuBaoTri>
+    <LoaiBT>Loại bảo trì</LoaiBT>
+    <Ten_May>Thiết bị:</Ten_May>
+    <NgayChuanCuoi>Ngày BĐKH</NgayChuanCuoi>
+    <NgayBDKeTiep>Ngày KTKH</NgayBDKeTiep>
+    <TenNhaXuong>Địa điểm</TenNhaXuong>
+  </TIEU_DE_PHIEU_BAO_TRI_QUA_HAN_KT>
+  <rptTitlereport>
+    <THONG_TIN_CTY>CN Công Ty Chang Shin Viêt Nam
+Thạnh Phú, Vĩnh Cửu, Đồng Nai
+Telephone:   Fax: </THONG_TIN_CTY>
+    <LOGO />
+    <LE_TRAI_LOGO>5</LE_TRAI_LOGO>
+    <LE_TREN_LOGO>5</LE_TREN_LOGO>
+    <WIDTH>50</WIDTH>
+    <HEIGHT>30</HEIGHT>
+    <NGAY_IN>Ngày in:14/12/2009</NGAY_IN>
+    <PAGE>?PAGE?</PAGE>
+    <OFPAGE>?OF?</OFPAGE>
+  </rptTitlereport>
+</NewDataSet>

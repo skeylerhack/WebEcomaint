@@ -1,0 +1,20 @@
+E:\H2 101211SK\ServerH2\ServerH2\bin\Debug\ServerH2.exe
+E:\H2 101211SK\ServerH2\ServerH2\bin\Debug\ServerH2.pdb
+E:\H2 101211SK\ServerH2\ServerH2\bin\Debug\ServerH2Lib.pdb
+E:\H2 101211SK\ServerH2\ServerH2\obj\Debug\ResolveAssemblyReference.cache
+E:\H2 101211SK\ServerH2\ServerH2\obj\Debug\ServerH2.Form1.resources
+E:\H2 101211SK\ServerH2\ServerH2\obj\Debug\ServerH2.Properties.Resources.resources
+E:\H2 101211SK\ServerH2\ServerH2\obj\Debug\ServerH2.csproj.GenerateResource.Cache
+E:\H2 101211SK\ServerH2\ServerH2\obj\Debug\ServerH2.exe
+E:\H2 101211SK\ServerH2\ServerH2\obj\Debug\ServerH2.pdb
+D:\HUYHOE\00089.Develop\10.FileTranfer\H2 101211SK\ServerH2\ServerH2\obj\Debug\ServerH2.exe
+D:\HUYHOE\00089.Develop\10.FileTranfer\H2 101211SK\ServerH2\ServerH2\obj\Debug\ServerH2.pdb
+D:\Mashj\ServerH2\ServerH2\obj\Debug\ServerH2.exe
+D:\Mashj\ServerH2\ServerH2\obj\Debug\ServerH2.pdb
+D:\Mashj\ServerH2\ServerH2\bin\Debug\ServerH2.exe
+D:\Mashj\ServerH2\ServerH2\bin\Debug\ServerH2.pdb
+D:\Mashj\ServerH2\ServerH2\bin\Debug\ServerH2Lib.pdb
+D:\Mashj\ServerH2\ServerH2\obj\Debug\ResolveAssemblyReference.cache
+D:\Mashj\ServerH2\ServerH2\obj\Debug\ServerH2.Form1.resources
+D:\Mashj\ServerH2\ServerH2\obj\Debug\ServerH2.Properties.Resources.resources
+D:\Mashj\ServerH2\ServerH2\obj\Debug\ServerH2.csproj.GenerateResource.Cache

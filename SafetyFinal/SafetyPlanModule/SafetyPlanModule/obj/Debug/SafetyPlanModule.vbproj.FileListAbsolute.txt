@@ -1,0 +1,170 @@
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\SafetyPlanModule.dll
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\SafetyPlanModule.pdb
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\SafetyPlanModule.xml
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\Commons.dll
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Data.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Utils.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\stdole.dll
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Data.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Utils.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbprojAssemblyReference.cache
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.ResolveComReference.cache
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.ChooseHazardReport.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmCreateRequest.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.ChooseStopCard.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.ChooseIncidentAndAccident.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmQFind.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListAlertMail.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmPhanQuyenDuyet.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.Form2.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListDepartment.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListNhanVienSafety.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmAUDIT.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmKhuVuc.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListDTTiepXuc.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListCongViec.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmDKKN.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.Form1.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmHazardReport.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmIncidentAndAccident.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmDanhMucQuanLyRuiRo.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListImg.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListMoiNguy.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmPrint.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmStopCard.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.Resources.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmInspection.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmConfirm.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmReport.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmExportExcel.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmShowImg.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmXNGuiMail.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmFind.resources
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.GenerateResource.cache
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.dll.licenses
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.CoreCompileInputs.cache
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.CopyComplete
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.dll
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.xml
+D:\01.Code\02.DLL\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.pdb
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\SafetyPlanModule.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\SafetyPlanModule.pdb
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\SafetyPlanModule.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\Commons.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Data.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Utils.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Data.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Utils.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbprojAssemblyReference.cache
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.ResolveComReference.cache
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.ChooseHazardReport.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmCreateRequest.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.ChooseStopCard.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.ChooseIncidentAndAccident.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmLeadership.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmLeadershipDetails.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmQFind.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListAlertMail.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmPhanQuyenDuyet.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.Form2.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListDepartment.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListNhanVienSafety.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmAUDIT.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmKhuVuc.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListDTTiepXuc.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListCongViec.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmDKKN.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.Form1.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmHazardReport.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmIncidentAndAccident.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmDanhMucQuanLyRuiRo.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListImg.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListMoiNguy.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmPrint.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmStopCard.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.Resources.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmInspection.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmConfirm.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmReport.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmExportExcel.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmShowImg.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmXNGuiMail.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmFind.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.GenerateResource.cache
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.dll.licenses
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.CoreCompileInputs.cache
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.CopyComplete
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.pdb
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\SafetyPlanModule.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\SafetyPlanModule.pdb
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\SafetyPlanModule.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\Commons.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Data.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Utils.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\Microsoft.ApplicationBlocks.Data.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Data.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.Utils.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.AssemblyReference.cache
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.ResolveComReference.cache
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.ChooseHazardReport.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmCreateRequest.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.ChooseStopCard.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.ChooseIncidentAndAccident.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmLeadership.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmLeadershipDetails.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmQFind.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListAlertMail.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmPhanQuyenDuyet.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.Form2.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListDepartment.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListNhanVienSafety.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmAUDIT.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmKhuVuc.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListDTTiepXuc.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListCongViec.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmDKKN.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.Form1.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmHazardReport.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmIncidentAndAccident.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmDanhMucQuanLyRuiRo.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListImg.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmListMoiNguy.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmPrint.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmStopCard.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.Resources.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmInspection.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmConfirm.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmReport.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmExportExcel.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmShowImg.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmXNGuiMail.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.FrmFind.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.GenerateResource.cache
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.dll.licenses
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.CoreCompileInputs.cache
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbproj.CopyComplete
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.pdb

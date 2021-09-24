@@ -1,0 +1,128 @@
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\SAFETY.exe.config
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\SAFETY.exe.manifest
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\SAFETY.application
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\SAFETY.exe
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\SAFETY.pdb
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\SAFETY.xml
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.BonusSkins.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.Data.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.Utils.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.XtraBars.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\stdole.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\System.Web.Services.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\Interop.Excel.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.pdb
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.xml
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.Data.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.Utils.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.XtraBars.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\Safety\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.vbprojAssemblyReference.cache
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\frmDoiServer.resources
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\frmLogin.resources
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\frmPassword.resources
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\frmLanguage.resources
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\frmMain.resources
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\frmNhomquyen.resources
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\Resources.resources
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.GenerateResource.cache
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.exe.licenses
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.CoreCompileInputs.cache
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.TrustInfo.xml
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.exe.manifest
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.application
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.CopyComplete
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.exe
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.xml
+D:\01.Code\02.DLL\SafetyFinal\Safety\obj\Debug\SAFETY.pdb
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\SAFETY.exe.config
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\SAFETY.exe.manifest
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\SAFETY.application
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\SAFETY.exe
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\SAFETY.pdb
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\SAFETY.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.BonusSkins.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.Data.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.Utils.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.XtraBars.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\stdole.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\System.Web.Services.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\Interop.Excel.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.pdb
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.Data.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.Utils.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.XtraBars.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\SAFETY.vbprojAssemblyReference.cache
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\frmDoiServer.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\frmLogin.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\frmPassword.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\frmLanguage.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\frmMain.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\frmNhomquyen.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\Resources.resources
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.GenerateResource.cache
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.CoreCompileInputs.cache
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\SAFETY.TrustInfo.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\SAFETY.exe.manifest
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\SAFETY.application
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.CopyComplete
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\SAFETY.exe
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\SAFETY.xml
+D:\Minh\20210812\RECEIVE\Baria\SafetyFinal\Safety\obj\Debug\SAFETY.pdb
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\SAFETY.exe.config
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\SAFETY.exe.manifest
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\SAFETY.application
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\SAFETY.exe
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\SAFETY.pdb
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\SAFETY.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.BonusSkins.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.Data.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.Utils.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.XtraBars.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\stdole.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\System.Web.Services.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\Interop.Excel.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.pdb
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.Data.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.Utils.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.XtraBars.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.AssemblyReference.cache
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\frmDoiServer.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\frmLogin.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\frmPassword.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\frmLanguage.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\frmMain.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\frmNhomquyen.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\Resources.resources
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.GenerateResource.cache
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.CoreCompileInputs.cache
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.TrustInfo.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.exe.manifest
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.application
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.CopyComplete
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.exe
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.xml
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.pdb
+D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.exe.licenses

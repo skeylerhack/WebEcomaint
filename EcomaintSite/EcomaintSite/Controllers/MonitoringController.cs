@@ -278,7 +278,7 @@ namespace EcomaintSite.Controllers
         {
             try
             {
-                listthongso = monitoringRepository.GetMonitoringParametersByDevice(id, Convert.ToInt32(due), Convert.ToDateTime(todate, new CultureInfo("vi-vn")).ToString("yyyy/MM/dd"), Convert.ToInt32(mslcv), Convert.ToInt32(stt)).ToList();
+                listthongso = monitoringRepository.GetMonitoringParametersByDevice(id, Convert.ToInt32(due), Convert.ToDateTime(todate, new CultureInfo("vi-vn")).ToString("yyyy/MM/dd"), Convert.ToInt32(mslcv), Convert.ToInt32(stt), User.Identity.GetUserName()).ToList();
                 //var gs = listthongso.Select(x => new
                 //{
                 //    DeviceID = x.DeviceID,
