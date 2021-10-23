@@ -1,13 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports DevExpress.XtraGrid.Views.Grid
-Imports DevExpress.XtraGrid.Views.Grid.ViewInfo
-Imports DevExpress.XtraEditors.ViewInfo
-Imports DevExpress.XtraEditors.Drawing
-Imports System.IO
 Imports DevExpress.XtraEditors
-Imports DevExpress.Utils
-Imports DevExpress.XtraGrid.Columns
-
 Imports DevExpress.XtraGrid.Views.Base
 Imports Microsoft.ApplicationBlocks.Data
 Imports DevExpress.XtraEditors.Repository
@@ -15,40 +8,52 @@ Imports DevExpress.XtraEditors.Repository
 Public Class FrmLeadershipDetails
     Private _action As String = ""
     Private dtNNgu As DataTable
-    Private isLoad As String = ""
     Public Sub New()
-
-        ' This call is required by the Windows Form Designer.
         InitializeComponent()
-
-        ' Add any initialization after the InitializeComponent() call.
-
-    End Sub
-    Public Sub New(ByVal DocNum As String)
-
-        ' This call is required by the Windows Form Designer.
-        InitializeComponent()
-
-        ' Add any initialization after the InitializeComponent() call.
     End Sub
     Private Sub FrmLeadership_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        isLoad = "0Load"
+        Commons.Modules.SQLString = "0Load"
         GetListUser()
-        isLoad = ""
+        GetComBo()
+        dtpDateCreate.Value = DateTime.Now
         If cbUser.Items.Count > 0 Then
             cbUser.SelectedValue = Commons.Modules.UserName
         End If
-
+        Commons.Modules.SQLString = ""
         GetData()
-
         EnableButton(False)
         Commons.Modules.ObjSystems.ThayDoiNN(Me)
-        LoadNN()
     End Sub
+
+    Private Sub GetComBo()
+        Try
+            Dim dt As New DataTable()
+            Dim sqlcom As New SqlCommand()
+            Dim con As New SqlConnection(Commons.IConnections.ConnectionString())
+            If con.State = ConnectionState.Closed Then
+                con.Open()
+            End If
+            sqlcom.Connection = con
+            sqlcom.Parameters.AddWithValue("ACTION", "GET_TYPE")
+            sqlcom.Parameters.AddWithValue("NNgu", Commons.Modules.TypeLanguage)
+            sqlcom.CommandType = CommandType.StoredProcedure
+            sqlcom.CommandText = "VS_LEADERSHIP"
+            Dim da As New SqlDataAdapter(sqlcom)
+            Dim ds As New DataSet()
+            da.Fill(ds)
+            Commons.Modules.ObjSystems.MLoadLookUpEditNoRemove(cboLoaiBC, ds.Tables(0), "ID_TYPE", "NAME_TYPE", "Loại BC")
+            cboLoaiBC.Properties.PopulateColumns()
+            cboLoaiBC.Properties.Columns("ID_TYPE").Visible = False
+        Catch generatedExceptionName As Exception
+        Finally
+        End Try
+    End Sub
+
+
 #Region "Get data"
     Private Sub GetData()
-        If isLoad <> "" Then
-            Return
+        If Commons.Modules.SQLString = "0Load" Then
+            Exit Sub
         End If
         Dim dt As New DataTable()
         Dim sqlcom As New SqlCommand()
@@ -60,6 +65,7 @@ Public Class FrmLeadershipDetails
         sqlcom.Parameters.AddWithValue("ACTION", "GET_DATA")
         sqlcom.Parameters.AddWithValue("USER_NAME", cbUser.SelectedValue)
         sqlcom.Parameters.AddWithValue("DateCreate", dtpDateCreate.Value)
+        sqlcom.Parameters.AddWithValue("ID_TYPE", cboLoaiBC.EditValue)
         sqlcom.CommandType = CommandType.StoredProcedure
         sqlcom.CommandText = "VS_LEADERSHIPDETAILS"
         Dim da As New SqlDataAdapter(sqlcom)
@@ -134,10 +140,16 @@ Public Class FrmLeadershipDetails
         btnEdit.Visible = Not tt
         btnExit.Visible = Not tt
         cbUser.Enabled = Not tt
+        cboLoaiBC.Enabled = Not tt
         dtpDateCreate.Enabled = Not tt
     End Sub
 
     Private Sub btnEdit_Click(sender As Object, e As EventArgs) Handles btnEdit.Click
+        'kiểm tra user chọn có bằng với user name không có thì mới cho sữa còn không thì không được
+        If cbUser.SelectedValue.ToString().Trim() <> Commons.Modules.UserName Then
+            XtraMessageBox.Show(Commons.Modules.ObjLanguages.GetLanguage(Commons.Modules.ModuleName, Me.Name, "BanKhongCoQuyen", Commons.Modules.TypeLanguage), Commons.Modules.ObjLanguages.GetLanguage(Commons.Modules.ModuleName, Me.Name, "msgWarning", Commons.Modules.TypeLanguage), MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
         EnableButton(True)
         _action = "UPDATE"
     End Sub
@@ -153,16 +165,16 @@ Public Class FrmLeadershipDetails
                     End If
                     transaction = con.BeginTransaction("Transaction")
 
-                    Dim sBT = "LeaderShipDetails" + Commons.Modules.UserName
+                    Dim sBT = "LDSDetails" + Commons.Modules.UserName
                     Dim dt As New DataTable()
                     dt = GridControl1.DataSource
                     Commons.Modules.ObjSystems.MCreateTableToDatatable(Commons.IConnections.ConnectionString(), sBT, dt, "")
-
                     sqlcom.Connection = con
                     sqlcom.Transaction = transaction
                     sqlcom.Parameters.AddWithValue("ACTION", _action)
                     sqlcom.Parameters.AddWithValue("USER_NAME", Commons.Modules.UserName)
                     sqlcom.Parameters.AddWithValue("DateCreate", dtpDateCreate.Value)
+                    sqlcom.Parameters.AddWithValue("ID_TYPE", cboLoaiBC.EditValue)
                     sqlcom.Parameters.AddWithValue("sBT", sBT)
 
                     sqlcom.CommandType = CommandType.StoredProcedure
@@ -194,56 +206,56 @@ Public Class FrmLeadershipDetails
         Me.Close()
     End Sub
 
-    'NGON NGU
-    Private Sub LoadNN()
-        LoadDataNN()
-        Me.Text = GetNN(dtNNgu, Me.Name)
-        GridView1.Columns("Content").Caption = GetNN(dtNNgu, "STT")
-        GridView1.Columns("Content").Caption = GetNN(dtNNgu, "Content")
-        GridView1.Columns("Yes").Caption = GetNN(dtNNgu, "Yes")
-        GridView1.Columns("No").Caption = GetNN(dtNNgu, "No")
-        GridView1.Columns("NA").Caption = GetNN(dtNNgu, "NA")
-        btnEdit.Text = GetNN(dtNNgu, btnEdit.Name)
-        btnCancel.Text = GetNN(dtNNgu, btnCancel.Name)
-        btnExit.Text = GetNN(dtNNgu, btnExit.Name)
-        btnSave.Text = GetNN(dtNNgu, btnSave.Name)
-    End Sub
+    ''NGON NGU
+    'Private Sub LoadNN()
+    '    LoadDataNN()
+    '    Me.Text = GetNN(dtNNgu, Me.Name)
+    '    GridView1.Columns("Content").Caption = GetNN(dtNNgu, "STT")
+    '    GridView1.Columns("Content").Caption = GetNN(dtNNgu, "Content")
+    '    GridView1.Columns("Yes").Caption = GetNN(dtNNgu, "Yes")
+    '    GridView1.Columns("No").Caption = GetNN(dtNNgu, "No")
+    '    GridView1.Columns("NA").Caption = GetNN(dtNNgu, "NA")
+    '    btnEdit.Text = GetNN(dtNNgu, btnEdit.Name)
+    '    btnCancel.Text = GetNN(dtNNgu, btnCancel.Name)
+    '    btnExit.Text = GetNN(dtNNgu, btnExit.Name)
+    '    btnSave.Text = GetNN(dtNNgu, btnSave.Name)
+    'End Sub
 
-    Private Sub LoadDataNN()
-        dtNNgu = New DataTable
-        dtNNgu.Load(SqlHelper.ExecuteReader(Commons.IConnections.ConnectionString, CommandType.Text, "SELECT KEYWORD , CASE " & Commons.Modules.TypeLanguage &
-                " WHEN 0 THEN VIETNAM WHEN 1 THEN ENGLISH ELSE CHINESE END AS NN , CONVERT(INT," & Commons.Modules.TypeLanguage.ToString & ") AS NNGU " &
-                " FROM LANGUAGES WHERE FORM = N'" & Me.Name & "' "))
+    'Private Sub LoadDataNN()
+    '    dtNNgu = New DataTable
+    '    dtNNgu.Load(SqlHelper.ExecuteReader(Commons.IConnections.ConnectionString, CommandType.Text, "SELECT KEYWORD , CASE " & Commons.Modules.TypeLanguage &
+    '            " WHEN 0 THEN VIETNAM WHEN 1 THEN ENGLISH ELSE CHINESE END AS NN , CONVERT(INT," & Commons.Modules.TypeLanguage.ToString & ") AS NNGU " &
+    '            " FROM LANGUAGES WHERE FORM = N'" & Me.Name & "' "))
 
-    End Sub
+    'End Sub
 
-    Private Function GetNN(ByVal dtNN As DataTable, ByVal sKeyWord As String) As String
-        If dtNN Is Nothing Then
-            Return ""
-            Exit Function
-        End If
+    'Private Function GetNN(ByVal dtNN As DataTable, ByVal sKeyWord As String) As String
+    '    If dtNN Is Nothing Then
+    '        Return ""
+    '        Exit Function
+    '    End If
 
-        Dim sNN As String = ""
-        Try
-            If CInt(dtNN.Rows(0)(2).ToString) <> Commons.Modules.TypeLanguage Then LoadNN()
-            sNN = CType(dtNN.Select("KEYWORD = '" & sKeyWord & "'"), DataRow())(0)(1).ToString()
+    '    Dim sNN As String = ""
+    '    Try
+    '        If CInt(dtNN.Rows(0)(2).ToString) <> Commons.Modules.TypeLanguage Then LoadNN()
+    '        sNN = CType(dtNN.Select("KEYWORD = '" & sKeyWord & "'"), DataRow())(0)(1).ToString()
 
 
-        Catch ex As Exception
-            sNN = ""
-        End Try
+    '    Catch ex As Exception
+    '        sNN = ""
+    '    End Try
 
-        If sNN = "" Then
-            SqlHelper.ExecuteNonQuery(Commons.IConnections.ConnectionString, CommandType.Text, (" INSERT INTO [LANGUAGES]([MS_MODULE],[FORM],[KEYWORD],[VIETNAM],[ENGLISH],[CHINESE]," &
-                    " [FORM_HAY_REPORT],[VIETNAM_OR],[ENGLISH_OR],[CHINESE_OR]) " &
-                    " VALUES(N'" + Commons.Modules.ModuleName + "',N'" + Me.Name + "',N'" + sKeyWord + "',N'@" + sKeyWord + "@',N'@" + sKeyWord + "@',N'@" + sKeyWord + "@'," &
-                    " 0,N'@" + sKeyWord + "@',N'@" + sKeyWord + "@',N'@" + sKeyWord + "@')"))
-            sNN = "@" + sKeyWord + "@"
-        End If
+    '    If sNN = "" Then
+    '        SqlHelper.ExecuteNonQuery(Commons.IConnections.ConnectionString, CommandType.Text, (" INSERT INTO [LANGUAGES]([MS_MODULE],[FORM],[KEYWORD],[VIETNAM],[ENGLISH],[CHINESE]," &
+    '                " [FORM_HAY_REPORT],[VIETNAM_OR],[ENGLISH_OR],[CHINESE_OR]) " &
+    '                " VALUES(N'" + Commons.Modules.ModuleName + "',N'" + Me.Name + "',N'" + sKeyWord + "',N'@" + sKeyWord + "@',N'@" + sKeyWord + "@',N'@" + sKeyWord + "@'," &
+    '                " 0,N'@" + sKeyWord + "@',N'@" + sKeyWord + "@',N'@" + sKeyWord + "@')"))
+    '        sNN = "@" + sKeyWord + "@"
+    '    End If
 
-        Return sNN
+    '    Return sNN
 
-    End Function
+    'End Function
 
     Private Sub GridView1_CellValueChanging(sender As Object, e As CellValueChangedEventArgs) Handles GridView1.CellValueChanging
         Dim Yes As Int32 = GridView1.GetRowCellValue(e.RowHandle, GridView1.Columns("Yes"))
@@ -287,47 +299,30 @@ Public Class FrmLeadershipDetails
     End Sub
 
     Private Sub cbUser_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbUser.SelectedIndexChanged
-        If isLoad <> "" Then
-            Return
+        If Commons.Modules.SQLString = "0Load" Then
+            Exit Sub
         End If
-        'Set dtpDateCreate
-        Dim sqlcom As New SqlCommand()
-        Dim con As New SqlConnection(Commons.IConnections.ConnectionString())
-        If con.State = ConnectionState.Closed Then
-            con.Open()
-        End If
-
-        sqlcom.Connection = con
-        sqlcom.Parameters.AddWithValue("ACTION", "GET_MAX_DATECREATE")
-        sqlcom.Parameters.AddWithValue("USER_NAME", cbUser.SelectedValue)
-        sqlcom.CommandType = CommandType.StoredProcedure
-        sqlcom.CommandText = "VS_LEADERSHIPDETAILS"
-        Dim da As New SqlDataAdapter(sqlcom)
-        Dim ds As New DataSet()
-        da.Fill(ds)
-        Dim dt As New DataTable()
-        dt = ds.Tables(0).Copy()
-
-        If String.IsNullOrEmpty(dt.Rows(0)(0).ToString()) Then
-            dtpDateCreate.Value = Now
-        Else
-            dtpDateCreate.Value = dt.Rows(0)(0)
-        End If
-
-        'Load data
         GetData()
-
-        'Set btnEdit
-        If cbUser.SelectedValue.ToString() = Commons.Modules.UserName Then
-            btnEdit.Visible = True
-        Else
-            btnEdit.Visible = False
-        End If
     End Sub
 
     Private Sub dtpDateCreate_ValueChanged(sender As Object, e As EventArgs) Handles dtpDateCreate.ValueChanged
         'Load data
+        If Commons.Modules.SQLString = "0Load" Then
+            Exit Sub
+        End If
         GetData()
+    End Sub
+
+    Private Sub cboLoaiBC_EditValueChanged(sender As Object, e As EventArgs) Handles cboLoaiBC.EditValueChanged
+        If Commons.Modules.SQLString = "0Load" Then
+            Exit Sub
+        End If
+        GetData()
+    End Sub
+
+    Private Sub btnPrint_Click(sender As Object, e As EventArgs) Handles btnPrint.Click
+        Dim frm As New FrmBaoCaoLeaderShip()
+        frm.ShowDialog()
     End Sub
 #End Region
 End Class

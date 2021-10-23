@@ -16,6 +16,6 @@ namespace Model.Data
         public bool Yes { get; set; }
         public bool No { get; set; }
         public bool NA { get; set; }
-
+        public string NOTE { get; set; }
     }
 }

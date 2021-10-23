@@ -126,3 +126,46 @@ D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\De
 D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.xml
 D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.pdb
 D:\Nâng cấp Phú Mĩ\Code Nâng Cấp\phu mi\phu mi\SafetyFinal\Safety\obj\Debug\SAFETY.exe.licenses
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\SAFETY.exe.config
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\SAFETY.exe.manifest
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\SAFETY.application
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\SAFETY.exe
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\SAFETY.pdb
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\SAFETY.xml
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.BonusSkins.v9.2.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.Data.v9.2.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.Utils.v9.2.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.XtraBars.v9.2.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.XtraEditors.v9.2.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.XtraGrid.v9.2.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\stdole.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\System.Web.Services.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\Interop.Excel.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.XtraLayout.v9.2.dll
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.pdb
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\SafetyPlanModule.xml
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.Data.v9.2.xml
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.Utils.v9.2.xml
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.XtraBars.v9.2.xml
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.XtraEditors.v9.2.xml
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.XtraGrid.v9.2.xml
+D:\01.WebEcomaint\SafetyFinal\Safety\bin\Debug\DevExpress.XtraLayout.v9.2.xml
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.AssemblyReference.cache
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\frmDoiServer.resources
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\frmLogin.resources
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\frmPassword.resources
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\frmLanguage.resources
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\frmMain.resources
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\frmNhomquyen.resources
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\Resources.resources
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.GenerateResource.cache
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.exe.licenses
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.CoreCompileInputs.cache
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.TrustInfo.xml
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.exe.manifest
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.application
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.vbproj.CopyComplete
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.exe
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.xml
+D:\01.WebEcomaint\SafetyFinal\Safety\obj\Debug\SAFETY.pdb

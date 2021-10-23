@@ -7,7 +7,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_PublishTargetUrl>D:\01.WebEcomaint\Pubplic</_PublishTargetUrl>
-    <History>True|2021-09-23T13:19:09.6970611Z;True|2021-09-23T20:18:41.5026900+07:00;True|2021-09-20T15:12:47.5928992+07:00;True|2021-09-15T14:13:23.4649091+07:00;True|2021-09-15T14:12:47.2094205+07:00;True|2021-09-15T13:59:04.0567156+07:00;True|2021-09-14T09:02:01.7831331+07:00;False|2021-09-13T10:25:39.3462293+07:00;False|2021-09-13T09:56:31.7695989+07:00;</History>
+    <History>True|2021-10-21T09:30:52.0536510Z;True|2021-10-04T08:35:07.9967376+07:00;True|2021-09-23T20:19:09.6970611+07:00;True|2021-09-23T20:18:41.5026900+07:00;True|2021-09-20T15:12:47.5928992+07:00;True|2021-09-15T14:13:23.4649091+07:00;True|2021-09-15T14:12:47.2094205+07:00;True|2021-09-15T13:59:04.0567156+07:00;True|2021-09-14T09:02:01.7831331+07:00;False|2021-09-13T10:25:39.3462293+07:00;False|2021-09-13T09:56:31.7695989+07:00;</History>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
@@ -20,10 +20,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/EcomaintSite.dll">
-      <publishTime>09/23/2021 20:18:39</publishTime>
+      <publishTime>10/23/2021 10:22:54</publishTime>
     </File>
     <File Include="bin/EcomaintSite.pdb">
-      <publishTime>09/23/2021 20:18:39</publishTime>
+      <publishTime>10/23/2021 10:22:54</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>06/12/2019 09:06:44</publishTime>
@@ -101,13 +101,13 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>07/28/2021 13:10:09</publishTime>
     </File>
     <File Include="bin/Model.Data.dll">
-      <publishTime>09/20/2021 15:12:26</publishTime>
+      <publishTime>10/23/2021 10:22:44</publishTime>
     </File>
     <File Include="bin/Model.Data.dll.config">
       <publishTime>09/16/2021 17:01:43</publishTime>
     </File>
     <File Include="bin/Model.Data.pdb">
-      <publishTime>09/20/2021 15:12:26</publishTime>
+      <publishTime>10/23/2021 10:22:44</publishTime>
     </File>
     <File Include="bin/Model.dll">
       <publishTime>01/02/2018 15:49:40</publishTime>
@@ -116,19 +116,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>01/01/0001 00:00:00</publishTime>
     </File>
     <File Include="bin/Model.Interface.dll">
-      <publishTime>09/23/2021 20:18:26</publishTime>
+      <publishTime>10/23/2021 10:22:45</publishTime>
     </File>
     <File Include="bin/Model.Interface.pdb">
-      <publishTime>09/23/2021 20:18:26</publishTime>
+      <publishTime>10/23/2021 10:22:45</publishTime>
     </File>
     <File Include="bin/Model.pdb">
       <publishTime>01/02/2018 15:49:40</publishTime>
     </File>
     <File Include="bin/Model.Repository.dll">
-      <publishTime>09/23/2021 20:18:28</publishTime>
+      <publishTime>10/23/2021 10:22:46</publishTime>
     </File>
     <File Include="bin/Model.Repository.pdb">
-      <publishTime>09/23/2021 20:18:28</publishTime>
+      <publishTime>10/23/2021 10:22:46</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>06/27/2020 11:18:35</publishTime>
@@ -674,7 +674,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/10/2021 20:32:54</publishTime>
     </File>
     <File Include="js/controller/LeaderShipController.js">
-      <publishTime>09/09/2021 16:13:47</publishTime>
+      <publishTime>10/23/2021 10:19:00</publishTime>
     </File>
     <File Include="js/controller/MasterPlansController.js">
       <publishTime>06/27/2020 11:18:36</publishTime>
@@ -917,7 +917,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:35</publishTime>
     </File>
     <File Include="Views/Dashboard/Index.cshtml">
-      <publishTime>06/27/2020 11:18:35</publishTime>
+      <publishTime>10/04/2021 08:19:02</publishTime>
     </File>
     <File Include="Views/MasterPlans/Index.cshtml">
       <publishTime>08/10/2021 09:45:05</publishTime>
@@ -965,7 +965,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>09/20/2021 08:47:11</publishTime>
     </File>
     <File Include="Views/Safety/ShowLeaderShip.cshtml">
-      <publishTime>09/09/2021 15:31:07</publishTime>
+      <publishTime>10/23/2021 08:25:18</publishTime>
     </File>
     <File Include="Views/Safety/ShowStopCard.cshtml">
       <publishTime>09/20/2021 10:04:12</publishTime>
@@ -1010,7 +1010,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>06/27/2020 11:18:35</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>09/23/2021 15:32:18</publishTime>
+      <publishTime>10/23/2021 10:05:15</publishTime>
     </File>
   </ItemGroup>
 </Project>

@@ -19,16 +19,16 @@ Partial Class FrmReport
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txtNguoiBC = New DevExpress.XtraEditors.TextEdit
-        Me.txtGhiChu = New DevExpress.XtraEditors.TextEdit
-        Me.dtNgayHT = New System.Windows.Forms.DateTimePicker
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.btnBC = New DevExpress.XtraEditors.SimpleButton
-        Me.btnThoat = New DevExpress.XtraEditors.SimpleButton
-        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton
-        Me.btnKhongTH = New DevExpress.XtraEditors.SimpleButton
+        Me.txtNguoiBC = New DevExpress.XtraEditors.TextEdit()
+        Me.txtGhiChu = New DevExpress.XtraEditors.TextEdit()
+        Me.dtNgayHT = New System.Windows.Forms.DateTimePicker()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnBC = New DevExpress.XtraEditors.SimpleButton()
+        Me.btnThoat = New DevExpress.XtraEditors.SimpleButton()
+        Me.SimpleButton1 = New DevExpress.XtraEditors.SimpleButton()
+        Me.btnKhongTH = New DevExpress.XtraEditors.SimpleButton()
         CType(Me.txtNguoiBC.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.txtGhiChu.Properties, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -130,7 +130,7 @@ Partial Class FrmReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(446, 198)
+        Me.ClientSize = New System.Drawing.Size(446, 201)
         Me.Controls.Add(Me.btnKhongTH)
         Me.Controls.Add(Me.SimpleButton1)
         Me.Controls.Add(Me.btnThoat)

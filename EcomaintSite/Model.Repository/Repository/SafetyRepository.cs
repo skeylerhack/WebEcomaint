@@ -1682,13 +1682,14 @@ namespace Model.Repository.Repository
         #endregion
 
         #region Leader Ship
-        public List<LeaderShipViewModel>  GetListLeaderShipDetails(string User,DateTime DateCreate)
+        public List<LeaderShipViewModel>  GetListLeaderShipDetails(string User,string LoaiBC, DateTime DateCreate)
         {
             List<LeaderShipViewModel> list = null;
             try
             {
                 List<SqlParameter> listParameter = new List<SqlParameter>();
                 listParameter.Add(new SqlParameter("USER_NAME", User));
+                listParameter.Add(new SqlParameter("ID_TYPE", LoaiBC));
                 listParameter.Add(new SqlParameter("DateCreate", DateCreate));
                 list = DBUtils.ExecuteSPList<LeaderShipViewModel>("VS_LEADERSHIPDETAILS1", listParameter, AppName.Model1);
                 return list;
@@ -1699,7 +1700,7 @@ namespace Model.Repository.Repository
             }
         }
 
-        public bool SaveLeaderShipDetails(List<LeaderShipViewModel> model,string User, DateTime NgayTao)
+        public bool SaveLeaderShipDetails(List<LeaderShipViewModel> model,string User, string LoaiBC, DateTime NgayTao)
         {
             try
             {
@@ -1711,26 +1712,27 @@ namespace Model.Repository.Repository
                     UserName = User,
                     Yes =x.Yes,
                     No =x.No,
-                    NA =x.NA
+                    NA =x.NA,
+                    NOTE =x.NOTE
                     });
                 });
-                db.LeadershipDetails.RemoveRange(db.LeadershipDetails.Where(x=>x.UserName == User && DbFunctions.TruncateTime(x.DateCreate) == DbFunctions.TruncateTime(NgayTao)));
+                db.LeadershipDetails.RemoveRange(db.LeadershipDetails.Where(x=>x.UserName == User && db.Leaderships.Any(y => y.ID == x.IDLeadership && y.ID_TYPE.ToString() == LoaiBC) && DbFunctions.TruncateTime(x.DateCreate) == DbFunctions.TruncateTime(NgayTao)));
                 db.LeadershipDetails.AddRange(listDetails);
                 db.SaveChanges();
                 return true;
             }
-            catch
+            catch(Exception ex)
             {
                 return false;
             }
 
         }
 
-        public bool DeleteLeaderShipDetails(string User, DateTime NgayTao)
+        public bool DeleteLeaderShipDetails(string User, string LoaiBC, DateTime NgayTao)
         {
             try
             {
-                db.LeadershipDetails.RemoveRange(db.LeadershipDetails.Where(x => x.UserName == User && DbFunctions.TruncateTime(x.DateCreate) == DbFunctions.TruncateTime(NgayTao)));
+                db.LeadershipDetails.RemoveRange(db.LeadershipDetails.Where(x => x.UserName == User && db.Leaderships.Any(y=>y.ID == x.IDLeadership && y.ID_TYPE.ToString() == LoaiBC) && DbFunctions.TruncateTime(x.DateCreate) == DbFunctions.TruncateTime(NgayTao)));
                 db.SaveChanges();
                 return true;
             }

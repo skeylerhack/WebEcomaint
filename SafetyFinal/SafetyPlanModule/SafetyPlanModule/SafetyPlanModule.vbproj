@@ -92,6 +92,12 @@
     <Compile Include="ChooseHazardReport.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="FrmBaoCaoLeaderShip.Designer.vb">
+      <DependentUpon>FrmBaoCaoLeaderShip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBaoCaoLeaderShip.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmCreateRequest.Designer.vb">
       <DependentUpon>FrmCreateRequest.vb</DependentUpon>
     </Compile>
@@ -108,6 +114,12 @@
       <DependentUpon>ChooseIncidentAndAccident.vb</DependentUpon>
     </Compile>
     <Compile Include="ChooseIncidentAndAccident.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLeadershipType.Designer.vb">
+      <DependentUpon>FrmLeadershipType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLeadershipType.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmLeadership.Designer.vb">
@@ -308,6 +320,9 @@
       <DependentUpon>ChooseHazardReport.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBaoCaoLeaderShip.resx">
+      <DependentUpon>FrmBaoCaoLeaderShip.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCreateRequest.resx">
       <DependentUpon>FrmCreateRequest.vb</DependentUpon>
       <SubType>Designer</SubType>
@@ -318,6 +333,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChooseIncidentAndAccident.resx">
       <DependentUpon>ChooseIncidentAndAccident.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLeadershipType.resx">
+      <DependentUpon>FrmLeadershipType.vb</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLeadership.resx">

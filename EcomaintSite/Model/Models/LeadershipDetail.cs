@@ -1,10 +1,8 @@
 namespace Model.Data
 {
     using System;
-    using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using System.Data.Entity.Spatial;
 
     public partial class LeadershipDetail
     {
@@ -27,7 +25,8 @@ namespace Model.Data
         public bool? No { get; set; }
 
         public bool? NA { get; set; }
-
+        [StringLength(500)]
+        public string NOTE { get; set; }
         public virtual Leadership Leadership { get; set; }
     }
 }

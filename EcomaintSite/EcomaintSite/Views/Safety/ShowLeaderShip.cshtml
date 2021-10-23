@@ -38,6 +38,13 @@
 
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
                             <div class="form-group responsive">
+                                <label data-lang="lblcboLoaiBC">cboLoaiBC</label>
+                                @Html.DropDownList("cboLoaiBC", ViewBag.LoaiBC as SelectList, new { name = "cboLoaiBC", data_slide = "left", @class = "form-control select2-container--classic", @style = "width:100%" })
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                            <div class="form-group responsive">
                                 <label data-lang="lblTungay">Từ ngày</label>
                                 <input class="form-control" type="text" id="fromDate" data-type="datepicker" value="@DateTime.Now.ToString("dd/MM/yyyy")" />
                             </div>
@@ -69,26 +76,14 @@
                                             <th data-lang="STT">STT</th>
                                             <th data-lang="IDLeadership" class="hidden">IDLeadership</th>
                                             <th data-lang="Content">Content</th>
+                                            <th data-lang="NOTE">NOTE</th>
                                             <th data-lang="Yes">Yes</th>
                                             <th data-lang="No">No</th>
                                             <th data-lang="NA">NA</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @*@if (Model != null)
-                                        {
-                                            foreach (var item in Model)
-                                            {
-                                                <tr data-id="@item.IDLeadership">
-                                                    <td style="width:15px; text-align:center"> @item.STT </td>
-                                                    <td class="hidden">@item.IDLeadership</td>
-                                                    <td style="width:500px"> @item.Content</td>
-                                                    <td style="width:15px; text-align:center"><input type="checkbox" class="custom-control-input" value="@item.Yes" data-chon="yes"></td>
-                                                    <td style="width:15px; text-align:center"><input type="checkbox" class="custom-control-input" value="@item.No" data-chon="no"></td>
-                                                    <td style="width:15px; text-align:center"><input type="checkbox" class="custom-control-input" value="@item.NA" data-chon="na"></td>
-                                                </tr>
-                                            }
-                                        }*@
+
                                     </tbody>
                                 </table>
 

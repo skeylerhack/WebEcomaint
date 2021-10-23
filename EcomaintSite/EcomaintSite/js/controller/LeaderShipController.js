@@ -50,10 +50,10 @@
                 }
             }
             var fnPrivate = {
-
                 LoadLeaderShipDetails: function () {
+                    if (change == false) return;
                     Loading.fn.Show();
-                    $.post(urlGetLeaderShip, { TuNgay: $("#fromDate").val(), User: $("#cbReport").val() }, function (data) {
+                    $.post(urlGetLeaderShip, { TuNgay: $("#fromDate").val(), User: $("#cbReport").val(), LoaiBC: $("#cboLoaiBC").val()}, function (data) {
                         if ($.fn.DataTable.isDataTable('#tbShowListDeails')) {
                             $('#tbShowListDeails').dataTable().fnDestroy();
                         }
@@ -64,7 +64,8 @@
                                 $('#tbShowListDeails tbody').append('<tr data-id="' + data[i].IDLeadership + '"><td style="width:15px; text-align:center">'
                                     + data[i].STT + '</td><td class="hidden">'
                                     + data[i].IDLeadership + '</td ><td>'
-                                    + data[i].Content + '</td><td style="width:15px; text-align:center"><input type="checkbox" class="custom-control-input" '
+                                    + data[i].Content + '</td><td><textarea class= "form-control" id = "txtGhiChu" style="margin-top: 0px; margin-bottom: 0px; height: 30px;" >'
+                                    + (data[i].NOTE == null ?"":data[i].NOTE)+'</textarea></td ><td style="width:15px; text-align:center"><input type="checkbox" class="custom-control-input" '
                                     + (data[i].Yes == true ? "checked" : "") + ' data-chon="yes"></td><td style="width:15px; text-align:center"><input type="checkbox" class="custom-control-input"'
                                     + (data[i].No == true ? "checked" : "") + ' data-chon="no"></td><td style="width:15px; text-align:center"><input type="checkbox" class="custom-control-input "'
                                     + (data[i].NA == true ? "checked" : "") + ' data-chon="na"></td></tr>');
@@ -84,16 +85,27 @@
                     Main.fn.InitButtonFloat(buttonFloat)
                     vars = bindVariables();
                     method = fnPrivate;
+                    change = false;
                     Main.fn.InitDateTimePickerChanged([$('#fromDate')], method.LoadLeaderShipDetails);
                     $('#cbReport').val($('#txtCreatedBy').val()).change();
                     $('#cbReport').change(function () {
                         method.LoadLeaderShipDetails();
                     })
-                    method.LoadLeaderShipDetails();
+                    $('#cboLoaiBC').change(function () {
+                        method.LoadLeaderShipDetails();
+                    })
                     $("#cbReport").select2(
                         {
                             theme: "classic"
                         });
+                    $("#cboLoaiBC").select2(
+                        {
+                            theme: "classic"
+                        });
+                    change = true;
+                    method.LoadLeaderShipDetails();
+
+
                     $('#tbShowListDeails tbody').on('click', 'tr td input', function () {
                         var rowchon = $(this).parent().parent().attr("data-id");
                         if ($(this).is(":checked")) {
@@ -130,6 +142,7 @@
                         lstLeadDetails[i].STT = this.cells[0].innerHTML;
                         lstLeadDetails[i].IDLeadership = this.cells[1].innerHTML;
                         lstLeadDetails[i].Content = this.cells[2].innerHTML;
+                        lstLeadDetails[i].NOTE = $(obj).closest('tr').find('textarea').val();
                         lstLeadDetails[i].Yes = $(obj).closest('tr').find('input[type=checkbox][data-chon="yes"]').is(":checked");
                         lstLeadDetails[i].No = $(obj).closest('tr').find('input[type=checkbox][data-chon="no"]').is(":checked");
                         lstLeadDetails[i].NA = $(obj).closest('tr').find('input[type=checkbox][data-chon="na"]').is(":checked");
@@ -139,7 +152,7 @@
                     $.ajax({
                         url: urlSaveLeaderShip,
                         type: "post",
-                        data: { TuNgay: $("#fromDate").val(), User: $("#cbReport").val(), DataDetails: stringData1 },
+                        data: { TuNgay: $("#fromDate").val(), User: $("#cbReport").val(), LoaiBC: $("#cboLoaiBC").val(), DataDetails: stringData1 },
                         success: function (data) {
                             if (data.Message === 'success') {
                                 Alert.fn.Show(global.TypeLanguage == 0 ? "Thêm chứng từ thành công!" : "Add certificate to public!", Alert.Type.success);
@@ -157,7 +170,7 @@
                     }
                     Alert.fn.ShowConfirm(global.TypeLanguage == 0 ? "Bạn có chắc muốn xóa?" : "Are you sure you want to delete?", Alert.Type.question, 'Xóa', function (result) {
                         if (result === true) {
-                            $.post(urlDeleteLeaderShip, { TuNgay: $("#fromDate").val(), User: $("#cbReport").val()}, function (data) {
+                            $.post(urlDeleteLeaderShip, { TuNgay: $("#fromDate").val(), User: $("#cbReport").val(), LoaiBC: $("#cboLoaiBC").val()}, function (data) {
                                 if (data === 'success') {
                                     window.location.href = urlResetLeaderShip;
                                 } 

@@ -7,13 +7,14 @@ Imports Microsoft.Win32
 Imports DevExpress.LookAndFeel
 Imports DevExpress.UserSkins
 Imports DevExpress.Skins
+Imports SafetyPlanModule
 
 Module CMMS_Main
 
 
-    <STAThread()> _
+    <STAThread()>
     Public Sub Main()
-       
+
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
 
@@ -50,7 +51,7 @@ Module CMMS_Main
                         Catch ex As Exception
 
                         End Try
-                        
+
 
 
 
@@ -160,6 +161,8 @@ Module CMMS_Main
             Application.EnableVisualStyles()
             Application.SetCompatibleTextRenderingDefault(False)
             Application.Run(frmMain)
+            'Dim frm As New FrmLeadershipDetails()
+            'Application.Run(frm)
         Catch ex As Exception
             MessageBox.Show("main" & ex.Message)
         End Try

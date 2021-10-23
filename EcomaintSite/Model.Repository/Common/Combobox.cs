@@ -139,6 +139,31 @@ namespace Model.Combobox
              });
             return new SelectList(listItem, "Value", "Text", null);
         }
+
+        public SelectList GetLoaiBC(int NNgu)
+        {
+            DataTable dtTmp = new DataTable();
+            SqlCommand sqlcom = new SqlCommand();
+            SqlConnection con = new SqlConnection(db.Database.Connection.ConnectionString);
+            if (con.State == ConnectionState.Closed)
+                con.Open();
+            sqlcom.Connection = con;
+            sqlcom.Parameters.AddWithValue("ACTION", "GET_TYPE");
+            sqlcom.Parameters.AddWithValue("NNgu", NNgu);
+            sqlcom.CommandType = CommandType.StoredProcedure;
+            sqlcom.CommandText = "VS_LEADERSHIP";
+            SqlDataAdapter da = new SqlDataAdapter(sqlcom);
+            da.Fill(dtTmp);
+            var listItem = dtTmp.AsEnumerable().Select(
+             x => new SelectListItem
+             {
+                 Text = x.Field<string>("NAME_TYPE"),
+                 Value = x.Field<Int64>("ID_TYPE").ToString()
+             });
+            return new SelectList(listItem, "Value", "Text", null);
+        }
+
+
         public SelectList GetListLocation()
         {
             DataTable dtTmp = new DataTable();

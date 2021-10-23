@@ -16,6 +16,7 @@ namespace Model.Interface
         SelectList GetCbbLoaiCV(string UserName, int NNgu, int CoAll);
 
         SelectList GetListReportParent(string UserName);
+        SelectList GetLoaiBC(int NNgu);
         SelectList GetListLocation();
         SelectList GetListLoaiMoiNguy();
         SelectList GetListDepartment();

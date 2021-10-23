@@ -17,6 +17,8 @@ namespace Model.Data
 
         public int ID { get; set; }
 
+        public Int64 ID_TYPE { get; set; }
+
         public string Content { get; set; }
 
         [StringLength(30)]
