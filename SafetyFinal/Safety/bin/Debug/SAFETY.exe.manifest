@@ -256,19 +256,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>2wd4/eStBXCHqZEyUT77Xe56tp0=</dsig:DigestValue>
+        <dsig:DigestValue>mrVr3VPw0ueCpYPwqxHMHqd4mPY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SafetyPlanModule.dll" size="1068032">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SafetyPlanModule.dll" size="1067520">
       <assemblyIdentity name="SafetyPlanModule" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6n56Q27aDDlICF6aoIT4YOBNNYk=</dsig:DigestValue>
+        <dsig:DigestValue>R+ARO1PK8/1sr/BWbd7Ud4rP49M=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

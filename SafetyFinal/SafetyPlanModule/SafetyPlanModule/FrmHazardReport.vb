@@ -653,7 +653,7 @@ Public Class FrmHazardReport
                 sqlcom.Parameters.AddWithValue("HPES5", cbHPES5.Checked)
                 sqlcom.Parameters.AddWithValue("HPES6", cbHPES6.Checked)
                 sqlcom.Parameters.AddWithValue("Location", cbLocation.SelectedValue)
-                sqlcom.Parameters.AddWithValue("ID_HAZARD", cbLocation.SelectedValue)
+                sqlcom.Parameters.AddWithValue("ID_HAZARD", cbLoaiMoiNguy.SelectedValue)
                 sqlcom.Parameters.AddWithValue("Description", txtDescription.Text)
                 sqlcom.Parameters.AddWithValue("IS_APPROVED", cbApproved.Checked)
                 sqlcom.Parameters.AddWithValue("APPROVAL_USER", txtApproval_User.Text)

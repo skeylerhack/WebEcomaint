@@ -60,44 +60,44 @@
     </xs:element>
   </xs:schema>
   <Table>
-    <ID>22109</ID>
-    <DocNum>HZ010920210022058</DocNum>
-    <DocDate>2021-09-01T00:00:00+07:00</DocDate>
-    <DocTime>2021-09-01T21:05:10.38+07:00</DocTime>
-    <Createdtime>2021-09-01T21:05:10.38+07:00</Createdtime>
-    <CreatedBy>sy_ha</CreatedBy>
-    <Department>Khai thác</Department>
+    <ID>22075</ID>
+    <DocNum>HZ271020210022046</DocNum>
+    <DocDate>2021-10-27T00:00:00+07:00</DocDate>
+    <DocTime>2021-10-27T13:15:00.16+07:00</DocTime>
+    <Createdtime>2021-10-27T13:15:00.16+07:00</Createdtime>
+    <CreatedBy>dat_1812</CreatedBy>
+    <Department>An toàn</Department>
     <UnsafeCondition>true</UnsafeCondition>
     <BelongContractor>true</BelongContractor>
-    <Operation>false</Operation>
+    <Operation>true</Operation>
     <HR>false</HR>
     <UnsafeBehevior>false</UnsafeBehevior>
     <BelongToBSPort>false</BelongToBSPort>
     <TechHSE>false</TechHSE>
     <Acount>false</Acount>
     <SatetySuggestion>false</SatetySuggestion>
-    <Tally>true</Tally>
+    <Tally>false</Tally>
     <Procu>false</Procu>
     <Other>false</Other>
     <Stopwork>false</Stopwork>
     <Commercial>false</Commercial>
     <HPES1>false</HPES1>
     <HPES2>false</HPES2>
-    <HPES3>false</HPES3>
+    <HPES3>true</HPES3>
     <HPES4>false</HPES4>
-    <HPES5>true</HPES5>
+    <HPES5>false</HPES5>
     <HPES6>false</HPES6>
-    <Location>Kho 7/ WH 7</Location>
-    <Description>aaaaaadddd</Description>
+    <Location>Kho 3.1/ WH 3.1</Location>
+    <Description>aa</Description>
     <External>false</External>
     <NearMiss>false</NearMiss>
   </Table>
   <Table1>
-    <ID>64401</ID>
-    <HazardReportID>22109</HazardReportID>
-    <PreventiveAction>aaaaaa</PreventiveAction>
+    <ID>64354</ID>
+    <HazardReportID>22075</HazardReportID>
+    <PreventiveAction>11</PreventiveAction>
     <Staffname>Bằng Dương Kim </Staffname>
-    <Deadline>2021-09-08T00:00:00+07:00</Deadline>
+    <Deadline>2021-10-28T00:00:00+07:00</Deadline>
     <Status>Ongoing-Đang xử lý</Status>
   </Table1>
 </NewDataSet>
