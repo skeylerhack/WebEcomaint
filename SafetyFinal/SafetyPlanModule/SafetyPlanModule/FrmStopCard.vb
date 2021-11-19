@@ -359,36 +359,30 @@ Public Class FrmStopCard
                     cbIS_DELETE.Checked = ds.Tables(0).Rows(0)("IS_DELETE")
                     ptbImage_1.Image = Nothing
                     ptbImage_2.Image = Nothing
-                    If IMG_PATCH1.Text <> "" Then
-                        Try
-                            Dim imageData As Byte() = DirectCast(ds.Tables(0).Rows(0)("Image_1"), Byte())
-                            If Not imageData Is Nothing Then
-                                If imageData.Length <> 0 Then
-                                    Dim ms As New MemoryStream(imageData)
-                                    ptbImage_1.Image = Image.FromStream(ms, True)
-                                End If
+                    Try
+                        Dim imageData As Byte() = DirectCast(ds.Tables(0).Rows(0)("Image_1"), Byte())
+                        If Not imageData Is Nothing Then
+                            If imageData.Length <> 0 Then
+                                Dim ms As New MemoryStream(imageData)
+                                ptbImage_1.Image = Image.FromStream(ms, True)
                             End If
-                        Catch ex As Exception
-                            ptbImage_1.Image = Nothing
-                        End Try
-                    Else
+                        End If
+                    Catch ex As Exception
                         ptbImage_1.Image = Nothing
-                    End If
-                    If IMG_PATCH2.Text <> "" Then
-                        Try
-                            Dim imageData As Byte() = DirectCast(ds.Tables(0).Rows(0)("Image_2"), Byte())
-                            If Not imageData Is Nothing Then
-                                If imageData.Length <> 0 Then
-                                    Dim ms As New MemoryStream(imageData)
-                                    ptbImage_2.Image = Image.FromStream(ms, True)
-                                End If
+                    End Try
+
+                    Try
+                        Dim imageData As Byte() = DirectCast(ds.Tables(0).Rows(0)("Image_2"), Byte())
+                        If Not imageData Is Nothing Then
+                            If imageData.Length <> 0 Then
+                                Dim ms As New MemoryStream(imageData)
+                                ptbImage_2.Image = Image.FromStream(ms, True)
                             End If
-                        Catch ex As Exception
-                            ptbImage_2.Image = Nothing
-                        End Try
-                    Else
+                        End If
+                    Catch ex As Exception
                         ptbImage_2.Image = Nothing
-                    End If
+                    End Try
+
                     cbNguoiLQ.SelectedValue = ds.Tables(0).Rows(0)("NGUOILIENQUAN1")
                     txtNguoiLQ.Text = ds.Tables(0).Rows(0)("NGUOILIENQUAN2")
                 Else
@@ -533,36 +527,29 @@ Public Class FrmStopCard
                     cbIS_DELETE.Checked = ds.Tables(0).Rows(0)("IS_DELETE")
                     ptbImage_1.Image = Nothing
                     ptbImage_2.Image = Nothing
-                    If IMG_PATCH1.Text <> "" Then
-                        Try
-                            Dim imageData As Byte() = DirectCast(ds.Tables(0).Rows(0)("Image_1"), Byte())
-                            If Not imageData Is Nothing Then
-                                If imageData.Length <> 0 Then
-                                    Dim ms As New MemoryStream(imageData)
-                                    ptbImage_1.Image = Image.FromStream(ms, True)
-                                End If
+                    Try
+                        Dim imageData As Byte() = DirectCast(ds.Tables(0).Rows(0)("Image_1"), Byte())
+                        If Not imageData Is Nothing Then
+                            If imageData.Length <> 0 Then
+                                Dim ms As New MemoryStream(imageData)
+                                ptbImage_1.Image = Image.FromStream(ms, True)
                             End If
-                        Catch ex As Exception
-                            ptbImage_1.Image = Nothing
-                        End Try
-                    Else
+                        End If
+                    Catch ex As Exception
                         ptbImage_1.Image = Nothing
-                    End If
-                    If IMG_PATCH2.Text <> "" Then
-                        Try
-                            Dim imageData As Byte() = DirectCast(ds.Tables(0).Rows(0)("Image_2"), Byte())
-                            If Not imageData Is Nothing Then
-                                If imageData.Length <> 0 Then
-                                    Dim ms As New MemoryStream(imageData)
-                                    ptbImage_2.Image = Image.FromStream(ms, True)
-                                End If
+                    End Try
+                    Try
+                        Dim imageData As Byte() = DirectCast(ds.Tables(0).Rows(0)("Image_2"), Byte())
+                        If Not imageData Is Nothing Then
+                            If imageData.Length <> 0 Then
+                                Dim ms As New MemoryStream(imageData)
+                                ptbImage_2.Image = Image.FromStream(ms, True)
                             End If
-                        Catch ex As Exception
-                            ptbImage_2.Image = Nothing
-                        End Try
-                    Else
+                        End If
+                    Catch ex As Exception
                         ptbImage_2.Image = Nothing
-                    End If
+                    End Try
+
                     cbNguoiLQ.SelectedValue = ds.Tables(0).Rows(0)("NGUOILIENQUAN1")
                     txtNguoiLQ.Text = ds.Tables(0).Rows(0)("NGUOILIENQUAN2")
                 Else
@@ -3722,6 +3709,7 @@ Public Class FrmStopCard
         End If
 
     End Sub
+
 
     Private Sub PictureBox7_MouseEnter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ptbImage_2.MouseClick
         If Not ptbImage_2.Image Is Nothing Then

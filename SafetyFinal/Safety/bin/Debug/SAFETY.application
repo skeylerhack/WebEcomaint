@@ -8,17 +8,17 @@
         <beforeApplicationStartup />
       </update>
     </subscription>
-    <deploymentProvider codebase="http://desktop-5uvs2f2/VietSoft/SAFETY.application" />
+    <deploymentProvider codebase="http://desktop-krbmqee/VietSoft/SAFETY.application" />
   </deployment>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="SAFETY.exe.manifest" size="19368">
+    <dependentAssembly dependencyType="install" codebase="SAFETY.exe.manifest" size="16573">
       <assemblyIdentity name="SAFETY.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>UHlFd/p/Bs1rTzvwawgbt8Vh+Hw=</dsig:DigestValue>
+        <dsig:DigestValue>l4pj8SkWudAlCk3hxbCU4bkG0Io=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
