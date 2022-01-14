@@ -286,3 +286,4 @@ G:\02.WebSafety\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPl
 G:\02.WebSafety\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.dll
 G:\02.WebSafety\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.xml
 G:\02.WebSafety\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.pdb
+G:\02.WebSafety\SafetyFinal\SafetyPlanModule\SafetyPlanModule\obj\Debug\SafetyPlanModule.vbprojAssemblyReference.cache
