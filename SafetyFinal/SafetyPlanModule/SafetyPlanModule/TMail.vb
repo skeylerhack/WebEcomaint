@@ -147,12 +147,11 @@ Public Class TMail
 
 
 
-
+        smtpclient.UseDefaultCredentials = True
         Dim credentials As New System.Net.NetworkCredential()
         credentials.UserName = _MailFromUser
         credentials.Password = _MailFromPassword
         smtpclient.Credentials = credentials
-        'smtpclient.UseDefaultCredentials = True
         prbBar.PerformStep()
         prbBar.Update()
         Try
@@ -230,12 +229,12 @@ Public Class TMail
 
 
 
-
+        smtpclient.UseDefaultCredentials = True
         Dim credentials As New System.Net.NetworkCredential()
         credentials.UserName = _MailFromUser
         credentials.Password = _MailFromPassword
         smtpclient.Credentials = credentials
-        'smtpclient.UseDefaultCredentials = True
+
 
         Try
 
