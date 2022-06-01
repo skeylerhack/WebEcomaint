@@ -208,19 +208,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>zRjS8kOZY0+L/nQjU6OGMv70k5o=</dsig:DigestValue>
+        <dsig:DigestValue>B1HtN/BraBVCI8DrPHcxH56wJNg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SafetyPlanModule.dll" size="1067520">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SafetyPlanModule.dll" size="1067008">
       <assemblyIdentity name="SafetyPlanModule" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>IValz1zRNPsEgR8RFBWlR1zty5w=</dsig:DigestValue>
+        <dsig:DigestValue>pnOwpAGOVjnE/8q6g8QonTPcYes=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

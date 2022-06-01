@@ -3595,9 +3595,9 @@ Public Class FrmHazardReport
     End Sub
 
 
-    Private Sub TableLayoutPanel2_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles TableLayoutPanel2.Paint
+    'Private Sub TableLayoutPanel2_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles TableLayoutPanel2.Paint
 
-    End Sub
+    'End Sub
 
     Private Sub btNguoiLQ_Click(sender As Object, e As EventArgs) Handles btNguoiLQ.Click
         Dim frm As New FrmFind(GetListInfoNPT_BCT1())
